@@ -240,26 +240,36 @@ function ChartCard({
 
 function App() {
   const { data, error } = useDashboardData();
-  const [phase, setPhase] = useState("Todas");
+  const [phase, setPhase] = useState("");
+  const [ageGroup, setAgeGroup] = useState("Todos");
   const [education, setEducation] = useState("Todos");
   const [employment, setEmployment] = useState("Todos");
 
   const rows = data?.rows ?? [];
+  const phases = useMemo(() => uniqueValues(rows, "phase"), [rows]);
+  const selectedPhase = phases.includes(phase) ? phase : (phases[0] ?? "");
+  const ageGroupOptions = useMemo(() => uniqueValues(rows, "age_group"), [rows]);
+  const educationLevels = useMemo(() => uniqueValues(rows, "education_level"), [rows]);
+  const employmentStatuses = useMemo(() => uniqueValues(rows, "employment_status"), [rows]);
+
+  useEffect(() => {
+    if (phases.length > 0 && !phases.includes(phase)) {
+      setPhase(phases[0]);
+    }
+  }, [phase, phases]);
 
   const filteredRows = useMemo(
     () =>
       rows.filter((row) => {
-        const phaseMatch = phase === "Todas" || row.phase === phase;
+        const phaseMatch = row.phase === selectedPhase;
+        const ageMatch = ageGroup === "Todos" || row.age_group === ageGroup;
         const educationMatch = education === "Todos" || row.education_level === education;
         const employmentMatch = employment === "Todos" || row.employment_status === employment;
-        return phaseMatch && educationMatch && employmentMatch;
+        return phaseMatch && ageMatch && educationMatch && employmentMatch;
       }),
-    [education, employment, phase, rows],
+    [ageGroup, education, employment, rows, selectedPhase],
   );
 
-  const phases = useMemo(() => uniqueValues(rows, "phase"), [rows]);
-  const educationLevels = useMemo(() => uniqueValues(rows, "education_level"), [rows]);
-  const employmentStatuses = useMemo(() => uniqueValues(rows, "employment_status"), [rows]);
   const barriers = useMemo(() => averageBarriers(filteredRows), [filteredRows]);
   const ageGroups = useMemo(() => distribution(filteredRows, "age_group"), [filteredRows]);
   const difficulty = useMemo(() => distribution(filteredRows, "first_job_difficulty"), [filteredRows]);
@@ -328,9 +338,17 @@ function App() {
         </div>
         <label>
           Fase
-          <select value={phase} onChange={(event) => setPhase(event.target.value)}>
-            <option>Todas</option>
+          <select value={selectedPhase} onChange={(event) => setPhase(event.target.value)}>
             {phases.map((item) => (
+              <option key={item}>{item}</option>
+            ))}
+          </select>
+        </label>
+        <label>
+          Edad
+          <select value={ageGroup} onChange={(event) => setAgeGroup(event.target.value)}>
+            <option>Todos</option>
+            {ageGroupOptions.map((item) => (
               <option key={item}>{item}</option>
             ))}
           </select>
