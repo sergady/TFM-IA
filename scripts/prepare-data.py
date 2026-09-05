@@ -157,6 +157,10 @@ def discover_sources() -> list[tuple[str, Path]]:
         ]
     )
 
+    enriched = RAW_DIR / "Resultados_Analisis.xlsx"
+    if enriched in source_files:
+        source_files = [path for path in source_files if path.name != "Datos_Limpios.csv"]
+
     if not source_files:
         fallback = PROJECT_ROOT / "cleanData.csv"
         if fallback.exists():

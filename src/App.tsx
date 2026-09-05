@@ -3,7 +3,6 @@ import {
   Bar,
   BarChart,
   CartesianGrid,
-  Cell,
   Pie,
   PieChart,
   ResponsiveContainer,
@@ -167,6 +166,10 @@ function distribution(rows: SurveyRow[], key: string): DistributionItem[] {
   return Object.entries(counts)
     .map(([name, value]) => ({ name, value }))
     .sort((a, b) => b.value - a.value || a.name.localeCompare(b.name));
+}
+
+function withChartColors<T extends DistributionItem>(items: T[]) {
+  return items.map((item, index) => ({ ...item, fill: COLORS[index % COLORS.length] }));
 }
 
 function parseNumber(value: unknown) {
@@ -395,6 +398,7 @@ function ProposalDashboard({ proposals }: { proposals: ProposalsData }) {
   const highPriorityCount = proposals.rows.filter((proposal) => proposal.priority === "high").length;
   const topProposal = proposals.summary.topSupported[0];
   const primaryArea = proposals.summary.byPolicyArea[0];
+  const priorityChartData = withChartColors(proposals.summary.byPriority);
 
   return (
     <section className="proposal-section">
@@ -467,11 +471,7 @@ function ProposalDashboard({ proposals }: { proposals: ProposalsData }) {
           <div className="proposal-charts">
             <ResponsiveContainer width="100%" height={210}>
               <PieChart>
-                <Pie data={proposals.summary.byPriority} dataKey="value" nameKey="name" outerRadius={74} label>
-                  {proposals.summary.byPriority.map((_, index) => (
-                    <Cell key={index} fill={COLORS[index % COLORS.length]} />
-                  ))}
-                </Pie>
+                <Pie data={priorityChartData} dataKey="value" fill="#2563eb" nameKey="name" outerRadius={74} label />
                 <Tooltip formatter={(value, name) => [`${value} propuestas`, formatPriority(String(name))]} />
               </PieChart>
             </ResponsiveContainer>
@@ -579,6 +579,7 @@ function App() {
   const barriers = useMemo(() => averageBarriers(filteredRows), [filteredRows]);
   const ageGroups = useMemo(() => distribution(filteredRows, "age_group"), [filteredRows]);
   const difficulty = useMemo(() => distribution(filteredRows, "first_job_difficulty"), [filteredRows]);
+  const difficultyChartData = useMemo(() => withChartColors(difficulty), [difficulty]);
   const employmentDistribution = useMemo(
     () => distribution(filteredRows, "employment_status"),
     [filteredRows],
@@ -740,11 +741,7 @@ function App() {
             >
               <ResponsiveContainer width="100%" height={330}>
                 <PieChart>
-                  <Pie data={difficulty} dataKey="value" nameKey="name" outerRadius={105} label>
-                    {difficulty.map((_, index) => (
-                      <Cell key={index} fill={COLORS[index % COLORS.length]} />
-                    ))}
-                  </Pie>
+                  <Pie data={difficultyChartData} dataKey="value" fill="#2563eb" nameKey="name" outerRadius={105} label />
                   <Tooltip />
                 </PieChart>
               </ResponsiveContainer>

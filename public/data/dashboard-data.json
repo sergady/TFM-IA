@@ -1,1763 +1,13 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-05T17:39:33.036197+00:00",
-    "totalResponses": 106,
+    "generatedAt": "2026-09-05T17:43:53.887470+00:00",
+    "totalResponses": 53,
     "sources": [
-      "dashboard/data/raw/Datos_Limpios.csv",
       "dashboard/data/raw/Resultados_Analisis.xlsx"
     ],
     "barrierScale": "1 = poca dificultad, 5 = mucha dificultad"
   },
   "rows": [
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "1976",
-      "current_residence": "España, Asturias",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Estudios técnicos superiores (formación profesional superior)",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Administración de empresas",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy familiar de una persona joven",
-      "study_job_match": "Sí",
-      "time_to_first_job": "Seguidamente",
-      "first_job_difficulty": "Fácil",
-      "main_job_search_barriers": "Encontrar un puesto de lo que estudié",
-      "career_guidance_received": "Sí, pero fuera de mi institución de estudios",
-      "experience_barrier": "4",
-      "job_scarcity_barrier": "4",
-      "low_salary_barrier": "1",
-      "temporary_contract_barrier": "2",
-      "opportunity_scarcity_barrier": "2",
-      "internship_access_barrier": "1",
-      "discrimination_barrier": "1",
-      "migration_barrier": "1",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "No",
-      "preferred_destination": "",
-      "advice_to_young_people": "Formarme y desarrollar al máximo mis estudios",
-      "proposed_public_measure": "Formación y prácticas en empresas",
-      "age_group": "45 o mas"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "1999",
-      "current_residence": "Francia, Ain",
-      "country_of_origin": "España",
-      "education_level": "Graduado universitario",
-      "wants_higher_education": "No",
-      "field_of_study": "Informática",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Sí",
-      "time_to_first_job": "2 meses",
-      "first_job_difficulty": "Fácil",
-      "main_job_search_barriers": "Ninguna",
-      "career_guidance_received": "Sí",
-      "experience_barrier": "1",
-      "job_scarcity_barrier": "1",
-      "low_salary_barrier": "4",
-      "temporary_contract_barrier": "5",
-      "opportunity_scarcity_barrier": "1",
-      "internship_access_barrier": "1",
-      "discrimination_barrier": "1",
-      "migration_barrier": "1",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "No",
-      "mobility_intention": "Si",
-      "preferred_destination": "Suiza",
-      "advice_to_young_people": "Abrir la mente a irse fuera del pais",
-      "proposed_public_measure": "Regulación de los sueldos",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "2002",
-      "current_residence": "España, Asturias",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Estudios técnicos superiores (formación profesional superior)",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Turismo",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Sí",
-      "time_to_first_job": "Antes de acabar mis estudios, ya me habían ofrecido trabajo",
-      "first_job_difficulty": "Fácil",
-      "main_job_search_barriers": "aunque si me fue fácil encontrar trabajo, no resultó ser un trabajo estable con buen salario",
-      "career_guidance_received": "No",
-      "experience_barrier": "2",
-      "job_scarcity_barrier": "3",
-      "low_salary_barrier": "3",
-      "temporary_contract_barrier": "4",
-      "opportunity_scarcity_barrier": "4",
-      "internship_access_barrier": "1",
-      "discrimination_barrier": "1",
-      "migration_barrier": "2",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "Bélgica, UK, Holanda",
-      "advice_to_young_people": "Seguir formándome o salir del país",
-      "proposed_public_measure": "Ayudar a las empresas a contratar o facilitar el proceso de contratar a alguien sin experiencia",
-      "age_group": "Menos de 25"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "2000",
-      "current_residence": "España",
-      "country_of_origin": "Francia",
-      "education_level": "Estudios técnicos superiores (formación profesional superior)",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Diseño de moda",
-      "employment_status": "Buscando empleo",
-      "relation_to_problem": "Soy joven buscando empleo",
-      "study_job_match": "",
-      "time_to_first_job": "3 años",
-      "first_job_difficulty": "Muy difícil",
-      "main_job_search_barriers": "Poca demanda",
-      "career_guidance_received": "No",
-      "experience_barrier": "4",
-      "job_scarcity_barrier": "5",
-      "low_salary_barrier": "5",
-      "temporary_contract_barrier": "3",
-      "opportunity_scarcity_barrier": "5",
-      "internship_access_barrier": "4",
-      "discrimination_barrier": "5",
-      "migration_barrier": "4",
-      "public_transport_barrier": "2",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "Inglaterra",
-      "advice_to_young_people": "Seguir estudiando",
-      "proposed_public_measure": "Mayores ofertas para gente joven puesto que se piden años de experiencia",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "1999",
-      "current_residence": "Europa, España",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Estudios obligatorios",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Ninguno, solo son los estudios obligatorios.",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "No",
-      "time_to_first_job": "1 año",
-      "first_job_difficulty": "Neutral",
-      "main_job_search_barriers": "Que los requisitos sean tener x años de experiencia.",
-      "career_guidance_received": "No",
-      "experience_barrier": "5",
-      "job_scarcity_barrier": "3",
-      "low_salary_barrier": "2",
-      "temporary_contract_barrier": "3",
-      "opportunity_scarcity_barrier": "1",
-      "internship_access_barrier": "3",
-      "discrimination_barrier": "1",
-      "migration_barrier": "1",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "Alemania",
-      "advice_to_young_people": "Estudiar lo que me guste y coger la mayor experiencia laboral posible.",
-      "proposed_public_measure": "Rebajar los años de experiencia requeridos para un puesto de trabajo y facilitar las prácticas a dicho trabajo.",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "2001",
-      "current_residence": "España, Madrid",
-      "country_of_origin": "Es el mismo país pero otra región del territorio",
-      "education_level": "Estudios obligatorios",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Fotografía",
-      "employment_status": "Buscando empleo",
-      "relation_to_problem": "Soy joven buscando empleo",
-      "study_job_match": "",
-      "time_to_first_job": "6 años",
-      "first_job_difficulty": "Muy difícil",
-      "main_job_search_barriers": "",
-      "career_guidance_received": "Sí, pero fuera de mi institución de estudios",
-      "experience_barrier": "1",
-      "job_scarcity_barrier": "5",
-      "low_salary_barrier": "4",
-      "temporary_contract_barrier": "5",
-      "opportunity_scarcity_barrier": "5",
-      "internship_access_barrier": "5",
-      "discrimination_barrier": "3",
-      "migration_barrier": "5",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "Sí",
-      "regional_career_prospects": "Hermano no lo sé, técnicamente si pero es todo por contactos y a base de trabajar gratis",
-      "mobility_intention": "Si",
-      "preferred_destination": "Uk",
-      "advice_to_young_people": "",
-      "proposed_public_measure": "En mi campo ayudaría que las plazas publicas para estos trabajos no fuesen solo para quienes han realizado x estudios que solicitan sino para quienes demuestren, por ejemplo mediante un portfolio, que tienen el nivel y capacidades de hacerlo.\nY digo esto porque los trabajos publicos son casi los unicos que existen con ofertas de trabajo a las que puedes aplicar, los demas son por contactos",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "2001",
-      "current_residence": "España, Alicante",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Graduado universitario",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Biología",
-      "employment_status": "Estudiante;Buscando empleo",
-      "relation_to_problem": "Soy joven buscando empleo",
-      "study_job_match": "",
-      "time_to_first_job": "2 años",
-      "first_job_difficulty": "Muy difícil",
-      "main_job_search_barriers": "Falta de experiencia",
-      "career_guidance_received": "No",
-      "experience_barrier": "5",
-      "job_scarcity_barrier": "4",
-      "low_salary_barrier": "3",
-      "temporary_contract_barrier": "5",
-      "opportunity_scarcity_barrier": "5",
-      "internship_access_barrier": "5",
-      "discrimination_barrier": "3",
-      "migration_barrier": "5",
-      "public_transport_barrier": "2",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "No",
-      "preferred_destination": "",
-      "advice_to_young_people": "Opositar",
-      "proposed_public_measure": "Una formación académica que combine teoría y práctica en la misma proporción con colaboración de empresas con lo que se demanda en ese momento y en un futuro próximo para que cuando salgamos al mercado laboral estemos tengamos la experiencia suficiente",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "2001",
-      "current_residence": "España, Alicante",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Graduado universitario",
-      "wants_higher_education": "No",
-      "field_of_study": "Diseño",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Sí",
-      "time_to_first_job": "7-8 meses",
-      "first_job_difficulty": "Difícil",
-      "main_job_search_barriers": "Muchas personas optando por el mismo puesto, mucha competitividad",
-      "career_guidance_received": "No",
-      "experience_barrier": "3",
-      "job_scarcity_barrier": "2",
-      "low_salary_barrier": "4",
-      "temporary_contract_barrier": "5",
-      "opportunity_scarcity_barrier": "3",
-      "internship_access_barrier": "1",
-      "discrimination_barrier": "1",
-      "migration_barrier": "3",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "No",
-      "preferred_destination": "",
-      "advice_to_young_people": "",
-      "proposed_public_measure": "La creación de bolsas de empleo para jóvenes que no sean solo prácticas",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "1999",
-      "current_residence": "España, Asturias",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Estudios técnicos superiores (formación profesional superior)",
-      "wants_higher_education": "No",
-      "field_of_study": "Artesanía y Manualidades",
-      "employment_status": "Buscando empleo",
-      "relation_to_problem": "Soy joven buscando empleo",
-      "study_job_match": "",
-      "time_to_first_job": "Año y 3 meses",
-      "first_job_difficulty": "Muy difícil",
-      "main_job_search_barriers": "Ofertas temporales sin contrato",
-      "career_guidance_received": "Sí, pero fuera de mi institución de estudios",
-      "experience_barrier": "1",
-      "job_scarcity_barrier": "3",
-      "low_salary_barrier": "1",
-      "temporary_contract_barrier": "3",
-      "opportunity_scarcity_barrier": "3",
-      "internship_access_barrier": "3",
-      "discrimination_barrier": "1",
-      "migration_barrier": "2",
-      "public_transport_barrier": "2",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "No",
-      "mobility_intention": "Si",
-      "preferred_destination": "Suiza",
-      "advice_to_young_people": "Priorizar la experiencia laboral a los estudios",
-      "proposed_public_measure": "Un convenio de practicas mejor regulado sin exceso de requisitos",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "1999",
-      "current_residence": "España, Asturias",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Estudios técnicos medios (formación profesional media)",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Electricista",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Sí",
-      "time_to_first_job": "1 año",
-      "first_job_difficulty": "Muy difícil",
-      "main_job_search_barriers": "Piden experiencia hasta para ser ayudante, evidentemente recién titulado no poseo experiencia alguna",
-      "career_guidance_received": "No",
-      "experience_barrier": "5",
-      "job_scarcity_barrier": "3",
-      "low_salary_barrier": "3",
-      "temporary_contract_barrier": "1",
-      "opportunity_scarcity_barrier": "5",
-      "internship_access_barrier": "3",
-      "discrimination_barrier": "4",
-      "migration_barrier": "1",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Anda en un limbo entre si y no, básicamente es un poco cuestión de suerte",
-      "mobility_intention": "Si",
-      "preferred_destination": "Alemania",
-      "advice_to_young_people": "Haber insistido más para que me metieran a una empresa de mi sector en las prácticas",
-      "proposed_public_measure": "Poner un marco de limitaciones o facilitar la formación en empresa para los empresarios, no puede ser que te pidan experiencia para ser ayudante ya que ser ayudante es prácticamente hacer el mínimo indispensable que cualquier persona podría realizar, debería de regularizarse los requisitos según qué cargo oferte la empresa y que no elijan a dedo lo que les convenga",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "1997",
-      "current_residence": "francia, ain",
-      "country_of_origin": "España",
-      "education_level": "Máster universitario",
-      "wants_higher_education": "No",
-      "field_of_study": "ingeniería",
-      "employment_status": "Buscando empleo",
-      "relation_to_problem": "Soy joven buscando empleo",
-      "study_job_match": "",
-      "time_to_first_job": "poco",
-      "first_job_difficulty": "Neutral",
-      "main_job_search_barriers": "que te llamen",
-      "career_guidance_received": "No",
-      "experience_barrier": "2",
-      "job_scarcity_barrier": "3",
-      "low_salary_barrier": "3",
-      "temporary_contract_barrier": "4",
-      "opportunity_scarcity_barrier": "4",
-      "internship_access_barrier": "4",
-      "discrimination_barrier": "2",
-      "migration_barrier": "4",
-      "public_transport_barrier": "2",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "suiza",
-      "advice_to_young_people": "no sé",
-      "proposed_public_measure": "que haya más trabajo y bien pagado",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "1999",
-      "current_residence": "España, Asturias",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Máster universitario",
-      "wants_higher_education": "No",
-      "field_of_study": "Ingeniería informática",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Sí",
-      "time_to_first_job": "Nada, empecé a trabajar antes de terminarlos",
-      "first_job_difficulty": "Muy fácil",
-      "main_job_search_barriers": "Ninguna",
-      "career_guidance_received": "Sí",
-      "experience_barrier": "1",
-      "job_scarcity_barrier": "1",
-      "low_salary_barrier": "2",
-      "temporary_contract_barrier": "1",
-      "opportunity_scarcity_barrier": "1",
-      "internship_access_barrier": "1",
-      "discrimination_barrier": "1",
-      "migration_barrier": "1",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "Suiza",
-      "advice_to_young_people": "Estudiar algo con salidas.",
-      "proposed_public_measure": "Quizá subvenciones para prácticas remuneradas relacionadas con lo estudiado (es decir ganando experiencia relevante y cobrando)",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "1995",
-      "current_residence": "España, Asturias",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Estudios técnicos superiores (formación profesional superior)",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Fotografía",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "No",
-      "time_to_first_job": "0",
-      "first_job_difficulty": "Muy fácil",
-      "main_job_search_barriers": "En el campo de mis estudios no hay trabajo",
-      "career_guidance_received": "No",
-      "experience_barrier": "1",
-      "job_scarcity_barrier": "1",
-      "low_salary_barrier": "4",
-      "temporary_contract_barrier": "5",
-      "opportunity_scarcity_barrier": "5",
-      "internship_access_barrier": "1",
-      "discrimination_barrier": "3",
-      "migration_barrier": "5",
-      "public_transport_barrier": "2",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "No",
-      "mobility_intention": "No",
-      "preferred_destination": "",
-      "advice_to_young_people": "Preparar una oposición desde joven",
-      "proposed_public_measure": "Incentivos para la contratación de personal sin experiencia y la prohibición de utilizar fotografías en el currículum",
-      "age_group": "30-34"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "1997",
-      "current_residence": "Madrid, España",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Graduado universitario",
-      "wants_higher_education": "No",
-      "field_of_study": "Salud",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Sí",
-      "time_to_first_job": "Nada",
-      "first_job_difficulty": "Muy fácil",
-      "main_job_search_barriers": "Ninguna",
-      "career_guidance_received": "No",
-      "experience_barrier": "1",
-      "job_scarcity_barrier": "1",
-      "low_salary_barrier": "2",
-      "temporary_contract_barrier": "4",
-      "opportunity_scarcity_barrier": "1",
-      "internship_access_barrier": "1",
-      "discrimination_barrier": "1",
-      "migration_barrier": "1",
-      "public_transport_barrier": "2",
-      "regional_job_opportunities": "Sí",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "No",
-      "preferred_destination": "",
-      "advice_to_young_people": "",
-      "proposed_public_measure": "El problema principal ahora mismo es la vivienda, no el trabajo",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "2010",
-      "current_residence": "China",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Estudios obligatorios",
-      "wants_higher_education": "No",
-      "field_of_study": "Trabajo en una fábrica textil haciendo camisetas falsas",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Apoyo al comunismo chino",
-      "study_job_match": "No",
-      "time_to_first_job": "Nací en la fábrica y me puse a coser",
-      "first_job_difficulty": "Muy fácil",
-      "main_job_search_barriers": "Ninguna",
-      "career_guidance_received": "No",
-      "experience_barrier": "1",
-      "job_scarcity_barrier": "1",
-      "low_salary_barrier": "1",
-      "temporary_contract_barrier": "1",
-      "opportunity_scarcity_barrier": "1",
-      "internship_access_barrier": "1",
-      "discrimination_barrier": "1",
-      "migration_barrier": "1",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "Si, todos los niños chinos soñamos con apoyar el comunismo",
-      "regional_career_prospects": "No, no hay nada como trabajar 12 horas en una fabrica textil",
-      "mobility_intention": "No",
-      "preferred_destination": "Ninguno, viva china",
-      "advice_to_young_people": "Ir corriendo a una fabrica textil china",
-      "proposed_public_measure": "Hacer mas fabricas",
-      "age_group": "Menos de 25"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "2000",
-      "current_residence": "España, Comunidad Valenciana",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Graduado universitario",
-      "wants_higher_education": "No",
-      "field_of_study": "Lingüística",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "No",
-      "time_to_first_job": "3 años",
-      "first_job_difficulty": "Neutral",
-      "main_job_search_barriers": "Falta de oferta y salario",
-      "career_guidance_received": "No",
-      "experience_barrier": "2",
-      "job_scarcity_barrier": "4",
-      "low_salary_barrier": "4",
-      "temporary_contract_barrier": "3",
-      "opportunity_scarcity_barrier": "4",
-      "internship_access_barrier": "3",
-      "discrimination_barrier": "2",
-      "migration_barrier": "2",
-      "public_transport_barrier": "2",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "No",
-      "preferred_destination": "",
-      "advice_to_young_people": "",
-      "proposed_public_measure": "NsNc",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "1999",
-      "current_residence": "España",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Máster universitario",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Restauración y conservación de bienes culturales",
-      "employment_status": "Autónomo",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Sí",
-      "time_to_first_job": "Según terminé mis estudios encontré trabajo pero al trabajar por proyectos nada es permanente",
-      "first_job_difficulty": "Neutral",
-      "main_job_search_barriers": "El requisito de experiencia laboral",
-      "career_guidance_received": "No",
-      "experience_barrier": "5",
-      "job_scarcity_barrier": "5",
-      "low_salary_barrier": "5",
-      "temporary_contract_barrier": "5",
-      "opportunity_scarcity_barrier": "5",
-      "internship_access_barrier": "5",
-      "discrimination_barrier": "1",
-      "migration_barrier": "5",
-      "public_transport_barrier": "3",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "A muchos, desde países europeos hasta asiáticos y latinoamericanos",
-      "advice_to_young_people": "",
-      "proposed_public_measure": "Ni idea la verdad sorry",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "2000",
-      "current_residence": "España, Asturias",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Máster universitario",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Cálculos y simulación mecánica y fluidodinámica",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Está más o menos relacionado",
-      "time_to_first_job": "Alrededor de 9 meses",
-      "first_job_difficulty": "Difícil",
-      "main_job_search_barriers": "Siempre buscaban gente con 1-3 años de experiencia como mínimo, y en caso de no tener experiencia lo usan para pagarte menos de lo que marca tu convenio o para hacerte trabajar bajo condiciones que no eran las pactadas, sabiendo que es difícil que tengas otra opción.",
-      "career_guidance_received": "No",
-      "experience_barrier": "5",
-      "job_scarcity_barrier": "3",
-      "low_salary_barrier": "3",
-      "temporary_contract_barrier": "1",
-      "opportunity_scarcity_barrier": "4",
-      "internship_access_barrier": "1",
-      "discrimination_barrier": "1",
-      "migration_barrier": "5",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "Considero que en mi región hay oportunidades siempre y cuando sacrifiques tus condiciones laborales/salario digno los primeros años para así ganar experiencia que te permita llegar a un puesto decente.",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "Francia y Alemania",
-      "advice_to_young_people": "Valorando la calidad de vida de mi región, me quedaré aquí hasta poder acceder a un puesto que realmente me interese.",
-      "proposed_public_measure": "Ayudas para la descentralización de las industrias.",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "1997",
-      "current_residence": "España",
-      "country_of_origin": "Rumanía",
-      "education_level": "Estudios técnicos superiores (formación profesional superior)",
-      "wants_higher_education": "No",
-      "field_of_study": "Audiovisual",
-      "employment_status": "Trabajando;Autónomo",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Sí",
-      "time_to_first_job": "5 meses",
-      "first_job_difficulty": "Neutral",
-      "main_job_search_barriers": "",
-      "career_guidance_received": "No",
-      "experience_barrier": "1",
-      "job_scarcity_barrier": "5",
-      "low_salary_barrier": "4",
-      "temporary_contract_barrier": "3",
-      "opportunity_scarcity_barrier": "3",
-      "internship_access_barrier": "2",
-      "discrimination_barrier": "1",
-      "migration_barrier": "2",
-      "public_transport_barrier": "4",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "No",
-      "mobility_intention": "Si",
-      "preferred_destination": "",
-      "advice_to_young_people": "autobusero",
-      "proposed_public_measure": "no sé bro, no soy experto",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "2001",
-      "current_residence": "España, Comunidad Valenciana",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Estudios técnicos superiores (formación profesional superior)",
-      "wants_higher_education": "No",
-      "field_of_study": "Artes plásticas",
-      "employment_status": "Buscando empleo",
-      "relation_to_problem": "Soy joven buscando empleo",
-      "study_job_match": "",
-      "time_to_first_job": "Hasta la actualidad",
-      "first_job_difficulty": "Difícil",
-      "main_job_search_barriers": "",
-      "career_guidance_received": "No",
-      "experience_barrier": "5",
-      "job_scarcity_barrier": "4",
-      "low_salary_barrier": "3",
-      "temporary_contract_barrier": "2",
-      "opportunity_scarcity_barrier": "3",
-      "internship_access_barrier": "2",
-      "discrimination_barrier": "2",
-      "migration_barrier": "3",
-      "public_transport_barrier": "4",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Quizás",
-      "mobility_intention": "No",
-      "preferred_destination": "",
-      "advice_to_young_people": "",
-      "proposed_public_measure": "Una revisión de las condiciones y requisitos laborables que tienden a la absurdez en muchos casos",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "2001",
-      "current_residence": "España, Comunidad Valenciana",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Máster universitario",
-      "wants_higher_education": "No",
-      "field_of_study": "Educación",
-      "employment_status": "Estudiante;Trabajando",
-      "relation_to_problem": "Soy joven con trabajos esporádicos",
-      "study_job_match": "Sí",
-      "time_to_first_job": "El trabajo que realizo ahora mismo es en una empresa que lleva excursiones, escuelas de verano, viajes de fin de curso, etc. Por lo que es algo intermitente. Empecé en este trabajo antes de acabar mi segunda carrera (Educación Primaria) y llevo con la misma empresa ya 3 años.",
-      "first_job_difficulty": "Neutral",
-      "main_job_search_barriers": "Las principales dificultades fueron la falta de contactos y la falta de experiencia previa en este área de animación.",
-      "career_guidance_received": "No",
-      "experience_barrier": "3",
-      "job_scarcity_barrier": "3",
-      "low_salary_barrier": "2",
-      "temporary_contract_barrier": "3",
-      "opportunity_scarcity_barrier": "3",
-      "internship_access_barrier": "2",
-      "discrimination_barrier": "2",
-      "migration_barrier": "1",
-      "public_transport_barrier": "2",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "Irlanda",
-      "advice_to_young_people": "Lo mismo que he hecho.",
-      "proposed_public_measure": "Que ofrecieran más oportunidades para ganar experiencia o fueran más flexibles al respecto",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "1999",
-      "current_residence": "España",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Estudios técnicos superiores (formación profesional superior)",
-      "wants_higher_education": "No",
-      "field_of_study": "Metal",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Está más o menos relacionado",
-      "time_to_first_job": "1 año",
-      "first_job_difficulty": "Neutral",
-      "main_job_search_barriers": "",
-      "career_guidance_received": "No",
-      "experience_barrier": "1",
-      "job_scarcity_barrier": "1",
-      "low_salary_barrier": "1",
-      "temporary_contract_barrier": "1",
-      "opportunity_scarcity_barrier": "1",
-      "internship_access_barrier": "1",
-      "discrimination_barrier": "1",
-      "migration_barrier": "1",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "Sí",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "Países del este europeo",
-      "advice_to_young_people": "",
-      "proposed_public_measure": "Ninguna",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "1995",
-      "current_residence": "España",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Estudios obligatorios",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Prácticamente nada de lo que estudié me sirvió a futuro para ninguno de mis trabajos.",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "No",
-      "time_to_first_job": "Uno o dos meses para el primero y alguno entre trabajos.",
-      "first_job_difficulty": "Neutral",
-      "main_job_search_barriers": "No entender qué buscaba, cómo buscarlo o qué necesitaba para comenzar.",
-      "career_guidance_received": "No",
-      "experience_barrier": "5",
-      "job_scarcity_barrier": "3",
-      "low_salary_barrier": "5",
-      "temporary_contract_barrier": "5",
-      "opportunity_scarcity_barrier": "4",
-      "internship_access_barrier": "2",
-      "discrimination_barrier": "3",
-      "migration_barrier": "5",
-      "public_transport_barrier": "3",
-      "regional_job_opportunities": "Ofrecen trabajos mal pagados o de pocas horas a jóvenes que no saben dónde se meten. Muchas veces abusan del desconocimiento oara pedir de más.",
-      "regional_career_prospects": "Dejé mis estudios universitarios porque eran demasiado costosos para la oferta laboral que encontraría después además del alto número de estudiantes del mismo curso e intrusismo.",
-      "mobility_intention": "Si",
-      "preferred_destination": "Alemania, Reino Unido, Italia.",
-      "advice_to_young_people": "Quizas una formación profesional para encontrar algo relacionado con un trabajo que me gustaría y al que pudiera acceder con preparación previa.",
-      "proposed_public_measure": "Información e instruccion sobre el plano laboral, opciones y ayudas tanto económicas como informativas",
-      "age_group": "30-34"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "27-06-26",
-      "birth_year": "2003",
-      "current_residence": "España, Asturies",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Estudios técnicos superiores (formación profesional superior)",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Química",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Sí",
-      "time_to_first_job": "6 meses",
-      "first_job_difficulty": "Difícil",
-      "main_job_search_barriers": "Ofertas precarias y las complicaciones a la hora de conseguir vehículo propio debido a que los trabajos de mi sector suelen ubicarse alejados de las zonas urbanas",
-      "career_guidance_received": "Sí",
-      "experience_barrier": "4",
-      "job_scarcity_barrier": "4",
-      "low_salary_barrier": "5",
-      "temporary_contract_barrier": "4",
-      "opportunity_scarcity_barrier": "3",
-      "internship_access_barrier": "3",
-      "discrimination_barrier": "1",
-      "migration_barrier": "2",
-      "public_transport_barrier": "5",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "",
-      "advice_to_young_people": "Aprovechar todo lo posible situaciones de no emancipación puesto que parece el único momento vital donde conseguir un buen ahorro",
-      "proposed_public_measure": "Acomodar de nuevo la organización del calendario escolar en fp para que tras completar las practicas existan oportunidades reales de contratación.",
-      "age_group": "Menos de 25"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "28-06-26",
-      "birth_year": "1999",
-      "current_residence": "España, asturias",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Estudios técnicos superiores (formación profesional superior)",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Administración",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven estudiante",
-      "study_job_match": "Está más o menos relacionado",
-      "time_to_first_job": "Poco",
-      "first_job_difficulty": "Neutral",
-      "main_job_search_barriers": "Inmadurez",
-      "career_guidance_received": "Sí, pero fuera de mi institución de estudios",
-      "experience_barrier": "3",
-      "job_scarcity_barrier": "4",
-      "low_salary_barrier": "4",
-      "temporary_contract_barrier": "2",
-      "opportunity_scarcity_barrier": "4",
-      "internship_access_barrier": "2",
-      "discrimination_barrier": "4",
-      "migration_barrier": "3",
-      "public_transport_barrier": "3",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "Por europa",
-      "advice_to_young_people": "",
-      "proposed_public_measure": "Mejores legislaciones",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "28-06-26",
-      "birth_year": "2001",
-      "current_residence": "Cartagena, murcia, españa, europa",
-      "country_of_origin": "Es el mismo país pero otra región del territorio",
-      "education_level": "Estudios técnicos superiores (formación profesional superior)",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Estética",
-      "employment_status": "Despedida (busco empleo)",
-      "relation_to_problem": "Soy joven buscando empleo",
-      "study_job_match": "",
-      "time_to_first_job": "2 años",
-      "first_job_difficulty": "Muy difícil",
-      "main_job_search_barriers": "Poca oferta de emoleo en el sector y muy cerrado",
-      "career_guidance_received": "No",
-      "experience_barrier": "2",
-      "job_scarcity_barrier": "3",
-      "low_salary_barrier": "3",
-      "temporary_contract_barrier": "3",
-      "opportunity_scarcity_barrier": "3",
-      "internship_access_barrier": "2",
-      "discrimination_barrier": "3",
-      "migration_barrier": "3",
-      "public_transport_barrier": "2",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "No",
-      "mobility_intention": "Si",
-      "preferred_destination": "Estados unidos , paris o italia se que paises bajos etc tambien tienen mi sector y otros sitios",
-      "advice_to_young_people": "No toca otra que joderse e ir de trabajo en trabajo de mierda",
-      "proposed_public_measure": "Sinceramente acabar con cosas como el periodo de prueba en mi caso",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "28-06-26",
-      "birth_year": "1999",
-      "current_residence": "Asturias, España",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Máster universitario",
-      "wants_higher_education": "No",
-      "field_of_study": "Ingeniería informática",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Sí",
-      "time_to_first_job": "Un mes",
-      "first_job_difficulty": "Difícil",
-      "main_job_search_barriers": "Sin respuesta de ninguna empresa, sólo encontré por contactos",
-      "career_guidance_received": "Sí, pero fuera de mi institución de estudios",
-      "experience_barrier": "5",
-      "job_scarcity_barrier": "2",
-      "low_salary_barrier": "1",
-      "temporary_contract_barrier": "3",
-      "opportunity_scarcity_barrier": "4",
-      "internship_access_barrier": "2",
-      "discrimination_barrier": "1",
-      "migration_barrier": "1",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "No",
-      "preferred_destination": "Suiza",
-      "advice_to_young_people": "",
-      "proposed_public_measure": "Crear más puestos de trabajo que no requieran experiencia laboral previa",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "28-06-26",
-      "birth_year": "1971",
-      "current_residence": "España,  Gijón",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Estudios técnicos superiores (formación profesional superior)",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Informatica",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy familiar de una persona joven",
-      "study_job_match": "No",
-      "time_to_first_job": "Poco",
-      "first_job_difficulty": "Fácil",
-      "main_job_search_barriers": "Poca experiencia",
-      "career_guidance_received": "Sí",
-      "experience_barrier": "2",
-      "job_scarcity_barrier": "1",
-      "low_salary_barrier": "2",
-      "temporary_contract_barrier": "2",
-      "opportunity_scarcity_barrier": "2",
-      "internship_access_barrier": "2",
-      "discrimination_barrier": "1",
-      "migration_barrier": "1",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "Sí",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "No",
-      "preferred_destination": "",
-      "advice_to_young_people": "Aumentar mi nivel de estudios",
-      "proposed_public_measure": "Subvenciones a las empresas para la incorporación de mas trabajadores para garantizarles experiencia",
-      "age_group": "45 o mas"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "28-06-26",
-      "birth_year": "1966",
-      "current_residence": "España, Asturias",
-      "country_of_origin": "Es el mismo país pero otra región del territorio",
-      "education_level": "Estudios técnicos superiores (formación profesional superior)",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Fuerzas Armadas",
-      "employment_status": "Jubilado/a",
-      "relation_to_problem": "Social",
-      "study_job_match": "",
-      "time_to_first_job": "Inmediato",
-      "first_job_difficulty": "Neutral",
-      "main_job_search_barriers": "",
-      "career_guidance_received": "No",
-      "experience_barrier": "1",
-      "job_scarcity_barrier": "1",
-      "low_salary_barrier": "1",
-      "temporary_contract_barrier": "1",
-      "opportunity_scarcity_barrier": "1",
-      "internship_access_barrier": "2",
-      "discrimination_barrier": "1",
-      "migration_barrier": "2",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "No",
-      "preferred_destination": "",
-      "advice_to_young_people": "",
-      "proposed_public_measure": "Garantizar la estabilidad laboral y los salarios acordes a la preparación exigida.",
-      "age_group": "45 o mas"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "28-06-26",
-      "birth_year": "2001",
-      "current_residence": "España, Asturias",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Estudios técnicos superiores (formación profesional superior)",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Administración y finanzas",
-      "employment_status": "Estudiante;Buscando empleo",
-      "relation_to_problem": "Soy joven estudiante",
-      "study_job_match": "",
-      "time_to_first_job": "1 mes",
-      "first_job_difficulty": "",
-      "main_job_search_barriers": "",
-      "career_guidance_received": "Sí",
-      "experience_barrier": "3",
-      "job_scarcity_barrier": "4",
-      "low_salary_barrier": "4",
-      "temporary_contract_barrier": "4",
-      "opportunity_scarcity_barrier": "3",
-      "internship_access_barrier": "1",
-      "discrimination_barrier": "2",
-      "migration_barrier": "1",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "Sí",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "No",
-      "preferred_destination": "",
-      "advice_to_young_people": "Formación Profesional con buena tasa de empleabilidad",
-      "proposed_public_measure": "Orientar más a los jóvenes durante la época de estudiantes",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "29-06-26",
-      "birth_year": "1997",
-      "current_residence": "España, Asturias",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Graduado universitario",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Ingeniería Informática del Software",
-      "employment_status": "Estudiante;Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Sí",
-      "time_to_first_job": "Sin espera",
-      "first_job_difficulty": "Fácil",
-      "main_job_search_barriers": "Alcanzar el filtro de las entrevistas",
-      "career_guidance_received": "No",
-      "experience_barrier": "4",
-      "job_scarcity_barrier": "2",
-      "low_salary_barrier": "1",
-      "temporary_contract_barrier": "2",
-      "opportunity_scarcity_barrier": "1",
-      "internship_access_barrier": "2",
-      "discrimination_barrier": "1",
-      "migration_barrier": "2",
-      "public_transport_barrier": "2",
-      "regional_job_opportunities": "Sí",
-      "regional_career_prospects": "Pese a tener una oferta extendida en el sector, la capacidad de crecimiento dentro de él es limitada en la región",
-      "mobility_intention": "Si",
-      "preferred_destination": "Nueva Zelanda",
-      "advice_to_young_people": "Focalizar el esfuerzo en la búsqueda de empleo en el extranjero",
-      "proposed_public_measure": "Fomentar el crecimiento del sector a nivel nacional y regional.",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "09-07-26",
-      "birth_year": "1999",
-      "current_residence": "Esoaña",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Máster universitario",
-      "wants_higher_education": "No",
-      "field_of_study": "Marketing",
-      "employment_status": "Buscando empleo",
-      "relation_to_problem": "Soy joven buscando empleo",
-      "study_job_match": "",
-      "time_to_first_job": "Actualidad",
-      "first_job_difficulty": "Difícil",
-      "main_job_search_barriers": "",
-      "career_guidance_received": "No",
-      "experience_barrier": "5",
-      "job_scarcity_barrier": "3",
-      "low_salary_barrier": "5",
-      "temporary_contract_barrier": "4",
-      "opportunity_scarcity_barrier": "5",
-      "internship_access_barrier": "3",
-      "discrimination_barrier": "1",
-      "migration_barrier": "4",
-      "public_transport_barrier": "2",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "Holanda",
-      "advice_to_young_people": "",
-      "proposed_public_measure": "Bolsas de trabajo especializadas",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "09-07-26",
-      "birth_year": "1999",
-      "current_residence": "Suiza, Zúrich",
-      "country_of_origin": "España",
-      "education_level": "Graduado universitario",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Ingeniería",
-      "employment_status": "Estudiante;Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Sí",
-      "time_to_first_job": "3 meses",
-      "first_job_difficulty": "Neutral",
-      "main_job_search_barriers": "Idioma",
-      "career_guidance_received": "No",
-      "experience_barrier": "4",
-      "job_scarcity_barrier": "3",
-      "low_salary_barrier": "2",
-      "temporary_contract_barrier": "1",
-      "opportunity_scarcity_barrier": "3",
-      "internship_access_barrier": "1",
-      "discrimination_barrier": "2",
-      "migration_barrier": "3",
-      "public_transport_barrier": "2",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "Suiza",
-      "advice_to_young_people": "Emigrar",
-      "proposed_public_measure": "Regulación del trabajo informal y trabajo en empresas no remunerado",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "09-07-26",
-      "birth_year": "1999",
-      "current_residence": "España, Asturias",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Estudios obligatorios",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Obra civil",
-      "employment_status": "Estudiante",
-      "relation_to_problem": "Soy joven estudiante",
-      "study_job_match": "No",
-      "time_to_first_job": "No han acabado",
-      "first_job_difficulty": "",
-      "main_job_search_barriers": "",
-      "career_guidance_received": "No",
-      "experience_barrier": "4",
-      "job_scarcity_barrier": "2",
-      "low_salary_barrier": "4",
-      "temporary_contract_barrier": "4",
-      "opportunity_scarcity_barrier": "3",
-      "internship_access_barrier": "3",
-      "discrimination_barrier": "1",
-      "migration_barrier": "4",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "No",
-      "preferred_destination": "",
-      "advice_to_young_people": "",
-      "proposed_public_measure": "Apoyo al emprendimiento en sectores de industria",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "09-07-26",
-      "birth_year": "1996",
-      "current_residence": "Gijon",
-      "country_of_origin": "Venezuela",
-      "education_level": "Estudios técnicos superiores (formación profesional superior)",
-      "wants_higher_education": "No",
-      "field_of_study": "Informatica",
-      "employment_status": "Estudiante;Trabajando",
-      "relation_to_problem": "Soy joven buscando empleo",
-      "study_job_match": "No",
-      "time_to_first_job": "3 meses",
-      "first_job_difficulty": "Neutral",
-      "main_job_search_barriers": "tener la oportunidad de estar seleccionado para la primera entrevista",
-      "career_guidance_received": "Sí",
-      "experience_barrier": "5",
-      "job_scarcity_barrier": "2",
-      "low_salary_barrier": "4",
-      "temporary_contract_barrier": "5",
-      "opportunity_scarcity_barrier": "5",
-      "internship_access_barrier": "1",
-      "discrimination_barrier": "2",
-      "migration_barrier": "2",
-      "public_transport_barrier": "3",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "No",
-      "mobility_intention": "Si",
-      "preferred_destination": "Noruega",
-      "advice_to_young_people": "Irme de españa",
-      "proposed_public_measure": "que mediante un sistema similar a la bolsa de empleo se le tuviera que dar prioridad a los jovenes (28-34) para conseguir ofertas en su sector , que se acumulen puntos tanto por inactividad como por trabajar en empleos no relacionados a tu campo y de esa manera tengas la oportunidad de acceder al proceso de seleccion para trabajos en tu area de forma periodica sin tener que hacer activamente la búsqueda del mismo",
-      "age_group": "30-34"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "09-07-26",
-      "birth_year": "1999",
-      "current_residence": "españa, madrid",
-      "country_of_origin": "Es el mismo país pero otra región del territorio",
-      "education_level": "Graduado universitario",
-      "wants_higher_education": "No",
-      "field_of_study": "informatica",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Sí",
-      "time_to_first_job": "6 meses",
-      "first_job_difficulty": "Difícil",
-      "main_job_search_barriers": "nadie te llama",
-      "career_guidance_received": "Sí, pero fuera de mi institución de estudios",
-      "experience_barrier": "5",
-      "job_scarcity_barrier": "5",
-      "low_salary_barrier": "5",
-      "temporary_contract_barrier": "5",
-      "opportunity_scarcity_barrier": "5",
-      "internship_access_barrier": "4",
-      "discrimination_barrier": "1",
-      "migration_barrier": "3",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "",
-      "advice_to_young_people": "",
-      "proposed_public_measure": "qu todas las practicas sean remuneradas",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "09-07-26",
-      "birth_year": "1999",
-      "current_residence": "España",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Estudios técnicos superiores (formación profesional superior)",
-      "wants_higher_education": "No",
-      "field_of_study": "Deporte",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy empleador/a",
-      "study_job_match": "Sí",
-      "time_to_first_job": "1 año",
-      "first_job_difficulty": "Neutral",
-      "main_job_search_barriers": "No considero haber tenido dificultades",
-      "career_guidance_received": "Sí",
-      "experience_barrier": "2",
-      "job_scarcity_barrier": "2",
-      "low_salary_barrier": "2",
-      "temporary_contract_barrier": "5",
-      "opportunity_scarcity_barrier": "2",
-      "internship_access_barrier": "2",
-      "discrimination_barrier": "2",
-      "migration_barrier": "2",
-      "public_transport_barrier": "2",
-      "regional_job_opportunities": "Sí",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "No",
-      "preferred_destination": "",
-      "advice_to_young_people": "",
-      "proposed_public_measure": "Me gustaria que hubiera un limite en los contratos temporales y en las horas complementarias o extras realizadas .",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "09-07-26",
-      "birth_year": "1996",
-      "current_residence": "España, Asturias",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Estudios técnicos medios (formación profesional media)",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Informatica, Deporte",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "No",
-      "time_to_first_job": "Desde que deje de estudiar, trabaje",
-      "first_job_difficulty": "Neutral",
-      "main_job_search_barriers": "Ninguno",
-      "career_guidance_received": "Sí, pero fuera de mi institución de estudios",
-      "experience_barrier": "2",
-      "job_scarcity_barrier": "4",
-      "low_salary_barrier": "4",
-      "temporary_contract_barrier": "2",
-      "opportunity_scarcity_barrier": "3",
-      "internship_access_barrier": "2",
-      "discrimination_barrier": "1",
-      "migration_barrier": "1",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "Depende del campo en el que quieras trabajar",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "Inglaterra, Canada",
-      "advice_to_young_people": "Valorar el mercado laboral en alguno de los paises que mencione anteriormente, estudiar algo que me valga para trabajar bien alli y me interese y probar en alguno de esos paises. Si volviese tengo esa formacion fuera que me seria util aqui tambien.",
-      "proposed_public_measure": "Ayudas que incentiven a las empresas a aumentar puestos de trabajo y ayudar a que la gente joven sea emprendedora",
-      "age_group": "30-34"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "09-07-26",
-      "birth_year": "1999",
-      "current_residence": "España, Asturias",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Estudios técnicos superiores (formación profesional superior)",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Técnico en sonido y audiovisuales",
-      "employment_status": "Buscando empleo",
-      "relation_to_problem": "Soy joven buscando empleo",
-      "study_job_match": "",
-      "time_to_first_job": "Mes y medio",
-      "first_job_difficulty": "Difícil",
-      "main_job_search_barriers": "Profesionales con muchos años de experiencia marchándose de las grandes ciudades por no poder pagar su vivienda en ellas llegando a regiones con menos actividad como Asturias y lógicamente realizando la mayoría de los trabajos del campo.",
-      "career_guidance_received": "Sí",
-      "experience_barrier": "5",
-      "job_scarcity_barrier": "3",
-      "low_salary_barrier": "2",
-      "temporary_contract_barrier": "3",
-      "opportunity_scarcity_barrier": "4",
-      "internship_access_barrier": "2",
-      "discrimination_barrier": "1",
-      "migration_barrier": "3",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "No",
-      "mobility_intention": "Si",
-      "preferred_destination": "Alemania - UK - US",
-      "advice_to_young_people": "Cambiar de estudios o mudarme a otro país antes",
-      "proposed_public_measure": "Esa es una muy buena pregunta",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "09-07-26",
-      "birth_year": "1999",
-      "current_residence": "España, Asturias",
-      "country_of_origin": "Inglaterra",
-      "education_level": "Estudios técnicos medios (formación profesional media)",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Administración",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "No",
-      "time_to_first_job": "2 años",
-      "first_job_difficulty": "Difícil",
-      "main_job_search_barriers": "",
-      "career_guidance_received": "No",
-      "experience_barrier": "3",
-      "job_scarcity_barrier": "2",
-      "low_salary_barrier": "4",
-      "temporary_contract_barrier": "5",
-      "opportunity_scarcity_barrier": "5",
-      "internship_access_barrier": "4",
-      "discrimination_barrier": "1",
-      "migration_barrier": "5",
-      "public_transport_barrier": "5",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "No",
-      "mobility_intention": "Si",
-      "preferred_destination": "",
-      "advice_to_young_people": "",
-      "proposed_public_measure": "Más ayudas",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "09-07-26",
-      "birth_year": "1999",
-      "current_residence": "España",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Graduado universitario",
-      "wants_higher_education": "No",
-      "field_of_study": "Ingeniería informática",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Sí",
-      "time_to_first_job": "Empecé a trabajar antes de haber terminado la carrera",
-      "first_job_difficulty": "Fácil",
-      "main_job_search_barriers": "La predisposición de las empresas a dar empleo a jóvenes",
-      "career_guidance_received": "Sí",
-      "experience_barrier": "4",
-      "job_scarcity_barrier": "1",
-      "low_salary_barrier": "2",
-      "temporary_contract_barrier": "1",
-      "opportunity_scarcity_barrier": "1",
-      "internship_access_barrier": "2",
-      "discrimination_barrier": "2",
-      "migration_barrier": "1",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "Sí",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "Suiza, Irlanda, Suecia o Polonia",
-      "advice_to_young_people": "Crearme una cuenta de LinkedIn cuanto antes y empezar a crear una red de contactos",
-      "proposed_public_measure": "Posiblemente algún tipo de ayuda a las empresas para financiar más formación para los empleados",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "09-07-26",
-      "birth_year": "1998",
-      "current_residence": "España, Asturias",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Graduado universitario",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Documentación",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Sí",
-      "time_to_first_job": "5 meses",
-      "first_job_difficulty": "Neutral",
-      "main_job_search_barriers": "Que salieran oposiciones relacionadas con mi área de trabajo.",
-      "career_guidance_received": "Sí",
-      "experience_barrier": "2",
-      "job_scarcity_barrier": "5",
-      "low_salary_barrier": "4",
-      "temporary_contract_barrier": "4",
-      "opportunity_scarcity_barrier": "4",
-      "internship_access_barrier": "2",
-      "discrimination_barrier": "1",
-      "migration_barrier": "3",
-      "public_transport_barrier": "3",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "No",
-      "preferred_destination": "",
-      "advice_to_young_people": "",
-      "proposed_public_measure": "En el caso de mi área de trabajo, sería tan fácil como convocar oposiciones para cubrir la necesidad de puestos de trabajo y favorecer así la incorporación de personas jóvenes a los mismos.",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "09-07-26",
-      "birth_year": "1997",
-      "current_residence": "Belgica, brusselas",
-      "country_of_origin": "Es el mismo país pero otra región del territorio",
-      "education_level": "Estudios obligatorios",
-      "wants_higher_education": "Sí",
-      "field_of_study": "General",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "No",
-      "time_to_first_job": "5",
-      "first_job_difficulty": "Difícil",
-      "main_job_search_barriers": "No ténia un titulo superior",
-      "career_guidance_received": "No",
-      "experience_barrier": "5",
-      "job_scarcity_barrier": "3",
-      "low_salary_barrier": "1",
-      "temporary_contract_barrier": "1",
-      "opportunity_scarcity_barrier": "3",
-      "internship_access_barrier": "4",
-      "discrimination_barrier": "1",
-      "migration_barrier": "1",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "Sí",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "Francis/espana",
-      "advice_to_young_people": "Sacar buenas notas en los estudios/buscar una formacion",
-      "proposed_public_measure": "Formacion",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "09-07-26",
-      "birth_year": "1999",
-      "current_residence": "España, Asturias",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Máster universitario",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Ingeniería informática",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Sí",
-      "time_to_first_job": "Dos meses",
-      "first_job_difficulty": "Difícil",
-      "main_job_search_barriers": "Silencio de radio de la mayoría de empresas",
-      "career_guidance_received": "Sí",
-      "experience_barrier": "5",
-      "job_scarcity_barrier": "3",
-      "low_salary_barrier": "3",
-      "temporary_contract_barrier": "5",
-      "opportunity_scarcity_barrier": "5",
-      "internship_access_barrier": "2",
-      "discrimination_barrier": "1",
-      "migration_barrier": "1",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "Suiza",
-      "advice_to_young_people": "Estudios sobre cohetería o ingeniería aeroespacial",
-      "proposed_public_measure": "Una cuota de empleados jóvenes similar a la cuota de mujeres",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "09-07-26",
-      "birth_year": "1999",
-      "current_residence": "España, Asturias",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Estudios técnicos superiores (formación profesional superior)",
-      "wants_higher_education": "No",
-      "field_of_study": "Electricidad",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Sí",
-      "time_to_first_job": "3 meses",
-      "first_job_difficulty": "Muy fácil",
-      "main_job_search_barriers": "Ninguna",
-      "career_guidance_received": "Sí",
-      "experience_barrier": "1",
-      "job_scarcity_barrier": "1",
-      "low_salary_barrier": "1",
-      "temporary_contract_barrier": "1",
-      "opportunity_scarcity_barrier": "1",
-      "internship_access_barrier": "1",
-      "discrimination_barrier": "1",
-      "migration_barrier": "1",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "Sí",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "Mismo país, distinta region",
-      "advice_to_young_people": "Estudiar menos",
-      "proposed_public_measure": "Replantear sistema educativo",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "09-07-26",
-      "birth_year": "1999",
-      "current_residence": "Estados Unidos, Carolina del Sur",
-      "country_of_origin": "Mexico",
-      "education_level": "Estudios técnicos superiores (formación profesional superior)",
-      "wants_higher_education": "Sí",
-      "field_of_study": ".",
-      "employment_status": "Estudiante;Trabajando;Autónomo",
-      "relation_to_problem": "Soy empleador/a",
-      "study_job_match": "No",
-      "time_to_first_job": "1 año",
-      "first_job_difficulty": "Fácil",
-      "main_job_search_barriers": "",
-      "career_guidance_received": "No",
-      "experience_barrier": "1",
-      "job_scarcity_barrier": "1",
-      "low_salary_barrier": "3",
-      "temporary_contract_barrier": "2",
-      "opportunity_scarcity_barrier": "1",
-      "internship_access_barrier": "1",
-      "discrimination_barrier": "3",
-      "migration_barrier": "5",
-      "public_transport_barrier": "2",
-      "regional_job_opportunities": "Lo desconozco",
-      "regional_career_prospects": "No",
-      "mobility_intention": "No",
-      "preferred_destination": "",
-      "advice_to_young_people": "Emigrar, emprender, estudiar, trabajar",
-      "proposed_public_measure": "Lo desconozco",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "09-07-26",
-      "birth_year": "1999",
-      "current_residence": "Suiza, Ginebra",
-      "country_of_origin": "España",
-      "education_level": "Graduado universitario",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Informática",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Trabajador",
-      "study_job_match": "Sí",
-      "time_to_first_job": "Nada",
-      "first_job_difficulty": "Neutral",
-      "main_job_search_barriers": "El idioma",
-      "career_guidance_received": "No",
-      "experience_barrier": "4",
-      "job_scarcity_barrier": "4",
-      "low_salary_barrier": "4",
-      "temporary_contract_barrier": "4",
-      "opportunity_scarcity_barrier": "3",
-      "internship_access_barrier": "2",
-      "discrimination_barrier": "1",
-      "migration_barrier": "4",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "Sí",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "España",
-      "advice_to_young_people": "Emigrar",
-      "proposed_public_measure": "Invertir en nuevos puestos de trabajo",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "09-07-26",
-      "birth_year": "1996",
-      "current_residence": "España, Madrid",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Graduado universitario",
-      "wants_higher_education": "No",
-      "field_of_study": "Economía",
-      "employment_status": "Estudiante",
-      "relation_to_problem": "Soy joven estudiante",
-      "study_job_match": "Sí",
-      "time_to_first_job": "3 meses",
-      "first_job_difficulty": "Neutral",
-      "main_job_search_barriers": "Remuneración suficiente para independizarse",
-      "career_guidance_received": "Sí",
-      "experience_barrier": "4",
-      "job_scarcity_barrier": "3",
-      "low_salary_barrier": "5",
-      "temporary_contract_barrier": "4",
-      "opportunity_scarcity_barrier": "4",
-      "internship_access_barrier": "2",
-      "discrimination_barrier": "1",
-      "migration_barrier": "1",
-      "public_transport_barrier": "2",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "",
-      "advice_to_young_people": "",
-      "proposed_public_measure": "Campaña de informacion con datos sobre el mercado laboral para crear conciencia de la mala situacion actual",
-      "age_group": "30-34"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "09-07-26",
-      "birth_year": "1999",
-      "current_residence": "España, Palencia",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Graduado universitario",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Veterinaria",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Sí",
-      "time_to_first_job": "5 meses",
-      "first_job_difficulty": "Neutral",
-      "main_job_search_barriers": "Necesidad de experiencia previa para optar a la mayoría de puestos de trabajo",
-      "career_guidance_received": "Sí",
-      "experience_barrier": "5",
-      "job_scarcity_barrier": "4",
-      "low_salary_barrier": "4",
-      "temporary_contract_barrier": "5",
-      "opportunity_scarcity_barrier": "4",
-      "internship_access_barrier": "2",
-      "discrimination_barrier": "3",
-      "migration_barrier": "4",
-      "public_transport_barrier": "3",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "No",
-      "preferred_destination": "",
-      "advice_to_young_people": "Hacer más prácticas durante la universidad orientadas al puesto de trabajo que deseo",
-      "proposed_public_measure": "Convenios colectivos más acordes con la realidad de cada sector",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "09-07-26",
-      "birth_year": "1999",
-      "current_residence": "España, Asturias",
-      "country_of_origin": "Es el mismo país pero otra región del territorio",
-      "education_level": "Estudios técnicos medios (formación profesional media)",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Atención a personas dependientes",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "No",
-      "time_to_first_job": "Unos meses",
-      "first_job_difficulty": "Neutral",
-      "main_job_search_barriers": "Experiencia",
-      "career_guidance_received": "No",
-      "experience_barrier": "3",
-      "job_scarcity_barrier": "2",
-      "low_salary_barrier": "3",
-      "temporary_contract_barrier": "3",
-      "opportunity_scarcity_barrier": "3",
-      "internship_access_barrier": "2",
-      "discrimination_barrier": "2",
-      "migration_barrier": "3",
-      "public_transport_barrier": "2",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "No",
-      "mobility_intention": "Si",
-      "preferred_destination": "Suiza",
-      "advice_to_young_people": "Formarme más",
-      "proposed_public_measure": "Mejorar las condiciones y regular las exigencias de acceso al puesto",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "10-07-26",
-      "birth_year": "1997",
-      "current_residence": "España, Asturias, Otur",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Máster universitario",
-      "wants_higher_education": "No",
-      "field_of_study": "Informática",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Sí",
-      "time_to_first_job": "0",
-      "first_job_difficulty": "Fácil",
-      "main_job_search_barriers": "",
-      "career_guidance_received": "Sí",
-      "experience_barrier": "1",
-      "job_scarcity_barrier": "1",
-      "low_salary_barrier": "1",
-      "temporary_contract_barrier": "4",
-      "opportunity_scarcity_barrier": "1",
-      "internship_access_barrier": "1",
-      "discrimination_barrier": "1",
-      "migration_barrier": "4",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "No se",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "Menos a Marruecos donde sea.",
-      "advice_to_young_people": "Destituir a Pedro Sánchez pero ya vamos",
-      "proposed_public_measure": "Que España gane el mundial y que dejen de darle la paguita a los perroflsutas que votan a Perro Sánchez",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "14-07-26",
-      "birth_year": "1999",
-      "current_residence": "España, Asturias",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Máster universitario",
-      "wants_higher_education": "No",
-      "field_of_study": "Historia Universal",
-      "employment_status": "Autónomo",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Sí",
-      "time_to_first_job": "Un año",
-      "first_job_difficulty": "Difícil",
-      "main_job_search_barriers": "Falta de información por parte de las empresas",
-      "career_guidance_received": "No",
-      "experience_barrier": "3",
-      "job_scarcity_barrier": "5",
-      "low_salary_barrier": "3",
-      "temporary_contract_barrier": "4",
-      "opportunity_scarcity_barrier": "5",
-      "internship_access_barrier": "1",
-      "discrimination_barrier": "1",
-      "migration_barrier": "3",
-      "public_transport_barrier": "1",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Con mucha suerte",
-      "mobility_intention": "Si",
-      "preferred_destination": "Bélgica, Dinamarca o Suecia",
-      "advice_to_young_people": "Soy joven así que no sé",
-      "proposed_public_measure": "Jubilar a la gente antes",
-      "age_group": "25-29"
-    },
-    {
-      "phase": "Datos Limpios",
-      "timestamp": "14-07-26",
-      "birth_year": "1999",
-      "current_residence": "España, Asturias",
-      "country_of_origin": "Es el mismo país al de residencia actual",
-      "education_level": "Graduado universitario",
-      "wants_higher_education": "Sí",
-      "field_of_study": "Informática",
-      "employment_status": "Trabajando",
-      "relation_to_problem": "Soy joven trabajando",
-      "study_job_match": "Sí",
-      "time_to_first_job": "8 meses",
-      "first_job_difficulty": "Muy difícil",
-      "main_job_search_barriers": "Muchas entrevistas, ningún sí",
-      "career_guidance_received": "Sí",
-      "experience_barrier": "5",
-      "job_scarcity_barrier": "3",
-      "low_salary_barrier": "2",
-      "temporary_contract_barrier": "4",
-      "opportunity_scarcity_barrier": "5",
-      "internship_access_barrier": "3",
-      "discrimination_barrier": "2",
-      "migration_barrier": "4",
-      "public_transport_barrier": "4",
-      "regional_job_opportunities": "No",
-      "regional_career_prospects": "Sí",
-      "mobility_intention": "Si",
-      "preferred_destination": "Alemania",
-      "advice_to_young_people": "",
-      "proposed_public_measure": "Nacionalizar los servicios humanos básicos como la vivienda, la luz, el agua, etc. Así como reducir las jornadas laborales para reducir el paro.",
-      "age_group": "25-29"
-    },
     {
       "phase": "Resultados Analisis",
       "timestamp": "27-06-26",
@@ -4571,10 +2821,6 @@
   "summary": {
     "phases": [
       {
-        "name": "Datos Limpios",
-        "value": 53
-      },
-      {
         "name": "Resultados Analisis",
         "value": 53
       }
@@ -4582,19 +2828,19 @@
     "ageGroups": [
       {
         "name": "25-29",
-        "value": 84
+        "value": 42
       },
       {
         "name": "30-34",
-        "value": 10
+        "value": 5
       },
       {
         "name": "45 o mas",
-        "value": 6
+        "value": 3
       },
       {
         "name": "Menos de 25",
-        "value": 6
+        "value": 3
       }
     ],
     "barriers": [
@@ -4602,402 +2848,402 @@
         "key": "temporary_contract_barrier",
         "name": "Contratos temporales",
         "average": 3.23,
-        "responses": 106
+        "responses": 53
       },
       {
         "key": "opportunity_scarcity_barrier",
         "name": "Falta de oportunidades",
         "average": 3.19,
-        "responses": 106
+        "responses": 53
       },
       {
         "key": "experience_barrier",
         "name": "Falta de experiencia",
         "average": 3.13,
-        "responses": 106
+        "responses": 53
       },
       {
         "key": "low_salary_barrier",
         "name": "Salarios insuficientes",
         "average": 2.98,
-        "responses": 106
+        "responses": 53
       },
       {
         "key": "job_scarcity_barrier",
         "name": "Escasez de ofertas",
         "average": 2.85,
-        "responses": 106
+        "responses": 53
       },
       {
         "key": "migration_barrier",
         "name": "Necesidad de migrar",
         "average": 2.6,
-        "responses": 106
+        "responses": 53
       },
       {
         "key": "internship_access_barrier",
         "name": "Acceso a practicas",
         "average": 2.19,
-        "responses": 106
+        "responses": 53
       },
       {
         "key": "public_transport_barrier",
         "name": "Transporte publico",
         "average": 1.85,
-        "responses": 106
+        "responses": 53
       },
       {
         "key": "discrimination_barrier",
         "name": "Discriminacion",
         "average": 1.66,
-        "responses": 106
+        "responses": 53
       }
     ],
     "topTerms": [
       {
         "name": "experiencia",
-        "value": 48
+        "value": 24
       },
       {
         "name": "trabajo",
-        "value": 44
+        "value": 22
       },
       {
         "name": "formacion",
-        "value": 18
+        "value": 9
       },
       {
         "name": "practicas",
-        "value": 18
+        "value": 9
       },
       {
         "name": "puesto",
-        "value": 16
+        "value": 8
       },
       {
         "name": "estudios",
-        "value": 16
+        "value": 8
       },
       {
         "name": "ninguna",
-        "value": 14
+        "value": 7
       },
       {
         "name": "sector",
-        "value": 12
+        "value": 6
       },
       {
         "name": "ofertas",
-        "value": 10
+        "value": 5
       },
       {
         "name": "estudiar",
-        "value": 10
+        "value": 5
       },
       {
         "name": "trabajos",
-        "value": 10
+        "value": 5
       },
       {
         "name": "falta",
-        "value": 10
+        "value": 5
       },
       {
         "name": "puestos",
-        "value": 10
+        "value": 5
       },
       {
         "name": "gente",
-        "value": 8
+        "value": 4
       },
       {
         "name": "requisitos",
-        "value": 8
+        "value": 4
       },
       {
         "name": "tener",
-        "value": 8
+        "value": 4
       },
       {
         "name": "campo",
-        "value": 8
+        "value": 4
       },
       {
         "name": "contactos",
-        "value": 8
+        "value": 4
       },
       {
         "name": "mismo",
-        "value": 8
+        "value": 4
       },
       {
         "name": "empleo",
-        "value": 8
+        "value": 4
       },
       {
         "name": "empresa",
-        "value": 8
+        "value": 4
       },
       {
         "name": "trabajar",
-        "value": 8
+        "value": 4
       },
       {
         "name": "ayudas",
-        "value": 8
+        "value": 4
       },
       {
         "name": "previa",
-        "value": 8
+        "value": 4
       },
       {
         "name": "area",
-        "value": 8
+        "value": 4
       },
       {
         "name": "encontrar",
-        "value": 6
+        "value": 3
       },
       {
         "name": "pais",
-        "value": 6
+        "value": 3
       },
       {
         "name": "facilitar",
-        "value": 6
+        "value": 3
       },
       {
         "name": "poca",
-        "value": 6
+        "value": 3
       },
       {
         "name": "sean",
-        "value": 6
+        "value": 3
       }
     ],
     "categories": {
       "education_level": [
         {
           "name": "Estudios técnicos superiores (formación profesional superior)",
-          "value": 38
+          "value": 19
         },
         {
           "name": "Graduado universitario",
-          "value": 28
+          "value": 14
         },
         {
           "name": "Máster universitario",
-          "value": 20
+          "value": 10
         },
         {
           "name": "Estudios obligatorios",
-          "value": 12
+          "value": 6
         },
         {
           "name": "Estudios técnicos medios (formación profesional media)",
-          "value": 8
+          "value": 4
         }
       ],
       "employment_status": [
         {
           "name": "Trabajando",
-          "value": 64
+          "value": 32
         },
         {
           "name": "Buscando empleo",
-          "value": 14
+          "value": 7
         },
         {
           "name": "Estudiante;Trabajando",
-          "value": 8
+          "value": 4
         },
         {
           "name": "Autónomo",
-          "value": 4
+          "value": 2
         },
         {
           "name": "Estudiante",
-          "value": 4
+          "value": 2
         },
         {
           "name": "Estudiante;Buscando empleo",
-          "value": 4
+          "value": 2
         },
         {
           "name": "Despedida (busco empleo)",
-          "value": 2
+          "value": 1
         },
         {
           "name": "Estudiante;Trabajando;Autónomo",
-          "value": 2
+          "value": 1
         },
         {
           "name": "Jubilado/a",
-          "value": 2
+          "value": 1
         },
         {
           "name": "Trabajando;Autónomo",
-          "value": 2
+          "value": 1
         }
       ],
       "relation_to_problem": [
         {
           "name": "Soy joven trabajando",
-          "value": 62
+          "value": 31
         },
         {
           "name": "Soy joven buscando empleo",
-          "value": 20
+          "value": 10
         },
         {
           "name": "Soy joven estudiante",
-          "value": 8
+          "value": 4
         },
         {
           "name": "Soy empleador/a",
-          "value": 4
+          "value": 2
         },
         {
           "name": "Soy familiar de una persona joven",
-          "value": 4
+          "value": 2
         },
         {
           "name": "Apoyo al comunismo chino",
-          "value": 2
+          "value": 1
         },
         {
           "name": "Social",
-          "value": 2
+          "value": 1
         },
         {
           "name": "Soy joven con trabajos esporádicos",
-          "value": 2
+          "value": 1
         },
         {
           "name": "Trabajador",
-          "value": 2
+          "value": 1
         }
       ],
       "first_job_difficulty": [
         {
           "name": "Neutral",
-          "value": 38
+          "value": 19
         },
         {
           "name": "Difícil",
-          "value": 24
+          "value": 12
         },
         {
           "name": "Fácil",
-          "value": 16
+          "value": 8
         },
         {
           "name": "Muy difícil",
-          "value": 14
+          "value": 7
         },
         {
           "name": "Muy fácil",
-          "value": 10
+          "value": 5
         },
         {
           "name": "Sin dato",
-          "value": 4
+          "value": 2
         }
       ],
       "career_guidance_received": [
         {
           "name": "No",
-          "value": 60
+          "value": 30
         },
         {
           "name": "Sí",
-          "value": 32
+          "value": 16
         },
         {
           "name": "Sí, pero fuera de mi institución de estudios",
-          "value": 14
+          "value": 7
         }
       ],
       "regional_job_opportunities": [
         {
           "name": "No",
-          "value": 72
+          "value": 36
         },
         {
           "name": "Sí",
-          "value": 22
+          "value": 11
         },
         {
           "name": "Considero que en mi región hay oportunidades siempre y cuando sacrifiques tus condiciones laborales/salario digno los primeros años para así ganar experiencia que te permita llegar a un puesto decente.",
-          "value": 2
+          "value": 1
         },
         {
           "name": "Depende del campo en el que quieras trabajar",
-          "value": 2
+          "value": 1
         },
         {
           "name": "Lo desconozco",
-          "value": 2
+          "value": 1
         },
         {
           "name": "No se",
-          "value": 2
+          "value": 1
         },
         {
           "name": "Ofrecen trabajos mal pagados o de pocas horas a jóvenes que no saben dónde se meten. Muchas veces abusan del desconocimiento oara pedir de más.",
-          "value": 2
+          "value": 1
         },
         {
           "name": "Si, todos los niños chinos soñamos con apoyar el comunismo",
-          "value": 2
+          "value": 1
         }
       ],
       "regional_career_prospects": [
         {
           "name": "Sí",
-          "value": 72
+          "value": 36
         },
         {
           "name": "No",
-          "value": 20
+          "value": 10
         },
         {
           "name": "Anda en un limbo entre si y no, básicamente es un poco cuestión de suerte",
-          "value": 2
+          "value": 1
         },
         {
           "name": "Con mucha suerte",
-          "value": 2
+          "value": 1
         },
         {
           "name": "Dejé mis estudios universitarios porque eran demasiado costosos para la oferta laboral que encontraría después además del alto número de estudiantes del mismo curso e intrusismo.",
-          "value": 2
+          "value": 1
         },
         {
           "name": "Hermano no lo sé, técnicamente si pero es todo por contactos y a base de trabajar gratis",
-          "value": 2
+          "value": 1
         },
         {
           "name": "No, no hay nada como trabajar 12 horas en una fabrica textil",
-          "value": 2
+          "value": 1
         },
         {
           "name": "Pese a tener una oferta extendida en el sector, la capacidad de crecimiento dentro de él es limitada en la región",
-          "value": 2
+          "value": 1
         },
         {
           "name": "Quizás",
-          "value": 2
+          "value": 1
         }
       ],
       "mobility_intention": [
         {
           "name": "Si",
-          "value": 72
+          "value": 36
         },
         {
           "name": "No",
-          "value": 34
+          "value": 17
         }
       ]
     },
@@ -5034,101 +3280,6 @@
       ]
     },
     "byPhase": {
-      "Datos Limpios": {
-        "responses": 53,
-        "barriers": [
-          {
-            "key": "temporary_contract_barrier",
-            "name": "Contratos temporales",
-            "average": 3.23,
-            "responses": 53
-          },
-          {
-            "key": "opportunity_scarcity_barrier",
-            "name": "Falta de oportunidades",
-            "average": 3.19,
-            "responses": 53
-          },
-          {
-            "key": "experience_barrier",
-            "name": "Falta de experiencia",
-            "average": 3.13,
-            "responses": 53
-          },
-          {
-            "key": "low_salary_barrier",
-            "name": "Salarios insuficientes",
-            "average": 2.98,
-            "responses": 53
-          },
-          {
-            "key": "job_scarcity_barrier",
-            "name": "Escasez de ofertas",
-            "average": 2.85,
-            "responses": 53
-          },
-          {
-            "key": "migration_barrier",
-            "name": "Necesidad de migrar",
-            "average": 2.6,
-            "responses": 53
-          },
-          {
-            "key": "internship_access_barrier",
-            "name": "Acceso a practicas",
-            "average": 2.19,
-            "responses": 53
-          },
-          {
-            "key": "public_transport_barrier",
-            "name": "Transporte publico",
-            "average": 1.85,
-            "responses": 53
-          },
-          {
-            "key": "discrimination_barrier",
-            "name": "Discriminacion",
-            "average": 1.66,
-            "responses": 53
-          }
-        ],
-        "difficulty": [
-          {
-            "name": "Neutral",
-            "value": 19
-          },
-          {
-            "name": "Difícil",
-            "value": 12
-          },
-          {
-            "name": "Fácil",
-            "value": 8
-          },
-          {
-            "name": "Muy difícil",
-            "value": 7
-          },
-          {
-            "name": "Muy fácil",
-            "value": 5
-          },
-          {
-            "name": "Sin dato",
-            "value": 2
-          }
-        ],
-        "mobility": [
-          {
-            "name": "Si",
-            "value": 36
-          },
-          {
-            "name": "No",
-            "value": 17
-          }
-        ]
-      },
       "Resultados Analisis": {
         "responses": 53,
         "barriers": [
@@ -5234,9 +3385,14 @@
     },
     "rows": [
       {
-        "source_type": "explicit_citizen_proposals",
-        "proposal_id": "P01",
-        "description": "Create and subsidize paid internships and structured work placements embedded in vocational and university programmes, with formal agreements between education institutions and employers to ensure relevant experience on graduation.",
+        "addressed_problems": [
+          "lack_of_internships",
+          "lack_of_experience",
+          "education_job_mismatch",
+          "transition_from_education_to_work",
+          "internship_access_barrier"
+        ],
+        "citizen_demand": "More and better-regulated paid internships and closer collaboration between education and companies so graduates gain relevant experience.",
         "supporting_response_ids": [
           6,
           11,
@@ -5246,25 +3402,24 @@
           3,
           8
         ],
-        "priority": "high",
         "sentiment_context": "Predominantly constructive but urgent: respondents express hope for better school–company links and paid internships, with medium sentiment intensity.",
-        "priority_justification": "Frequent, high-relevance mentions across education and employment categories; several respondents explicitly propose paid internships and curricular company collaboration; sentiment mixes hope and frustration.",
         "policy_area": "education_to_work_transition",
-        "title": "Expand paid, work-integrated internships and stronger education–business collaboration",
-        "citizen_demand": "More and better-regulated paid internships and closer collaboration between education and companies so graduates gain relevant experience.",
-        "addressed_problems": [
-          "lack_of_internships",
-          "lack_of_experience",
-          "education_job_mismatch",
-          "transition_from_education_to_work",
-          "internship_access_barrier"
-        ],
-        "support_count": 7
+        "proposal_id": "P01",
+        "source_type": "explicit_citizen_proposals",
+        "priority": "high",
+        "priority_justification": "Frequent, high-relevance mentions across education and employment categories; several respondents explicitly propose paid internships and curricular company collaboration; sentiment mixes hope and frustration.",
+        "description": "Create and subsidize paid internships and structured work placements embedded in vocational and university programmes, with formal agreements between education institutions and employers to ensure relevant experience on graduation.",
+        "support_count": 7,
+        "title": "Expand paid, work-integrated internships and stronger education–business collaboration"
       },
       {
-        "source_type": "mixed",
-        "proposal_id": "P02",
-        "description": "Establish targeted measures (e.g., hiring subsidies, funded trainee positions, probation rules) to encourage employers to offer positions that do not require prior experience and to provide on-the-job training for young hires.",
+        "addressed_problems": [
+          "lack_of_experience",
+          "access_to_training",
+          "opportunity_scarcity",
+          "employer_predisposition_against_youth"
+        ],
+        "citizen_demand": "Help companies hire inexperienced young people through subsidies, trainee schemes and regulated on-the-job training so youth can build experience.",
         "supporting_response_ids": [
           2,
           27,
@@ -5274,24 +3429,25 @@
           48,
           17
         ],
-        "priority": "high",
         "sentiment_context": "Negative to frustrated: many respondents report being blocked by experience requirements; proposals combine criticism with constructive remedies.",
-        "priority_justification": "Widespread, strongly felt barrier (many high experience_barrier scores); multiple explicit proposals for subsidies/entry jobs across responses.",
         "policy_area": "employment",
-        "title": "Create entry-level job pathways and incentives for firms to hire inexperienced youth",
-        "citizen_demand": "Help companies hire inexperienced young people through subsidies, trainee schemes and regulated on-the-job training so youth can build experience.",
-        "addressed_problems": [
-          "lack_of_experience",
-          "access_to_training",
-          "opportunity_scarcity",
-          "employer_predisposition_against_youth"
-        ],
-        "support_count": 7
+        "proposal_id": "P02",
+        "source_type": "mixed",
+        "priority": "high",
+        "priority_justification": "Widespread, strongly felt barrier (many high experience_barrier scores); multiple explicit proposals for subsidies/entry jobs across responses.",
+        "description": "Establish targeted measures (e.g., hiring subsidies, funded trainee positions, probation rules) to encourage employers to offer positions that do not require prior experience and to provide on-the-job training for young hires.",
+        "support_count": 7,
+        "title": "Create entry-level job pathways and incentives for firms to hire inexperienced youth"
       },
       {
-        "source_type": "explicit_citizen_proposals",
-        "proposal_id": "P03",
-        "description": "Introduce clearer regulations for internships and practice agreements (including minimum pay and limits on unpaid work) and put measures to reduce excessive use of temporary contracts and unpredictable extra hours.",
+        "addressed_problems": [
+          "temporary_contracts",
+          "working_conditions",
+          "low_salary_barrier",
+          "internship_access_barrier",
+          "precarious_internships"
+        ],
+        "citizen_demand": "Better regulation of internships (remuneration and access) and limits on temporary contracts and abusive working hours.",
         "supporting_response_ids": [
           8,
           35,
@@ -5300,25 +3456,24 @@
           16,
           17
         ],
-        "priority": "high",
         "sentiment_context": "Negative, medium–high intensity: respondents express frustration with unpaid/temporary offers and exploitation of inexperienced workers.",
-        "priority_justification": "Repeated, emotionally charged reports about precarious internships and temporary contracts; several explicit calls for regulatory action.",
         "policy_area": "employment",
-        "title": "Regulate internships and limit precarious temporary-contract practices",
-        "citizen_demand": "Better regulation of internships (remuneration and access) and limits on temporary contracts and abusive working hours.",
-        "addressed_problems": [
-          "temporary_contracts",
-          "working_conditions",
-          "low_salary_barrier",
-          "internship_access_barrier",
-          "precarious_internships"
-        ],
-        "support_count": 6
+        "proposal_id": "P03",
+        "source_type": "explicit_citizen_proposals",
+        "priority": "high",
+        "priority_justification": "Repeated, emotionally charged reports about precarious internships and temporary contracts; several explicit calls for regulatory action.",
+        "description": "Introduce clearer regulations for internships and practice agreements (including minimum pay and limits on unpaid work) and put measures to reduce excessive use of temporary contracts and unpredictable extra hours.",
+        "support_count": 6,
+        "title": "Regulate internships and limit precarious temporary-contract practices"
       },
       {
-        "source_type": "mixed",
-        "proposal_id": "P06",
-        "description": "Promote transparent hiring processes (reduce reliance on informal contacts), create youth-targeted employment pools or specialized job boards, accept portfolios or demonstrable skills in public hiring, and consider temporary prioritization mechanisms for younger applicants.",
+        "addressed_problems": [
+          "hiring_by_contacts",
+          "lack_of_job_offers",
+          "education_employment_mismatch",
+          "opportunity_scarcity"
+        ],
+        "citizen_demand": "Fairer, more transparent hiring: reduce contact-based selection, create youth job pools/specialized boards, and allow portfolios as proof of competence.",
         "supporting_response_ids": [
           5,
           7,
@@ -5327,24 +3482,23 @@
           26,
           35
         ],
-        "priority": "high",
         "sentiment_context": "Critical and solution-oriented: respondents express frustration at non-transparent hiring and propose concrete institutional fixes (job pools, portfolio acceptance); sentiment intensity medium–high.",
-        "priority_justification": "Recurring complaints about contact-based hiring and non-response, combined with several explicit proposals (job pools, quotas, portfolio recognition) indicate high analytical relevance.",
         "policy_area": "institutional",
-        "title": "Improve recruitment transparency and broaden recognition of alternative credentials",
-        "citizen_demand": "Fairer, more transparent hiring: reduce contact-based selection, create youth job pools/specialized boards, and allow portfolios as proof of competence.",
-        "addressed_problems": [
-          "hiring_by_contacts",
-          "lack_of_job_offers",
-          "education_employment_mismatch",
-          "opportunity_scarcity"
-        ],
-        "support_count": 6
+        "proposal_id": "P06",
+        "source_type": "mixed",
+        "priority": "high",
+        "priority_justification": "Recurring complaints about contact-based hiring and non-response, combined with several explicit proposals (job pools, quotas, portfolio recognition) indicate high analytical relevance.",
+        "description": "Promote transparent hiring processes (reduce reliance on informal contacts), create youth-targeted employment pools or specialized job boards, accept portfolios or demonstrable skills in public hiring, and consider temporary prioritization mechanisms for younger applicants.",
+        "support_count": 6,
+        "title": "Improve recruitment transparency and broaden recognition of alternative credentials"
       },
       {
-        "source_type": "explicit_citizen_proposals",
-        "proposal_id": "P04",
-        "description": "Provide formal career-orientation services inside educational institutions (vocational and higher education) that inform students about labour-market demands, opportunities, and pathways to gain experience.",
+        "addressed_problems": [
+          "lack_of_career_guidance",
+          "transition_from_education_to_work",
+          "education_job_mismatch"
+        ],
+        "citizen_demand": "More and earlier orientation for students from their own institutions to understand labour-market options and how to access them.",
         "supporting_response_ids": [
           29,
           6,
@@ -5352,23 +3506,24 @@
           22,
           30
         ],
-        "priority": "medium",
         "sentiment_context": "Hopeful and corrective: respondents request guidance to reduce uncertainty and mismatches; sentiment intensity medium.",
-        "priority_justification": "Common and actionable demand but less emotionally intense than experience/contract issues; recurring across education levels.",
         "policy_area": "career_guidance",
-        "title": "Strengthen career guidance and student orientation within education institutions",
-        "citizen_demand": "More and earlier orientation for students from their own institutions to understand labour-market options and how to access them.",
-        "addressed_problems": [
-          "lack_of_career_guidance",
-          "transition_from_education_to_work",
-          "education_job_mismatch"
-        ],
-        "support_count": 5
+        "proposal_id": "P04",
+        "source_type": "explicit_citizen_proposals",
+        "priority": "medium",
+        "priority_justification": "Common and actionable demand but less emotionally intense than experience/contract issues; recurring across education levels.",
+        "description": "Provide formal career-orientation services inside educational institutions (vocational and higher education) that inform students about labour-market demands, opportunities, and pathways to gain experience.",
+        "support_count": 5,
+        "title": "Strengthen career guidance and student orientation within education institutions"
       },
       {
-        "source_type": "mixed",
-        "proposal_id": "P05",
-        "description": "Support measures to decentralize industry and create regional job opportunities (e.g., incentives for firms to locate outside big cities) and improve transport/organizational arrangements (including vocational calendar alignment) to reduce commuting barriers to sector jobs.",
+        "addressed_problems": [
+          "lack_of_regional_opportunities",
+          "public_transport_barrier",
+          "opportunity_scarcity",
+          "need_to_emigrate"
+        ],
+        "citizen_demand": "More regional job creation, transport solutions and vocational-timing adjustments so local graduates can access real hiring opportunities without relocating.",
         "supporting_response_ids": [
           23,
           17,
@@ -5376,24 +3531,23 @@
           51,
           38
         ],
-        "priority": "medium",
         "sentiment_context": "Negative/concerned: respondents describe geographic isolation of jobs and transport hardship; propose decentralization and calendar adjustments with medium intensity.",
-        "priority_justification": "Frequent in certain sectors/regions with high relevance where respondents report concrete transport and locality problems; sentiment medium.",
         "policy_area": "territorial",
-        "title": "Address regional barriers: decentralize opportunities and improve mobility for sector jobs",
-        "citizen_demand": "More regional job creation, transport solutions and vocational-timing adjustments so local graduates can access real hiring opportunities without relocating.",
-        "addressed_problems": [
-          "lack_of_regional_opportunities",
-          "public_transport_barrier",
-          "opportunity_scarcity",
-          "need_to_emigrate"
-        ],
-        "support_count": 5
+        "proposal_id": "P05",
+        "source_type": "mixed",
+        "priority": "medium",
+        "priority_justification": "Frequent in certain sectors/regions with high relevance where respondents report concrete transport and locality problems; sentiment medium.",
+        "description": "Support measures to decentralize industry and create regional job opportunities (e.g., incentives for firms to locate outside big cities) and improve transport/organizational arrangements (including vocational calendar alignment) to reduce commuting barriers to sector jobs.",
+        "support_count": 5,
+        "title": "Address regional barriers: decentralize opportunities and improve mobility for sector jobs"
       },
       {
-        "source_type": "mixed",
-        "proposal_id": "P07",
-        "description": "Consider measures to improve pay conditions for entry-level jobs and ensure internships/practices provide at least minimum remuneration—actions may include wage regulation discussions, targeted subsidies, or sectoral agreements to align pay with qualification and living costs.",
+        "addressed_problems": [
+          "low_salaries",
+          "job_instability",
+          "temporary_contracts"
+        ],
+        "citizen_demand": "Regulate or support wages so jobs and internships pay adequately and enable financial independence.",
         "supporting_response_ids": [
           1,
           28,
@@ -5401,62 +3555,59 @@
           17,
           35
         ],
-        "priority": "medium",
         "sentiment_context": "Negative and concerned: respondents often link low pay to inability to be independent and to exploitation of inexperienced hires; sentiment intensity medium–high.",
-        "priority_justification": "Repeated concern about pay across respondents, but policy specifics vary; emotional intensity is significant though fewer explicit, detailed proposals than for experience barriers.",
         "policy_area": "economic",
-        "title": "Actions to address low pay and ensure adequate remuneration for youth",
-        "citizen_demand": "Regulate or support wages so jobs and internships pay adequately and enable financial independence.",
-        "addressed_problems": [
-          "low_salaries",
-          "job_instability",
-          "temporary_contracts"
-        ],
-        "support_count": 5
+        "proposal_id": "P07",
+        "source_type": "mixed",
+        "priority": "medium",
+        "priority_justification": "Repeated concern about pay across respondents, but policy specifics vary; emotional intensity is significant though fewer explicit, detailed proposals than for experience barriers.",
+        "description": "Consider measures to improve pay conditions for entry-level jobs and ensure internships/practices provide at least minimum remuneration—actions may include wage regulation discussions, targeted subsidies, or sectoral agreements to align pay with qualification and living costs.",
+        "support_count": 5,
+        "title": "Actions to address low pay and ensure adequate remuneration for youth"
       },
       {
-        "source_type": "explicit_citizen_proposals",
-        "proposal_id": "P08",
-        "description": "Increase or time competitive public-sector hiring (oposiciones) and adapt public recruitment criteria to allow demonstration of skills (e.g., portfolios) to open stable entry-level positions for young people.",
-        "supporting_response_ids": [
-          41,
-          5,
-          12
-        ],
-        "priority": "medium",
-        "sentiment_context": "Critical of current public hiring but pragmatic: respondents see public-sector vacancies as an avenue for stable employment and request broader access criteria.",
-        "priority_justification": "High relevance for some respondents and explicit proposals present, though support is concentrated in a subset of responses.",
-        "policy_area": "public_policy",
-        "title": "Create stable public-sector entry points (targeted public hiring)",
-        "citizen_demand": "Convene public competitive calls and open hiring routes that allow capable young applicants (not only those with formal credentials) to obtain stable jobs.",
         "addressed_problems": [
           "lack_of_job_offers",
           "education_job_mismatch",
           "public_support"
         ],
-        "support_count": 3
+        "citizen_demand": "Convene public competitive calls and open hiring routes that allow capable young applicants (not only those with formal credentials) to obtain stable jobs.",
+        "supporting_response_ids": [
+          41,
+          5,
+          12
+        ],
+        "sentiment_context": "Critical of current public hiring but pragmatic: respondents see public-sector vacancies as an avenue for stable employment and request broader access criteria.",
+        "policy_area": "public_policy",
+        "proposal_id": "P08",
+        "source_type": "explicit_citizen_proposals",
+        "priority": "medium",
+        "priority_justification": "High relevance for some respondents and explicit proposals present, though support is concentrated in a subset of responses.",
+        "description": "Increase or time competitive public-sector hiring (oposiciones) and adapt public recruitment criteria to allow demonstration of skills (e.g., portfolios) to open stable entry-level positions for young people.",
+        "support_count": 3,
+        "title": "Create stable public-sector entry points (targeted public hiring)"
       },
       {
-        "source_type": "explicit_citizen_proposals",
-        "proposal_id": "P09",
-        "description": "Offer targeted supports (training, financial incentives, incubators) to encourage young entrepreneurship and measures to incentivize firms to create stable positions for young people.",
-        "supporting_response_ids": [
-          33,
-          37,
-          34
-        ],
-        "priority": "low",
-        "sentiment_context": "Constructive and hopeful: respondents propose entrepreneurship as an alternative given scarce local opportunities; sentiment intensity medium.",
-        "priority_justification": "Present in the dataset but less frequent than core issues (experience, internships, temporary contracts); nonetheless relevant as a complementary pathway.",
-        "policy_area": "economic",
-        "title": "Support youth entrepreneurship and incentives for job creation",
-        "citizen_demand": "More support for entrepreneurship and incentives for companies to expand hiring so youth can create or find local opportunities.",
         "addressed_problems": [
           "opportunity_scarcity",
           "lack_of_job_offers",
           "need_to_emigrate"
         ],
-        "support_count": 3
+        "citizen_demand": "More support for entrepreneurship and incentives for companies to expand hiring so youth can create or find local opportunities.",
+        "supporting_response_ids": [
+          33,
+          37,
+          34
+        ],
+        "sentiment_context": "Constructive and hopeful: respondents propose entrepreneurship as an alternative given scarce local opportunities; sentiment intensity medium.",
+        "policy_area": "economic",
+        "proposal_id": "P09",
+        "source_type": "explicit_citizen_proposals",
+        "priority": "low",
+        "priority_justification": "Present in the dataset but less frequent than core issues (experience, internships, temporary contracts); nonetheless relevant as a complementary pathway.",
+        "description": "Offer targeted supports (training, financial incentives, incubators) to encourage young entrepreneurship and measures to incentivize firms to create stable positions for young people.",
+        "support_count": 3,
+        "title": "Support youth entrepreneurship and incentives for job creation"
       }
     ],
     "summary": {
@@ -5516,9 +3667,14 @@
       ],
       "topSupported": [
         {
-          "source_type": "explicit_citizen_proposals",
-          "proposal_id": "P01",
-          "description": "Create and subsidize paid internships and structured work placements embedded in vocational and university programmes, with formal agreements between education institutions and employers to ensure relevant experience on graduation.",
+          "addressed_problems": [
+            "lack_of_internships",
+            "lack_of_experience",
+            "education_job_mismatch",
+            "transition_from_education_to_work",
+            "internship_access_barrier"
+          ],
+          "citizen_demand": "More and better-regulated paid internships and closer collaboration between education and companies so graduates gain relevant experience.",
           "supporting_response_ids": [
             6,
             11,
@@ -5528,25 +3684,24 @@
             3,
             8
           ],
-          "priority": "high",
           "sentiment_context": "Predominantly constructive but urgent: respondents express hope for better school–company links and paid internships, with medium sentiment intensity.",
-          "priority_justification": "Frequent, high-relevance mentions across education and employment categories; several respondents explicitly propose paid internships and curricular company collaboration; sentiment mixes hope and frustration.",
           "policy_area": "education_to_work_transition",
-          "title": "Expand paid, work-integrated internships and stronger education–business collaboration",
-          "citizen_demand": "More and better-regulated paid internships and closer collaboration between education and companies so graduates gain relevant experience.",
-          "addressed_problems": [
-            "lack_of_internships",
-            "lack_of_experience",
-            "education_job_mismatch",
-            "transition_from_education_to_work",
-            "internship_access_barrier"
-          ],
-          "support_count": 7
+          "proposal_id": "P01",
+          "source_type": "explicit_citizen_proposals",
+          "priority": "high",
+          "priority_justification": "Frequent, high-relevance mentions across education and employment categories; several respondents explicitly propose paid internships and curricular company collaboration; sentiment mixes hope and frustration.",
+          "description": "Create and subsidize paid internships and structured work placements embedded in vocational and university programmes, with formal agreements between education institutions and employers to ensure relevant experience on graduation.",
+          "support_count": 7,
+          "title": "Expand paid, work-integrated internships and stronger education–business collaboration"
         },
         {
-          "source_type": "mixed",
-          "proposal_id": "P02",
-          "description": "Establish targeted measures (e.g., hiring subsidies, funded trainee positions, probation rules) to encourage employers to offer positions that do not require prior experience and to provide on-the-job training for young hires.",
+          "addressed_problems": [
+            "lack_of_experience",
+            "access_to_training",
+            "opportunity_scarcity",
+            "employer_predisposition_against_youth"
+          ],
+          "citizen_demand": "Help companies hire inexperienced young people through subsidies, trainee schemes and regulated on-the-job training so youth can build experience.",
           "supporting_response_ids": [
             2,
             27,
@@ -5556,24 +3711,25 @@
             48,
             17
           ],
-          "priority": "high",
           "sentiment_context": "Negative to frustrated: many respondents report being blocked by experience requirements; proposals combine criticism with constructive remedies.",
-          "priority_justification": "Widespread, strongly felt barrier (many high experience_barrier scores); multiple explicit proposals for subsidies/entry jobs across responses.",
           "policy_area": "employment",
-          "title": "Create entry-level job pathways and incentives for firms to hire inexperienced youth",
-          "citizen_demand": "Help companies hire inexperienced young people through subsidies, trainee schemes and regulated on-the-job training so youth can build experience.",
-          "addressed_problems": [
-            "lack_of_experience",
-            "access_to_training",
-            "opportunity_scarcity",
-            "employer_predisposition_against_youth"
-          ],
-          "support_count": 7
+          "proposal_id": "P02",
+          "source_type": "mixed",
+          "priority": "high",
+          "priority_justification": "Widespread, strongly felt barrier (many high experience_barrier scores); multiple explicit proposals for subsidies/entry jobs across responses.",
+          "description": "Establish targeted measures (e.g., hiring subsidies, funded trainee positions, probation rules) to encourage employers to offer positions that do not require prior experience and to provide on-the-job training for young hires.",
+          "support_count": 7,
+          "title": "Create entry-level job pathways and incentives for firms to hire inexperienced youth"
         },
         {
-          "source_type": "explicit_citizen_proposals",
-          "proposal_id": "P03",
-          "description": "Introduce clearer regulations for internships and practice agreements (including minimum pay and limits on unpaid work) and put measures to reduce excessive use of temporary contracts and unpredictable extra hours.",
+          "addressed_problems": [
+            "temporary_contracts",
+            "working_conditions",
+            "low_salary_barrier",
+            "internship_access_barrier",
+            "precarious_internships"
+          ],
+          "citizen_demand": "Better regulation of internships (remuneration and access) and limits on temporary contracts and abusive working hours.",
           "supporting_response_ids": [
             8,
             35,
@@ -5582,25 +3738,24 @@
             16,
             17
           ],
-          "priority": "high",
           "sentiment_context": "Negative, medium–high intensity: respondents express frustration with unpaid/temporary offers and exploitation of inexperienced workers.",
-          "priority_justification": "Repeated, emotionally charged reports about precarious internships and temporary contracts; several explicit calls for regulatory action.",
           "policy_area": "employment",
-          "title": "Regulate internships and limit precarious temporary-contract practices",
-          "citizen_demand": "Better regulation of internships (remuneration and access) and limits on temporary contracts and abusive working hours.",
-          "addressed_problems": [
-            "temporary_contracts",
-            "working_conditions",
-            "low_salary_barrier",
-            "internship_access_barrier",
-            "precarious_internships"
-          ],
-          "support_count": 6
+          "proposal_id": "P03",
+          "source_type": "explicit_citizen_proposals",
+          "priority": "high",
+          "priority_justification": "Repeated, emotionally charged reports about precarious internships and temporary contracts; several explicit calls for regulatory action.",
+          "description": "Introduce clearer regulations for internships and practice agreements (including minimum pay and limits on unpaid work) and put measures to reduce excessive use of temporary contracts and unpredictable extra hours.",
+          "support_count": 6,
+          "title": "Regulate internships and limit precarious temporary-contract practices"
         },
         {
-          "source_type": "mixed",
-          "proposal_id": "P06",
-          "description": "Promote transparent hiring processes (reduce reliance on informal contacts), create youth-targeted employment pools or specialized job boards, accept portfolios or demonstrable skills in public hiring, and consider temporary prioritization mechanisms for younger applicants.",
+          "addressed_problems": [
+            "hiring_by_contacts",
+            "lack_of_job_offers",
+            "education_employment_mismatch",
+            "opportunity_scarcity"
+          ],
+          "citizen_demand": "Fairer, more transparent hiring: reduce contact-based selection, create youth job pools/specialized boards, and allow portfolios as proof of competence.",
           "supporting_response_ids": [
             5,
             7,
@@ -5609,24 +3764,23 @@
             26,
             35
           ],
-          "priority": "high",
           "sentiment_context": "Critical and solution-oriented: respondents express frustration at non-transparent hiring and propose concrete institutional fixes (job pools, portfolio acceptance); sentiment intensity medium–high.",
-          "priority_justification": "Recurring complaints about contact-based hiring and non-response, combined with several explicit proposals (job pools, quotas, portfolio recognition) indicate high analytical relevance.",
           "policy_area": "institutional",
-          "title": "Improve recruitment transparency and broaden recognition of alternative credentials",
-          "citizen_demand": "Fairer, more transparent hiring: reduce contact-based selection, create youth job pools/specialized boards, and allow portfolios as proof of competence.",
-          "addressed_problems": [
-            "hiring_by_contacts",
-            "lack_of_job_offers",
-            "education_employment_mismatch",
-            "opportunity_scarcity"
-          ],
-          "support_count": 6
+          "proposal_id": "P06",
+          "source_type": "mixed",
+          "priority": "high",
+          "priority_justification": "Recurring complaints about contact-based hiring and non-response, combined with several explicit proposals (job pools, quotas, portfolio recognition) indicate high analytical relevance.",
+          "description": "Promote transparent hiring processes (reduce reliance on informal contacts), create youth-targeted employment pools or specialized job boards, accept portfolios or demonstrable skills in public hiring, and consider temporary prioritization mechanisms for younger applicants.",
+          "support_count": 6,
+          "title": "Improve recruitment transparency and broaden recognition of alternative credentials"
         },
         {
-          "source_type": "explicit_citizen_proposals",
-          "proposal_id": "P04",
-          "description": "Provide formal career-orientation services inside educational institutions (vocational and higher education) that inform students about labour-market demands, opportunities, and pathways to gain experience.",
+          "addressed_problems": [
+            "lack_of_career_guidance",
+            "transition_from_education_to_work",
+            "education_job_mismatch"
+          ],
+          "citizen_demand": "More and earlier orientation for students from their own institutions to understand labour-market options and how to access them.",
           "supporting_response_ids": [
             29,
             6,
@@ -5634,18 +3788,15 @@
             22,
             30
           ],
-          "priority": "medium",
           "sentiment_context": "Hopeful and corrective: respondents request guidance to reduce uncertainty and mismatches; sentiment intensity medium.",
-          "priority_justification": "Common and actionable demand but less emotionally intense than experience/contract issues; recurring across education levels.",
           "policy_area": "career_guidance",
-          "title": "Strengthen career guidance and student orientation within education institutions",
-          "citizen_demand": "More and earlier orientation for students from their own institutions to understand labour-market options and how to access them.",
-          "addressed_problems": [
-            "lack_of_career_guidance",
-            "transition_from_education_to_work",
-            "education_job_mismatch"
-          ],
-          "support_count": 5
+          "proposal_id": "P04",
+          "source_type": "explicit_citizen_proposals",
+          "priority": "medium",
+          "priority_justification": "Common and actionable demand but less emotionally intense than experience/contract issues; recurring across education levels.",
+          "description": "Provide formal career-orientation services inside educational institutions (vocational and higher education) that inform students about labour-market demands, opportunities, and pathways to gain experience.",
+          "support_count": 5,
+          "title": "Strengthen career guidance and student orientation within education institutions"
         }
       ],
       "tiers": [
@@ -5653,9 +3804,14 @@
           "priority": "high",
           "proposals": [
             {
-              "source_type": "explicit_citizen_proposals",
-              "proposal_id": "P01",
-              "description": "Create and subsidize paid internships and structured work placements embedded in vocational and university programmes, with formal agreements between education institutions and employers to ensure relevant experience on graduation.",
+              "addressed_problems": [
+                "lack_of_internships",
+                "lack_of_experience",
+                "education_job_mismatch",
+                "transition_from_education_to_work",
+                "internship_access_barrier"
+              ],
+              "citizen_demand": "More and better-regulated paid internships and closer collaboration between education and companies so graduates gain relevant experience.",
               "supporting_response_ids": [
                 6,
                 11,
@@ -5665,25 +3821,24 @@
                 3,
                 8
               ],
-              "priority": "high",
               "sentiment_context": "Predominantly constructive but urgent: respondents express hope for better school–company links and paid internships, with medium sentiment intensity.",
-              "priority_justification": "Frequent, high-relevance mentions across education and employment categories; several respondents explicitly propose paid internships and curricular company collaboration; sentiment mixes hope and frustration.",
               "policy_area": "education_to_work_transition",
-              "title": "Expand paid, work-integrated internships and stronger education–business collaboration",
-              "citizen_demand": "More and better-regulated paid internships and closer collaboration between education and companies so graduates gain relevant experience.",
-              "addressed_problems": [
-                "lack_of_internships",
-                "lack_of_experience",
-                "education_job_mismatch",
-                "transition_from_education_to_work",
-                "internship_access_barrier"
-              ],
-              "support_count": 7
+              "proposal_id": "P01",
+              "source_type": "explicit_citizen_proposals",
+              "priority": "high",
+              "priority_justification": "Frequent, high-relevance mentions across education and employment categories; several respondents explicitly propose paid internships and curricular company collaboration; sentiment mixes hope and frustration.",
+              "description": "Create and subsidize paid internships and structured work placements embedded in vocational and university programmes, with formal agreements between education institutions and employers to ensure relevant experience on graduation.",
+              "support_count": 7,
+              "title": "Expand paid, work-integrated internships and stronger education–business collaboration"
             },
             {
-              "source_type": "mixed",
-              "proposal_id": "P02",
-              "description": "Establish targeted measures (e.g., hiring subsidies, funded trainee positions, probation rules) to encourage employers to offer positions that do not require prior experience and to provide on-the-job training for young hires.",
+              "addressed_problems": [
+                "lack_of_experience",
+                "access_to_training",
+                "opportunity_scarcity",
+                "employer_predisposition_against_youth"
+              ],
+              "citizen_demand": "Help companies hire inexperienced young people through subsidies, trainee schemes and regulated on-the-job training so youth can build experience.",
               "supporting_response_ids": [
                 2,
                 27,
@@ -5693,24 +3848,25 @@
                 48,
                 17
               ],
-              "priority": "high",
               "sentiment_context": "Negative to frustrated: many respondents report being blocked by experience requirements; proposals combine criticism with constructive remedies.",
-              "priority_justification": "Widespread, strongly felt barrier (many high experience_barrier scores); multiple explicit proposals for subsidies/entry jobs across responses.",
               "policy_area": "employment",
-              "title": "Create entry-level job pathways and incentives for firms to hire inexperienced youth",
-              "citizen_demand": "Help companies hire inexperienced young people through subsidies, trainee schemes and regulated on-the-job training so youth can build experience.",
-              "addressed_problems": [
-                "lack_of_experience",
-                "access_to_training",
-                "opportunity_scarcity",
-                "employer_predisposition_against_youth"
-              ],
-              "support_count": 7
+              "proposal_id": "P02",
+              "source_type": "mixed",
+              "priority": "high",
+              "priority_justification": "Widespread, strongly felt barrier (many high experience_barrier scores); multiple explicit proposals for subsidies/entry jobs across responses.",
+              "description": "Establish targeted measures (e.g., hiring subsidies, funded trainee positions, probation rules) to encourage employers to offer positions that do not require prior experience and to provide on-the-job training for young hires.",
+              "support_count": 7,
+              "title": "Create entry-level job pathways and incentives for firms to hire inexperienced youth"
             },
             {
-              "source_type": "explicit_citizen_proposals",
-              "proposal_id": "P03",
-              "description": "Introduce clearer regulations for internships and practice agreements (including minimum pay and limits on unpaid work) and put measures to reduce excessive use of temporary contracts and unpredictable extra hours.",
+              "addressed_problems": [
+                "temporary_contracts",
+                "working_conditions",
+                "low_salary_barrier",
+                "internship_access_barrier",
+                "precarious_internships"
+              ],
+              "citizen_demand": "Better regulation of internships (remuneration and access) and limits on temporary contracts and abusive working hours.",
               "supporting_response_ids": [
                 8,
                 35,
@@ -5719,25 +3875,24 @@
                 16,
                 17
               ],
-              "priority": "high",
               "sentiment_context": "Negative, medium–high intensity: respondents express frustration with unpaid/temporary offers and exploitation of inexperienced workers.",
-              "priority_justification": "Repeated, emotionally charged reports about precarious internships and temporary contracts; several explicit calls for regulatory action.",
               "policy_area": "employment",
-              "title": "Regulate internships and limit precarious temporary-contract practices",
-              "citizen_demand": "Better regulation of internships (remuneration and access) and limits on temporary contracts and abusive working hours.",
-              "addressed_problems": [
-                "temporary_contracts",
-                "working_conditions",
-                "low_salary_barrier",
-                "internship_access_barrier",
-                "precarious_internships"
-              ],
-              "support_count": 6
+              "proposal_id": "P03",
+              "source_type": "explicit_citizen_proposals",
+              "priority": "high",
+              "priority_justification": "Repeated, emotionally charged reports about precarious internships and temporary contracts; several explicit calls for regulatory action.",
+              "description": "Introduce clearer regulations for internships and practice agreements (including minimum pay and limits on unpaid work) and put measures to reduce excessive use of temporary contracts and unpredictable extra hours.",
+              "support_count": 6,
+              "title": "Regulate internships and limit precarious temporary-contract practices"
             },
             {
-              "source_type": "mixed",
-              "proposal_id": "P06",
-              "description": "Promote transparent hiring processes (reduce reliance on informal contacts), create youth-targeted employment pools or specialized job boards, accept portfolios or demonstrable skills in public hiring, and consider temporary prioritization mechanisms for younger applicants.",
+              "addressed_problems": [
+                "hiring_by_contacts",
+                "lack_of_job_offers",
+                "education_employment_mismatch",
+                "opportunity_scarcity"
+              ],
+              "citizen_demand": "Fairer, more transparent hiring: reduce contact-based selection, create youth job pools/specialized boards, and allow portfolios as proof of competence.",
               "supporting_response_ids": [
                 5,
                 7,
@@ -5746,19 +3901,15 @@
                 26,
                 35
               ],
-              "priority": "high",
               "sentiment_context": "Critical and solution-oriented: respondents express frustration at non-transparent hiring and propose concrete institutional fixes (job pools, portfolio acceptance); sentiment intensity medium–high.",
-              "priority_justification": "Recurring complaints about contact-based hiring and non-response, combined with several explicit proposals (job pools, quotas, portfolio recognition) indicate high analytical relevance.",
               "policy_area": "institutional",
-              "title": "Improve recruitment transparency and broaden recognition of alternative credentials",
-              "citizen_demand": "Fairer, more transparent hiring: reduce contact-based selection, create youth job pools/specialized boards, and allow portfolios as proof of competence.",
-              "addressed_problems": [
-                "hiring_by_contacts",
-                "lack_of_job_offers",
-                "education_employment_mismatch",
-                "opportunity_scarcity"
-              ],
-              "support_count": 6
+              "proposal_id": "P06",
+              "source_type": "mixed",
+              "priority": "high",
+              "priority_justification": "Recurring complaints about contact-based hiring and non-response, combined with several explicit proposals (job pools, quotas, portfolio recognition) indicate high analytical relevance.",
+              "description": "Promote transparent hiring processes (reduce reliance on informal contacts), create youth-targeted employment pools or specialized job boards, accept portfolios or demonstrable skills in public hiring, and consider temporary prioritization mechanisms for younger applicants.",
+              "support_count": 6,
+              "title": "Improve recruitment transparency and broaden recognition of alternative credentials"
             }
           ],
           "count": 4
@@ -5767,9 +3918,12 @@
           "priority": "medium",
           "proposals": [
             {
-              "source_type": "explicit_citizen_proposals",
-              "proposal_id": "P04",
-              "description": "Provide formal career-orientation services inside educational institutions (vocational and higher education) that inform students about labour-market demands, opportunities, and pathways to gain experience.",
+              "addressed_problems": [
+                "lack_of_career_guidance",
+                "transition_from_education_to_work",
+                "education_job_mismatch"
+              ],
+              "citizen_demand": "More and earlier orientation for students from their own institutions to understand labour-market options and how to access them.",
               "supporting_response_ids": [
                 29,
                 6,
@@ -5777,23 +3931,24 @@
                 22,
                 30
               ],
-              "priority": "medium",
               "sentiment_context": "Hopeful and corrective: respondents request guidance to reduce uncertainty and mismatches; sentiment intensity medium.",
-              "priority_justification": "Common and actionable demand but less emotionally intense than experience/contract issues; recurring across education levels.",
               "policy_area": "career_guidance",
-              "title": "Strengthen career guidance and student orientation within education institutions",
-              "citizen_demand": "More and earlier orientation for students from their own institutions to understand labour-market options and how to access them.",
-              "addressed_problems": [
-                "lack_of_career_guidance",
-                "transition_from_education_to_work",
-                "education_job_mismatch"
-              ],
-              "support_count": 5
+              "proposal_id": "P04",
+              "source_type": "explicit_citizen_proposals",
+              "priority": "medium",
+              "priority_justification": "Common and actionable demand but less emotionally intense than experience/contract issues; recurring across education levels.",
+              "description": "Provide formal career-orientation services inside educational institutions (vocational and higher education) that inform students about labour-market demands, opportunities, and pathways to gain experience.",
+              "support_count": 5,
+              "title": "Strengthen career guidance and student orientation within education institutions"
             },
             {
-              "source_type": "mixed",
-              "proposal_id": "P05",
-              "description": "Support measures to decentralize industry and create regional job opportunities (e.g., incentives for firms to locate outside big cities) and improve transport/organizational arrangements (including vocational calendar alignment) to reduce commuting barriers to sector jobs.",
+              "addressed_problems": [
+                "lack_of_regional_opportunities",
+                "public_transport_barrier",
+                "opportunity_scarcity",
+                "need_to_emigrate"
+              ],
+              "citizen_demand": "More regional job creation, transport solutions and vocational-timing adjustments so local graduates can access real hiring opportunities without relocating.",
               "supporting_response_ids": [
                 23,
                 17,
@@ -5801,24 +3956,23 @@
                 51,
                 38
               ],
-              "priority": "medium",
               "sentiment_context": "Negative/concerned: respondents describe geographic isolation of jobs and transport hardship; propose decentralization and calendar adjustments with medium intensity.",
-              "priority_justification": "Frequent in certain sectors/regions with high relevance where respondents report concrete transport and locality problems; sentiment medium.",
               "policy_area": "territorial",
-              "title": "Address regional barriers: decentralize opportunities and improve mobility for sector jobs",
-              "citizen_demand": "More regional job creation, transport solutions and vocational-timing adjustments so local graduates can access real hiring opportunities without relocating.",
-              "addressed_problems": [
-                "lack_of_regional_opportunities",
-                "public_transport_barrier",
-                "opportunity_scarcity",
-                "need_to_emigrate"
-              ],
-              "support_count": 5
+              "proposal_id": "P05",
+              "source_type": "mixed",
+              "priority": "medium",
+              "priority_justification": "Frequent in certain sectors/regions with high relevance where respondents report concrete transport and locality problems; sentiment medium.",
+              "description": "Support measures to decentralize industry and create regional job opportunities (e.g., incentives for firms to locate outside big cities) and improve transport/organizational arrangements (including vocational calendar alignment) to reduce commuting barriers to sector jobs.",
+              "support_count": 5,
+              "title": "Address regional barriers: decentralize opportunities and improve mobility for sector jobs"
             },
             {
-              "source_type": "mixed",
-              "proposal_id": "P07",
-              "description": "Consider measures to improve pay conditions for entry-level jobs and ensure internships/practices provide at least minimum remuneration—actions may include wage regulation discussions, targeted subsidies, or sectoral agreements to align pay with qualification and living costs.",
+              "addressed_problems": [
+                "low_salaries",
+                "job_instability",
+                "temporary_contracts"
+              ],
+              "citizen_demand": "Regulate or support wages so jobs and internships pay adequately and enable financial independence.",
               "supporting_response_ids": [
                 1,
                 28,
@@ -5826,40 +3980,37 @@
                 17,
                 35
               ],
-              "priority": "medium",
               "sentiment_context": "Negative and concerned: respondents often link low pay to inability to be independent and to exploitation of inexperienced hires; sentiment intensity medium–high.",
-              "priority_justification": "Repeated concern about pay across respondents, but policy specifics vary; emotional intensity is significant though fewer explicit, detailed proposals than for experience barriers.",
               "policy_area": "economic",
-              "title": "Actions to address low pay and ensure adequate remuneration for youth",
-              "citizen_demand": "Regulate or support wages so jobs and internships pay adequately and enable financial independence.",
-              "addressed_problems": [
-                "low_salaries",
-                "job_instability",
-                "temporary_contracts"
-              ],
-              "support_count": 5
+              "proposal_id": "P07",
+              "source_type": "mixed",
+              "priority": "medium",
+              "priority_justification": "Repeated concern about pay across respondents, but policy specifics vary; emotional intensity is significant though fewer explicit, detailed proposals than for experience barriers.",
+              "description": "Consider measures to improve pay conditions for entry-level jobs and ensure internships/practices provide at least minimum remuneration—actions may include wage regulation discussions, targeted subsidies, or sectoral agreements to align pay with qualification and living costs.",
+              "support_count": 5,
+              "title": "Actions to address low pay and ensure adequate remuneration for youth"
             },
             {
-              "source_type": "explicit_citizen_proposals",
-              "proposal_id": "P08",
-              "description": "Increase or time competitive public-sector hiring (oposiciones) and adapt public recruitment criteria to allow demonstration of skills (e.g., portfolios) to open stable entry-level positions for young people.",
-              "supporting_response_ids": [
-                41,
-                5,
-                12
-              ],
-              "priority": "medium",
-              "sentiment_context": "Critical of current public hiring but pragmatic: respondents see public-sector vacancies as an avenue for stable employment and request broader access criteria.",
-              "priority_justification": "High relevance for some respondents and explicit proposals present, though support is concentrated in a subset of responses.",
-              "policy_area": "public_policy",
-              "title": "Create stable public-sector entry points (targeted public hiring)",
-              "citizen_demand": "Convene public competitive calls and open hiring routes that allow capable young applicants (not only those with formal credentials) to obtain stable jobs.",
               "addressed_problems": [
                 "lack_of_job_offers",
                 "education_job_mismatch",
                 "public_support"
               ],
-              "support_count": 3
+              "citizen_demand": "Convene public competitive calls and open hiring routes that allow capable young applicants (not only those with formal credentials) to obtain stable jobs.",
+              "supporting_response_ids": [
+                41,
+                5,
+                12
+              ],
+              "sentiment_context": "Critical of current public hiring but pragmatic: respondents see public-sector vacancies as an avenue for stable employment and request broader access criteria.",
+              "policy_area": "public_policy",
+              "proposal_id": "P08",
+              "source_type": "explicit_citizen_proposals",
+              "priority": "medium",
+              "priority_justification": "High relevance for some respondents and explicit proposals present, though support is concentrated in a subset of responses.",
+              "description": "Increase or time competitive public-sector hiring (oposiciones) and adapt public recruitment criteria to allow demonstration of skills (e.g., portfolios) to open stable entry-level positions for young people.",
+              "support_count": 3,
+              "title": "Create stable public-sector entry points (targeted public hiring)"
             }
           ],
           "count": 4
@@ -5868,26 +4019,26 @@
           "priority": "low",
           "proposals": [
             {
-              "source_type": "explicit_citizen_proposals",
-              "proposal_id": "P09",
-              "description": "Offer targeted supports (training, financial incentives, incubators) to encourage young entrepreneurship and measures to incentivize firms to create stable positions for young people.",
-              "supporting_response_ids": [
-                33,
-                37,
-                34
-              ],
-              "priority": "low",
-              "sentiment_context": "Constructive and hopeful: respondents propose entrepreneurship as an alternative given scarce local opportunities; sentiment intensity medium.",
-              "priority_justification": "Present in the dataset but less frequent than core issues (experience, internships, temporary contracts); nonetheless relevant as a complementary pathway.",
-              "policy_area": "economic",
-              "title": "Support youth entrepreneurship and incentives for job creation",
-              "citizen_demand": "More support for entrepreneurship and incentives for companies to expand hiring so youth can create or find local opportunities.",
               "addressed_problems": [
                 "opportunity_scarcity",
                 "lack_of_job_offers",
                 "need_to_emigrate"
               ],
-              "support_count": 3
+              "citizen_demand": "More support for entrepreneurship and incentives for companies to expand hiring so youth can create or find local opportunities.",
+              "supporting_response_ids": [
+                33,
+                37,
+                34
+              ],
+              "sentiment_context": "Constructive and hopeful: respondents propose entrepreneurship as an alternative given scarce local opportunities; sentiment intensity medium.",
+              "policy_area": "economic",
+              "proposal_id": "P09",
+              "source_type": "explicit_citizen_proposals",
+              "priority": "low",
+              "priority_justification": "Present in the dataset but less frequent than core issues (experience, internships, temporary contracts); nonetheless relevant as a complementary pathway.",
+              "description": "Offer targeted supports (training, financial incentives, incubators) to encourage young entrepreneurship and measures to incentivize firms to create stable positions for young people.",
+              "support_count": 3,
+              "title": "Support youth entrepreneurship and incentives for job creation"
             }
           ],
           "count": 1
