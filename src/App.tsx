@@ -729,8 +729,8 @@ function App() {
                   <CartesianGrid strokeDasharray="3 3" horizontal={false} />
                   <XAxis type="number" domain={[0, 5]} />
                   <YAxis dataKey="name" type="category" width={150} />
-                  <Tooltip />
-                  <Bar dataKey="average" radius={[0, 8, 8, 0]} fill="#2563eb" />
+                  <Tooltip formatter={(value) => [value, "Media"]} />
+                  <Bar dataKey="average" name="Media" radius={[0, 8, 8, 0]} fill="#2563eb" />
                 </BarChart>
               </ResponsiveContainer>
             </ChartCard>
@@ -742,7 +742,7 @@ function App() {
               <ResponsiveContainer width="100%" height={330}>
                 <PieChart>
                   <Pie data={difficultyChartData} dataKey="value" fill="#2563eb" nameKey="name" outerRadius={105} label />
-                  <Tooltip />
+                  <Tooltip formatter={(value) => [value, "Total"]} />
                 </PieChart>
               </ResponsiveContainer>
             </ChartCard>
@@ -756,8 +756,8 @@ function App() {
                   <CartesianGrid strokeDasharray="3 3" vertical={false} />
                   <XAxis dataKey="name" tick={{ fontSize: 12 }} />
                   <YAxis allowDecimals={false} />
-                  <Tooltip />
-                  <Bar dataKey="value" fill="#7c3aed" radius={[8, 8, 0, 0]} />
+                  <Tooltip formatter={(value) => [value, "Total"]} />
+                  <Bar dataKey="value" name="Total" fill="#7c3aed" radius={[8, 8, 0, 0]} />
                 </BarChart>
               </ResponsiveContainer>
             </ChartCard>
@@ -771,8 +771,8 @@ function App() {
                   <CartesianGrid strokeDasharray="3 3" vertical={false} />
                   <XAxis dataKey="name" />
                   <YAxis allowDecimals={false} />
-                  <Tooltip />
-                  <Bar dataKey="value" fill="#0891b2" radius={[8, 8, 0, 0]} />
+                  <Tooltip formatter={(value) => [value, "Total"]} />
+                  <Bar dataKey="value" name="Total" fill="#0891b2" radius={[8, 8, 0, 0]} />
                 </BarChart>
               </ResponsiveContainer>
             </ChartCard>
