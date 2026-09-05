@@ -627,11 +627,6 @@ function App() {
             las encuestas. Los filtros actualizan todos los graficos y lecturas de la pagina.
           </p>
         </div>
-        <div className="hero-meta">
-          <span>{data.metadata.totalResponses} respuestas totales</span>
-          <span>{data.metadata.sources.join(", ")}</span>
-          <span>{data.metadata.barrierScale}</span>
-        </div>
       </section>
 
       <section className={`filters card ${isProposalPhase ? "filters-proposal" : ""}`}>
@@ -642,14 +637,23 @@ function App() {
             <p>Selecciona una fase para cambiar el tipo de analisis mostrado.</p>
           </div>
         </div>
-        <label>
-          Fase
-          <select value={selectedPhase} onChange={(event) => setPhase(event.target.value)}>
+        <div className="phase-control">
+          <span>Fase</span>
+          <div className="phase-options" role="listbox" aria-label="Fase">
             {phases.map((item) => (
-              <option key={item}>{item}</option>
+              <button
+                aria-selected={selectedPhase === item}
+                className={selectedPhase === item ? "active" : ""}
+                key={item}
+                onClick={() => setPhase(item)}
+                role="option"
+                type="button"
+              >
+                {item}
+              </button>
             ))}
-          </select>
-        </label>
+          </div>
+        </div>
         {!isProposalPhase ? (
           <>
             <label>
@@ -717,7 +721,7 @@ function App() {
           <section className="dashboard-grid">
             <ChartCard
               title="Barreras mejor valoradas"
-              description="Media de dificultad declarada por las personas encuestadas."
+              description="Media de dificultad declarada por las personas encuestadas. Escala: 1 = poca dificultad, 5 = mucha dificultad."
             >
               <ResponsiveContainer width="100%" height={330}>
                 <BarChart data={barriers} layout="vertical" margin={{ left: 16, right: 24 }}>
