@@ -11,7 +11,15 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import { BriefcaseBusiness, Filter, MapPinned, TrendingUp, UsersRound } from "lucide-react";
+import {
+  BadgeCheck,
+  BriefcaseBusiness,
+  ClipboardList,
+  Filter,
+  MapPinned,
+  TrendingUp,
+  UsersRound,
+} from "lucide-react";
 
 type SurveyRow = Record<string, string>;
 
@@ -27,6 +35,43 @@ type BarrierItem = {
   responses: number;
 };
 
+type ProposalRow = {
+  proposal_id: string;
+  title: string;
+  policy_area: string;
+  description: string;
+  addressed_problems: string[];
+  citizen_demand: string;
+  source_type: string;
+  supporting_response_ids: number[];
+  support_count: number;
+  sentiment_context: string;
+  priority: string;
+  priority_justification: string;
+};
+
+type ProposalTier = {
+  priority: string;
+  proposals: ProposalRow[];
+  count: number;
+};
+
+type ProposalsData = {
+  metadata: {
+    source: string | null;
+    totalProposals: number;
+    totalSupport: number;
+  };
+  rows: ProposalRow[];
+  summary: {
+    byPriority: DistributionItem[];
+    byPolicyArea: DistributionItem[];
+    bySourceType: DistributionItem[];
+    topSupported: ProposalRow[];
+    tiers: ProposalTier[];
+  };
+};
+
 type DashboardData = {
   metadata: {
     generatedAt: string;
@@ -40,6 +85,7 @@ type DashboardData = {
     topTerms: DistributionItem[];
     quotes: Record<string, string[]>;
   };
+  proposals: ProposalsData;
 };
 
 const COLORS = ["#2563eb", "#7c3aed", "#0891b2", "#16a34a", "#ea580c", "#dc2626", "#4f46e5"];
@@ -54,6 +100,13 @@ const BARRIER_LABELS: Record<string, string> = {
   discrimination_barrier: "Discriminacion",
   migration_barrier: "Necesidad de migrar",
   public_transport_barrier: "Transporte publico",
+};
+
+const PRIORITY_LABELS: Record<string, string> = {
+  high: "Alta",
+  medium: "Media",
+  low: "Baja",
+  unclassified: "Sin clasificar",
 };
 
 const TEXT_COLUMNS = [
@@ -119,6 +172,16 @@ function distribution(rows: SurveyRow[], key: string): DistributionItem[] {
 function parseNumber(value: unknown) {
   const parsed = Number.parseFloat(clean(value).replace(",", "."));
   return Number.isFinite(parsed) ? parsed : null;
+}
+
+function formatLabel(value: string) {
+  return clean(value)
+    .replaceAll("_", " ")
+    .replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+function formatPriority(value: string) {
+  return PRIORITY_LABELS[value] ?? formatLabel(value);
 }
 
 function averageBarriers(rows: SurveyRow[]): BarrierItem[] {
@@ -234,6 +297,152 @@ function ChartCard({
         <p>{description}</p>
       </div>
       {children}
+    </section>
+  );
+}
+
+function ProposalDashboard({ proposals }: { proposals: ProposalsData }) {
+  if (!proposals.rows.length) {
+    return null;
+  }
+
+  const highPriorityCount = proposals.rows.filter((proposal) => proposal.priority === "high").length;
+  const topProposal = proposals.summary.topSupported[0];
+  const primaryArea = proposals.summary.byPolicyArea[0];
+
+  return (
+    <section className="proposal-section">
+      <div className="section-heading proposal-heading">
+        <div>
+          <p className="eyebrow dark">Fase 4 · Propuestas</p>
+          <h2>Propuestas publicas priorizadas</h2>
+          <p>
+            Vista especifica para leer las medidas generadas a partir de las respuestas ciudadanas,
+            su nivel de prioridad y el numero de respuestas que las respaldan.
+          </p>
+        </div>
+        <span className="source-pill">{proposals.metadata.source}</span>
+      </div>
+
+      <div className="proposal-kpis">
+        <KpiCard
+          icon={<ClipboardList size={22} />}
+          label="Propuestas detectadas"
+          value={String(proposals.metadata.totalProposals)}
+          detail="medidas estructuradas en fase 4"
+        />
+        <KpiCard
+          icon={<UsersRound size={22} />}
+          label="Apoyos agregados"
+          value={String(proposals.metadata.totalSupport)}
+          detail="respuestas vinculadas a propuestas"
+        />
+        <KpiCard
+          icon={<BadgeCheck size={22} />}
+          label="Alta prioridad"
+          value={String(highPriorityCount)}
+          detail="propuestas marcadas como urgentes"
+        />
+        <KpiCard
+          icon={<MapPinned size={22} />}
+          label="Area mas repetida"
+          value={primaryArea ? formatLabel(primaryArea.name) : "Sin dato"}
+          detail={primaryArea ? `${primaryArea.value} propuestas` : "sin clasificacion"}
+        />
+      </div>
+
+      <div className="proposal-grid">
+        <ChartCard
+          title="Ranking por apoyo ciudadano"
+          description="Numero de respuestas que respaldan cada propuesta."
+        >
+          <ResponsiveContainer width="100%" height={330}>
+            <BarChart data={proposals.summary.topSupported} layout="vertical" margin={{ left: 16, right: 24 }}>
+              <CartesianGrid strokeDasharray="3 3" horizontal={false} />
+              <XAxis type="number" allowDecimals={false} />
+              <YAxis dataKey="proposal_id" type="category" width={56} />
+              <Tooltip formatter={(value) => [`${value} respuestas`, "Apoyo"]} />
+              <Bar dataKey="support_count" radius={[0, 8, 8, 0]} fill="#16a34a" />
+            </BarChart>
+          </ResponsiveContainer>
+          {topProposal ? (
+            <div className="top-proposal">
+              <span>Mas apoyada</span>
+              <strong>{topProposal.title}</strong>
+              <p>{topProposal.citizen_demand}</p>
+            </div>
+          ) : null}
+        </ChartCard>
+
+        <ChartCard
+          title="Prioridad y area politica"
+          description="Distribucion de propuestas segun urgencia y ambito de intervencion."
+        >
+          <div className="proposal-charts">
+            <ResponsiveContainer width="100%" height={210}>
+              <PieChart>
+                <Pie data={proposals.summary.byPriority} dataKey="value" nameKey="name" outerRadius={74} label>
+                  {proposals.summary.byPriority.map((_, index) => (
+                    <Cell key={index} fill={COLORS[index % COLORS.length]} />
+                  ))}
+                </Pie>
+                <Tooltip formatter={(value, name) => [`${value} propuestas`, formatPriority(String(name))]} />
+              </PieChart>
+            </ResponsiveContainer>
+            <div className="area-list">
+              {proposals.summary.byPolicyArea.map((area) => (
+                <div key={area.name}>
+                  <span>{formatLabel(area.name)}</span>
+                  <strong>{area.value}</strong>
+                </div>
+              ))}
+            </div>
+          </div>
+        </ChartCard>
+      </div>
+
+      <div className="tier-list">
+        {proposals.summary.tiers.map((tier) => (
+          <section className={`tier-card priority-${tier.priority}`} key={tier.priority}>
+            <div className="tier-header">
+              <div>
+                <span>Prioridad</span>
+                <h3>{formatPriority(tier.priority)}</h3>
+              </div>
+              <strong>{tier.count}</strong>
+            </div>
+            <div className="proposal-cards">
+              {tier.proposals.map((proposal) => (
+                <article className="proposal-card" key={proposal.proposal_id}>
+                  <div className="proposal-card-header">
+                    <span>{proposal.proposal_id}</span>
+                    <strong>{proposal.support_count} apoyos</strong>
+                  </div>
+                  <h4>{proposal.title}</h4>
+                  <p>{proposal.description}</p>
+                  <div className="proposal-tags">
+                    <span>{formatLabel(proposal.policy_area)}</span>
+                    <span>{formatLabel(proposal.source_type)}</span>
+                  </div>
+                  <div className="proposal-field">
+                    <strong>Demanda ciudadana</strong>
+                    <p>{proposal.citizen_demand}</p>
+                  </div>
+                  <div className="proposal-field">
+                    <strong>Justificacion de prioridad</strong>
+                    <p>{proposal.priority_justification}</p>
+                  </div>
+                  <div className="problem-tags">
+                    {proposal.addressed_problems.slice(0, 5).map((problem) => (
+                      <span key={problem}>{formatLabel(problem)}</span>
+                    ))}
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
     </section>
   );
 }
@@ -399,6 +608,8 @@ function App() {
           detail="fuentes de encuesta integradas"
         />
       </section>
+
+      <ProposalDashboard proposals={data.proposals} />
 
       <section className="dashboard-grid">
         <ChartCard

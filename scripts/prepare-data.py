@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import ast
 import csv
 import json
 import re
@@ -13,6 +14,7 @@ PROJECT_ROOT = ROOT.parent
 RAW_DIR = ROOT / "data" / "raw"
 PROCESSED_DIR = ROOT / "data" / "processed"
 PUBLIC_DATA_DIR = ROOT / "public" / "data"
+PROPOSALS_FILE = RAW_DIR / "Propuestas_Fase_4.xlsx"
 
 BARRIER_COLUMNS = [
     "experience_barrier",
@@ -54,6 +56,23 @@ TEXT_COLUMNS = [
     "advice_to_young_people",
     "proposed_public_measure",
 ]
+
+PROPOSAL_COLUMNS = {
+    "proposal_id",
+    "title",
+    "policy_area",
+    "description",
+    "addressed_problems",
+    "citizen_demand",
+    "source_type",
+    "supporting_response_ids",
+    "support_count",
+    "sentiment_context",
+    "priority",
+    "priority_justification",
+}
+
+PRIORITY_ORDER = {"high": 1, "medium": 2, "low": 3}
 
 STOPWORDS = {
     "actual",
@@ -134,9 +153,15 @@ def discover_sources() -> list[tuple[str, Path]]:
         [
             path
             for path in RAW_DIR.glob("*")
-            if path.suffix.lower() in {".csv", ".xls", ".xlsx"}
+            if path.suffix.lower() in {".csv", ".xls", ".xlsx"} and path != PROPOSALS_FILE
         ]
     )
+
+    # The enriched analysis file contains the same survey responses as Datos_Limpios.csv
+    # plus analytical columns, so prefer it when both are present.
+    enriched = RAW_DIR / "Resultados_Analisis.xlsx"
+    if enriched in source_files:
+        source_files = [path for path in source_files if path.name != "Datos_Limpios.csv"]
 
     if not source_files:
         fallback = PROJECT_ROOT / "cleanData.csv"
@@ -230,7 +255,97 @@ def representative_quotes(rows: list[dict[str, str]], column: str, limit: int = 
     return quotes[:limit]
 
 
-def build_payload(rows: list[dict[str, str]], source_paths: list[Path]) -> dict[str, Any]:
+def parse_supporting_ids(value: Any) -> list[int]:
+    text = normalize_value(value)
+    if not text:
+        return []
+    try:
+        parsed = ast.literal_eval(text)
+        if isinstance(parsed, list):
+            return [int(item) for item in parsed if str(item).strip().isdigit()]
+    except (ValueError, SyntaxError):
+        pass
+    return [int(item) for item in re.findall(r"\d+", text)]
+
+
+def parse_string_list(value: Any) -> list[str]:
+    text = normalize_value(value)
+    if not text:
+        return []
+    try:
+        parsed = ast.literal_eval(text)
+        if isinstance(parsed, list):
+            return [normalize_value(item) for item in parsed if normalize_value(item)]
+    except (ValueError, SyntaxError):
+        pass
+    return [item.strip() for item in text.strip("[]").replace("'", "").split(",") if item.strip()]
+
+
+def priority_sort_key(row: dict[str, Any]) -> tuple[int, int, str]:
+    priority = normalize_value(row.get("priority")).lower()
+    support = int(row.get("support_count") or 0)
+    return (PRIORITY_ORDER.get(priority, 99), -support, normalize_value(row.get("proposal_id")))
+
+
+def load_proposals() -> dict[str, Any]:
+    if not PROPOSALS_FILE.exists():
+        return {
+            "metadata": {"source": None, "totalProposals": 0, "totalSupport": 0},
+            "rows": [],
+            "summary": {
+                "byPriority": [],
+                "byPolicyArea": [],
+                "bySourceType": [],
+                "topSupported": [],
+                "tiers": [],
+            },
+        }
+
+    raw_rows = read_excel(PROPOSALS_FILE)
+    rows: list[dict[str, Any]] = []
+    for raw_row in raw_rows:
+        proposal = {column: normalize_value(raw_row.get(column)) for column in PROPOSAL_COLUMNS}
+        supporting_ids = parse_supporting_ids(proposal.get("supporting_response_ids"))
+        support_count = parse_number(proposal.get("support_count"))
+        proposal["addressed_problems"] = parse_string_list(proposal.get("addressed_problems"))
+        proposal["supporting_response_ids"] = supporting_ids
+        proposal["support_count"] = int(support_count) if support_count is not None else len(supporting_ids)
+        proposal["priority"] = normalize_value(proposal.get("priority")).lower() or "unclassified"
+        rows.append(proposal)
+
+    rows = sorted(rows, key=priority_sort_key)
+    total_support = sum(int(row["support_count"]) for row in rows)
+    priorities = ["high", "medium", "low", "unclassified"]
+    tiers = [
+        {
+            "priority": priority,
+            "proposals": [row for row in rows if row["priority"] == priority],
+            "count": sum(1 for row in rows if row["priority"] == priority),
+        }
+        for priority in priorities
+        if any(row["priority"] == priority for row in rows)
+    ]
+
+    return {
+        "metadata": {
+            "source": str(PROPOSALS_FILE.relative_to(PROJECT_ROOT)),
+            "totalProposals": len(rows),
+            "totalSupport": total_support,
+        },
+        "rows": rows,
+        "summary": {
+            "byPriority": distribution(rows, "priority"),
+            "byPolicyArea": distribution(rows, "policy_area"),
+            "bySourceType": distribution(rows, "source_type"),
+            "topSupported": sorted(rows, key=lambda row: int(row["support_count"]), reverse=True)[:5],
+            "tiers": tiers,
+        },
+    }
+
+
+def build_payload(
+    rows: list[dict[str, str]], source_paths: list[Path], proposals: dict[str, Any]
+) -> dict[str, Any]:
     for row in rows:
         row["age_group"] = year_to_age_group(row.get("birth_year"))
 
@@ -262,6 +377,7 @@ def build_payload(rows: list[dict[str, str]], source_paths: list[Path]) -> dict[
             "quotes": {column: representative_quotes(rows, column) for column in TEXT_COLUMNS},
             "byPhase": by_phase,
         },
+        "proposals": proposals,
     }
 
 
@@ -276,12 +392,16 @@ def main() -> None:
         rows.extend(load_rows(phase, path))
         source_paths.append(path)
 
-    payload = build_payload(rows, source_paths)
+    proposals = load_proposals()
+    payload = build_payload(rows, source_paths, proposals)
     output = PROCESSED_DIR / "dashboard-data.json"
     public_output = PUBLIC_DATA_DIR / "dashboard-data.json"
     output.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     public_output.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Datos preparados: {len(rows)} respuestas -> {public_output}")
+    print(
+        f"Datos preparados: {len(rows)} respuestas y "
+        f"{proposals['metadata']['totalProposals']} propuestas -> {public_output}"
+    )
 
 
 if __name__ == "__main__":
