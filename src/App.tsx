@@ -85,7 +85,7 @@ type DashboardData = {
     topTerms: DistributionItem[];
     quotes: Record<string, string[]>;
   };
-  proposals: ProposalsData;
+  proposals?: ProposalsData;
 };
 
 const COLORS = ["#2563eb", "#7c3aed", "#0891b2", "#16a34a", "#ea580c", "#dc2626", "#4f46e5"];
@@ -182,6 +182,86 @@ function formatLabel(value: string) {
 
 function formatPriority(value: string) {
   return PRIORITY_LABELS[value] ?? formatLabel(value);
+}
+
+function countBy<T>(items: T[], getKey: (item: T) => string): DistributionItem[] {
+  const counts = items.reduce<Record<string, number>>((acc, item) => {
+    const key = clean(getKey(item)) || "Sin dato";
+    acc[key] = (acc[key] ?? 0) + 1;
+    return acc;
+  }, {});
+
+  return Object.entries(counts)
+    .map(([name, value]) => ({ name, value }))
+    .sort((a, b) => b.value - a.value || a.name.localeCompare(b.name));
+}
+
+function normalizeProblems(value: unknown) {
+  if (Array.isArray(value)) {
+    return value.map(clean).filter(Boolean);
+  }
+  return clean(value)
+    .replaceAll("[", "")
+    .replaceAll("]", "")
+    .replaceAll("'", "")
+    .split(",")
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
+function normalizeProposalRow(rawProposal: Partial<Record<keyof ProposalRow, unknown>>): ProposalRow {
+  const supportingIds = Array.isArray(rawProposal.supporting_response_ids)
+    ? rawProposal.supporting_response_ids.map((item) => Number(item)).filter(Number.isFinite)
+    : [];
+  const supportCount = Number(rawProposal.support_count);
+
+  return {
+    proposal_id: clean(rawProposal.proposal_id),
+    title: clean(rawProposal.title),
+    policy_area: clean(rawProposal.policy_area),
+    description: clean(rawProposal.description),
+    addressed_problems: normalizeProblems(rawProposal.addressed_problems),
+    citizen_demand: clean(rawProposal.citizen_demand),
+    source_type: clean(rawProposal.source_type),
+    supporting_response_ids: supportingIds,
+    support_count: Number.isFinite(supportCount) ? supportCount : supportingIds.length,
+    sentiment_context: clean(rawProposal.sentiment_context),
+    priority: clean(rawProposal.priority).toLowerCase() || "unclassified",
+    priority_justification: clean(rawProposal.priority_justification),
+  };
+}
+
+function buildProposalTiers(rows: ProposalRow[]): ProposalTier[] {
+  return ["high", "medium", "low", "unclassified"]
+    .map((priority) => {
+      const proposals = rows.filter((proposal) => proposal.priority === priority);
+      return { priority, proposals, count: proposals.length };
+    })
+    .filter((tier) => tier.count > 0);
+}
+
+function normalizeProposals(proposals?: ProposalsData): ProposalsData {
+  const rows = Array.isArray(proposals?.rows)
+    ? proposals.rows.map((proposal) => normalizeProposalRow(proposal))
+    : [];
+  const topSupported = [...rows].sort((a, b) => b.support_count - a.support_count).slice(0, 5);
+
+  return {
+    metadata: {
+      source: proposals?.metadata?.source ?? null,
+      totalProposals: proposals?.metadata?.totalProposals ?? rows.length,
+      totalSupport:
+        proposals?.metadata?.totalSupport ?? rows.reduce((sum, row) => sum + row.support_count, 0),
+    },
+    rows,
+    summary: {
+      byPriority: countBy(rows, (proposal) => proposal.priority),
+      byPolicyArea: countBy(rows, (proposal) => proposal.policy_area),
+      bySourceType: countBy(rows, (proposal) => proposal.source_type),
+      topSupported,
+      tiers: buildProposalTiers(rows),
+    },
+  };
 }
 
 function averageBarriers(rows: SurveyRow[]): BarrierItem[] {
@@ -489,6 +569,7 @@ function App() {
   const mobility = useMemo(() => distribution(filteredRows, "mobility_intention"), [filteredRows]);
   const quotes = useMemo(() => quoteExamples(filteredRows), [filteredRows]);
   const frequentTerms = useMemo(() => topTerms(filteredRows), [filteredRows]);
+  const proposals = useMemo(() => normalizeProposals(data?.proposals), [data?.proposals]);
 
   if (error) {
     return (
@@ -609,7 +690,7 @@ function App() {
         />
       </section>
 
-      <ProposalDashboard proposals={data.proposals} />
+      <ProposalDashboard proposals={proposals} />
 
       <section className="dashboard-grid">
         <ChartCard
