@@ -184,6 +184,12 @@ function formatPriority(value: string) {
   return PRIORITY_LABELS[value] ?? formatLabel(value);
 }
 
+function phaseLabelFromSource(source: string | null) {
+  const fileName = clean(source).split("/").pop() ?? "";
+  const withoutExtension = fileName.replace(/\.[^.]+$/, "");
+  return withoutExtension ? formatLabel(withoutExtension) : "Propuestas Fase 4";
+}
+
 function countBy<T>(items: T[], getKey: (item: T) => string): DistributionItem[] {
   const counts = items.reduce<Record<string, number>>((acc, item) => {
     const key = clean(getKey(item)) || "Sin dato";
@@ -535,8 +541,14 @@ function App() {
   const [employment, setEmployment] = useState("Todos");
 
   const rows = data?.rows ?? [];
-  const phases = useMemo(() => uniqueValues(rows, "phase"), [rows]);
+  const proposals = useMemo(() => normalizeProposals(data?.proposals), [data?.proposals]);
+  const proposalPhase = proposals.rows.length ? phaseLabelFromSource(proposals.metadata.source) : "";
+  const phases = useMemo(() => {
+    const surveyPhases = uniqueValues(rows, "phase");
+    return proposalPhase ? [...surveyPhases, proposalPhase] : surveyPhases;
+  }, [proposalPhase, rows]);
   const selectedPhase = phases.includes(phase) ? phase : (phases[0] ?? "");
+  const isProposalPhase = Boolean(proposalPhase && selectedPhase === proposalPhase);
   const ageGroupOptions = useMemo(() => uniqueValues(rows, "age_group"), [rows]);
   const educationLevels = useMemo(() => uniqueValues(rows, "education_level"), [rows]);
   const employmentStatuses = useMemo(() => uniqueValues(rows, "employment_status"), [rows]);
@@ -548,15 +560,20 @@ function App() {
   }, [phase, phases]);
 
   const filteredRows = useMemo(
-    () =>
-      rows.filter((row) => {
+    () => {
+      if (isProposalPhase) {
+        return [];
+      }
+
+      return rows.filter((row) => {
         const phaseMatch = row.phase === selectedPhase;
         const ageMatch = ageGroup === "Todos" || row.age_group === ageGroup;
         const educationMatch = education === "Todos" || row.education_level === education;
         const employmentMatch = employment === "Todos" || row.employment_status === employment;
         return phaseMatch && ageMatch && educationMatch && employmentMatch;
-      }),
-    [ageGroup, education, employment, rows, selectedPhase],
+      });
+    },
+    [ageGroup, education, employment, isProposalPhase, rows, selectedPhase],
   );
 
   const barriers = useMemo(() => averageBarriers(filteredRows), [filteredRows]);
@@ -569,7 +586,6 @@ function App() {
   const mobility = useMemo(() => distribution(filteredRows, "mobility_intention"), [filteredRows]);
   const quotes = useMemo(() => quoteExamples(filteredRows), [filteredRows]);
   const frequentTerms = useMemo(() => topTerms(filteredRows), [filteredRows]);
-  const proposals = useMemo(() => normalizeProposals(data?.proposals), [data?.proposals]);
 
   if (error) {
     return (
@@ -618,12 +634,12 @@ function App() {
         </div>
       </section>
 
-      <section className="filters card">
+      <section className={`filters card ${isProposalPhase ? "filters-proposal" : ""}`}>
         <div className="filter-title">
           <Filter size={20} />
           <div>
             <h2>Filtros</h2>
-            <p>Selecciona una fase o segmento para analizar los resultados.</p>
+            <p>Selecciona una fase para cambiar el tipo de analisis mostrado.</p>
           </div>
         </div>
         <label>
@@ -634,158 +650,166 @@ function App() {
             ))}
           </select>
         </label>
-        <label>
-          Edad
-          <select value={ageGroup} onChange={(event) => setAgeGroup(event.target.value)}>
-            <option>Todos</option>
-            {ageGroupOptions.map((item) => (
-              <option key={item}>{item}</option>
-            ))}
-          </select>
-        </label>
-        <label>
-          Estudios
-          <select value={education} onChange={(event) => setEducation(event.target.value)}>
-            <option>Todos</option>
-            {educationLevels.map((item) => (
-              <option key={item}>{item}</option>
-            ))}
-          </select>
-        </label>
-        <label>
-          Situacion laboral
-          <select value={employment} onChange={(event) => setEmployment(event.target.value)}>
-            <option>Todos</option>
-            {employmentStatuses.map((item) => (
-              <option key={item}>{item}</option>
-            ))}
-          </select>
-        </label>
-      </section>
-
-      <section className="kpi-grid">
-        <KpiCard
-          icon={<UsersRound size={22} />}
-          label="Respuestas filtradas"
-          value={String(filteredRows.length)}
-          detail={`sobre ${rows.length} respuestas disponibles`}
-        />
-        <KpiCard
-          icon={<TrendingUp size={22} />}
-          label="Barrera principal"
-          value={topBarrier?.name ?? "Sin dato"}
-          detail={topBarrier ? `media ${topBarrier.average}/5` : "sin respuestas numericas"}
-        />
-        <KpiCard
-          icon={<MapPinned size={22} />}
-          label="Intencion de movilidad"
-          value={String(mobilityYes)}
-          detail="personas que han pensado mudarse"
-        />
-        <KpiCard
-          icon={<BriefcaseBusiness size={22} />}
-          label="Fases cargadas"
-          value={String(phases.length)}
-          detail="fuentes de encuesta integradas"
-        />
-      </section>
-
-      <ProposalDashboard proposals={proposals} />
-
-      <section className="dashboard-grid">
-        <ChartCard
-          title="Barreras mejor valoradas"
-          description="Media de dificultad declarada por las personas encuestadas."
-        >
-          <ResponsiveContainer width="100%" height={330}>
-            <BarChart data={barriers} layout="vertical" margin={{ left: 16, right: 24 }}>
-              <CartesianGrid strokeDasharray="3 3" horizontal={false} />
-              <XAxis type="number" domain={[0, 5]} />
-              <YAxis dataKey="name" type="category" width={150} />
-              <Tooltip />
-              <Bar dataKey="average" radius={[0, 8, 8, 0]} fill="#2563eb" />
-            </BarChart>
-          </ResponsiveContainer>
-        </ChartCard>
-
-        <ChartCard
-          title="Dificultad del primer empleo"
-          description="Percepcion subjetiva al finalizar los estudios principales."
-        >
-          <ResponsiveContainer width="100%" height={330}>
-            <PieChart>
-              <Pie data={difficulty} dataKey="value" nameKey="name" outerRadius={105} label>
-                {difficulty.map((_, index) => (
-                  <Cell key={index} fill={COLORS[index % COLORS.length]} />
+        {!isProposalPhase ? (
+          <>
+            <label>
+              Edad
+              <select value={ageGroup} onChange={(event) => setAgeGroup(event.target.value)}>
+                <option>Todos</option>
+                {ageGroupOptions.map((item) => (
+                  <option key={item}>{item}</option>
                 ))}
-              </Pie>
-              <Tooltip />
-            </PieChart>
-          </ResponsiveContainer>
-        </ChartCard>
-
-        <ChartCard
-          title="Perfil laboral"
-          description="Situacion laboral de las personas incluidas en el segmento seleccionado."
-        >
-          <ResponsiveContainer width="100%" height={300}>
-            <BarChart data={employmentDistribution}>
-              <CartesianGrid strokeDasharray="3 3" vertical={false} />
-              <XAxis dataKey="name" tick={{ fontSize: 12 }} />
-              <YAxis allowDecimals={false} />
-              <Tooltip />
-              <Bar dataKey="value" fill="#7c3aed" radius={[8, 8, 0, 0]} />
-            </BarChart>
-          </ResponsiveContainer>
-        </ChartCard>
-
-        <ChartCard
-          title="Grupos de edad"
-          description="Agrupacion aproximada calculada a partir del ano de nacimiento."
-        >
-          <ResponsiveContainer width="100%" height={300}>
-            <BarChart data={ageGroups}>
-              <CartesianGrid strokeDasharray="3 3" vertical={false} />
-              <XAxis dataKey="name" />
-              <YAxis allowDecimals={false} />
-              <Tooltip />
-              <Bar dataKey="value" fill="#0891b2" radius={[8, 8, 0, 0]} />
-            </BarChart>
-          </ResponsiveContainer>
-        </ChartCard>
+              </select>
+            </label>
+            <label>
+              Estudios
+              <select value={education} onChange={(event) => setEducation(event.target.value)}>
+                <option>Todos</option>
+                {educationLevels.map((item) => (
+                  <option key={item}>{item}</option>
+                ))}
+              </select>
+            </label>
+            <label>
+              Situacion laboral
+              <select value={employment} onChange={(event) => setEmployment(event.target.value)}>
+                <option>Todos</option>
+                {employmentStatuses.map((item) => (
+                  <option key={item}>{item}</option>
+                ))}
+              </select>
+            </label>
+          </>
+        ) : null}
       </section>
 
-      <section className="insights-grid">
-        <div className="card">
-          <div className="section-heading">
-            <h2>Terminos frecuentes</h2>
-            <p>Lectura rapida de conceptos repetidos en respuestas abiertas.</p>
-          </div>
-          <div className="tag-cloud">
-            {frequentTerms.slice(0, 18).map((term) => (
-              <span key={term.name}>
-                {term.name} <strong>{term.value}</strong>
-              </span>
-            ))}
-          </div>
-        </div>
+      {isProposalPhase ? (
+        <ProposalDashboard proposals={proposals} />
+      ) : (
+        <>
+          <section className="kpi-grid">
+            <KpiCard
+              icon={<UsersRound size={22} />}
+              label="Respuestas filtradas"
+              value={String(filteredRows.length)}
+              detail={`sobre ${rows.length} respuestas disponibles`}
+            />
+            <KpiCard
+              icon={<TrendingUp size={22} />}
+              label="Barrera principal"
+              value={topBarrier?.name ?? "Sin dato"}
+              detail={topBarrier ? `media ${topBarrier.average}/5` : "sin respuestas numericas"}
+            />
+            <KpiCard
+              icon={<MapPinned size={22} />}
+              label="Intencion de movilidad"
+              value={String(mobilityYes)}
+              detail="personas que han pensado mudarse"
+            />
+            <KpiCard
+              icon={<BriefcaseBusiness size={22} />}
+              label="Fases cargadas"
+              value={String(phases.length)}
+              detail="fuentes integradas"
+            />
+          </section>
 
-        <div className="card">
-          <div className="section-heading">
-            <h2>Respuestas abiertas</h2>
-            <p>Ejemplos cualitativos del segmento seleccionado.</p>
-          </div>
-          <div className="quote-list">
-            {quotes.length ? (
-              quotes.map((quote, index) => (
-                <blockquote key={`${quote.column}-${index}`}>{quote.text}</blockquote>
-              ))
-            ) : (
-              <p className="muted">No hay respuestas abiertas para este filtro.</p>
-            )}
-          </div>
-        </div>
-      </section>
+          <section className="dashboard-grid">
+            <ChartCard
+              title="Barreras mejor valoradas"
+              description="Media de dificultad declarada por las personas encuestadas."
+            >
+              <ResponsiveContainer width="100%" height={330}>
+                <BarChart data={barriers} layout="vertical" margin={{ left: 16, right: 24 }}>
+                  <CartesianGrid strokeDasharray="3 3" horizontal={false} />
+                  <XAxis type="number" domain={[0, 5]} />
+                  <YAxis dataKey="name" type="category" width={150} />
+                  <Tooltip />
+                  <Bar dataKey="average" radius={[0, 8, 8, 0]} fill="#2563eb" />
+                </BarChart>
+              </ResponsiveContainer>
+            </ChartCard>
+
+            <ChartCard
+              title="Dificultad del primer empleo"
+              description="Percepcion subjetiva al finalizar los estudios principales."
+            >
+              <ResponsiveContainer width="100%" height={330}>
+                <PieChart>
+                  <Pie data={difficulty} dataKey="value" nameKey="name" outerRadius={105} label>
+                    {difficulty.map((_, index) => (
+                      <Cell key={index} fill={COLORS[index % COLORS.length]} />
+                    ))}
+                  </Pie>
+                  <Tooltip />
+                </PieChart>
+              </ResponsiveContainer>
+            </ChartCard>
+
+            <ChartCard
+              title="Perfil laboral"
+              description="Situacion laboral de las personas incluidas en el segmento seleccionado."
+            >
+              <ResponsiveContainer width="100%" height={300}>
+                <BarChart data={employmentDistribution}>
+                  <CartesianGrid strokeDasharray="3 3" vertical={false} />
+                  <XAxis dataKey="name" tick={{ fontSize: 12 }} />
+                  <YAxis allowDecimals={false} />
+                  <Tooltip />
+                  <Bar dataKey="value" fill="#7c3aed" radius={[8, 8, 0, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+            </ChartCard>
+
+            <ChartCard
+              title="Grupos de edad"
+              description="Agrupacion aproximada calculada a partir del ano de nacimiento."
+            >
+              <ResponsiveContainer width="100%" height={300}>
+                <BarChart data={ageGroups}>
+                  <CartesianGrid strokeDasharray="3 3" vertical={false} />
+                  <XAxis dataKey="name" />
+                  <YAxis allowDecimals={false} />
+                  <Tooltip />
+                  <Bar dataKey="value" fill="#0891b2" radius={[8, 8, 0, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+            </ChartCard>
+          </section>
+
+          <section className="insights-grid">
+            <div className="card">
+              <div className="section-heading">
+                <h2>Terminos frecuentes</h2>
+                <p>Lectura rapida de conceptos repetidos en respuestas abiertas.</p>
+              </div>
+              <div className="tag-cloud">
+                {frequentTerms.slice(0, 18).map((term) => (
+                  <span key={term.name}>
+                    {term.name} <strong>{term.value}</strong>
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="section-heading">
+                <h2>Respuestas abiertas</h2>
+                <p>Ejemplos cualitativos del segmento seleccionado.</p>
+              </div>
+              <div className="quote-list">
+                {quotes.length ? (
+                  quotes.map((quote, index) => (
+                    <blockquote key={`${quote.column}-${index}`}>{quote.text}</blockquote>
+                  ))
+                ) : (
+                  <p className="muted">No hay respuestas abiertas para este filtro.</p>
+                )}
+              </div>
+            </div>
+          </section>
+        </>
+      )}
     </main>
   );
 }

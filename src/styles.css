@@ -111,6 +111,10 @@ h2 {
   padding: 22px;
 }
 
+.filters-proposal {
+  grid-template-columns: 1.25fr minmax(220px, 360px);
+}
+
 .filter-title {
   display: flex;
   gap: 12px;

@@ -157,12 +157,6 @@ def discover_sources() -> list[tuple[str, Path]]:
         ]
     )
 
-    # The enriched analysis file contains the same survey responses as Datos_Limpios.csv
-    # plus analytical columns, so prefer it when both are present.
-    enriched = RAW_DIR / "Resultados_Analisis.xlsx"
-    if enriched in source_files:
-        source_files = [path for path in source_files if path.name != "Datos_Limpios.csv"]
-
     if not source_files:
         fallback = PROJECT_ROOT / "cleanData.csv"
         if fallback.exists():
