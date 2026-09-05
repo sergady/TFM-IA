@@ -4,6 +4,7 @@ import ast
 import csv
 import json
 import re
+import unicodedata
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
@@ -126,6 +127,12 @@ def slug_to_label(path: Path) -> str:
     return label.title() or "Fase"
 
 
+def normalized_file_stem(path: Path) -> str:
+    normalized = unicodedata.normalize("NFD", path.stem)
+    ascii_name = "".join(char for char in normalized if unicodedata.category(char) != "Mn")
+    return ascii_name.lower()
+
+
 def read_csv(path: Path) -> list[dict[str, str]]:
     with path.open(newline="", encoding="utf-8-sig") as file:
         reader = csv.DictReader(file)
@@ -157,8 +164,8 @@ def discover_sources() -> list[tuple[str, Path]]:
         ]
     )
 
-    enriched = RAW_DIR / "Resultados_Analisis.xlsx"
-    if enriched in source_files:
+    enriched_files = [path for path in source_files if normalized_file_stem(path) == "resultados_analisis"]
+    if enriched_files:
         source_files = [path for path in source_files if path.name != "Datos_Limpios.csv"]
 
     if not source_files:

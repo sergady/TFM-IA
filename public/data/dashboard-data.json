@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-05T17:52:43.047145+00:00",
+    "generatedAt": "2026-09-05T18:13:21.424355+00:00",
     "totalResponses": 53,
     "sources": [
-      "dashboard/data/raw/Resultados_Analisis.xlsx"
+      "dashboard/data/raw/Resultados_Análisis.xlsx"
     ],
     "barrierScale": "1 = poca dificultad, 5 = mucha dificultad"
   },
   "rows": [
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "1976",
       "current_residence": "España, Asturias",
@@ -62,7 +62,7 @@
       "sentiment_justification": "Reports a young relative unable to find work in their studied field but proposes training and internships as solutions, showing both worry and constructive intent."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "1999",
       "current_residence": "Francia, Ain",
@@ -115,7 +115,7 @@
       "sentiment_justification": "Highlights low salaries and precarious temporary contracts (high barrier ratings) and calls for salary regulation, expressing clear dissatisfaction with job conditions."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "2002",
       "current_residence": "España, Asturias",
@@ -168,7 +168,7 @@
       "sentiment_justification": "Says they found work quickly but it was unstable and poorly paid, and suggests helping firms hire inexperienced candidates, combining critique with a proposed fix."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "2000",
       "current_residence": "España",
@@ -221,7 +221,7 @@
       "sentiment_justification": "Reports three years to first job, very difficult search, high scarcity and discrimination ratings, and requests more offers for young people, indicating strong frustration."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "1999",
       "current_residence": "Europa, España",
@@ -274,7 +274,7 @@
       "sentiment_justification": "Complains job listings require years of experience, blocking applicants, and proposes lowering experience requirements and facilitating internships."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "2001",
       "current_residence": "España, Madrid",
@@ -327,7 +327,7 @@
       "sentiment_justification": "Describes public sector hiring favoring formal qualifications and contacts, excluding capable applicants, and proposes allowing portfolios as proof of ability."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "2001",
       "current_residence": "España, Alicante",
@@ -380,7 +380,7 @@
       "sentiment_justification": "Identifies lack of practical experience and requests academic programmes combining theory and practice with company collaboration, signaling concern plus constructive optimism."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "2001",
       "current_residence": "España, Alicante",
@@ -433,7 +433,7 @@
       "sentiment_justification": "Notes strong competition and precarious contract conditions for designers and proposes youth employment pools beyond internships, showing frustration and a suggested solution."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "1999",
       "current_residence": "España, Asturias",
@@ -486,7 +486,7 @@
       "sentiment_justification": "Reports temporary offers without contract and seeks better-regulated internship agreements, expressing frustration with unstable or non-contracted job offers."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "1999",
       "current_residence": "España, Asturias",
@@ -539,7 +539,7 @@
       "sentiment_justification": "States employers require experience even for assistant roles, blocking recent graduates, and demands regulation and facilitated company training to correct this."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "1997",
       "current_residence": "francia, ain",
@@ -592,7 +592,7 @@
       "sentiment_justification": "Unemployed emigrant reports not receiving job callbacks, scarce internships, temporary contracts and migration barriers, calling for more and better-paid jobs."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "1999",
       "current_residence": "España, Asturias",
@@ -645,7 +645,7 @@
       "sentiment_justification": "Employed master's graduate reports easy job entry and proposes subsidies for paid internships, showing approval and constructive policy suggestion."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "1995",
       "current_residence": "España, Asturias",
@@ -698,7 +698,7 @@
       "sentiment_justification": "States there are no job opportunities in photography, rejects regional prospects and proposes hiring incentives and banning photos on CVs, expressing criticism."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "1997",
       "current_residence": "Madrid, España",
@@ -751,7 +751,7 @@
       "sentiment_justification": "Briefly states housing—not employment—is their main current problem, presented as a factual personal observation without evaluative language."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "2010",
       "current_residence": "China",
@@ -804,7 +804,7 @@
       "sentiment_justification": "Mentions long hours and lack of broader prospects in a textile factory while also endorsing factory work and calling for more factories—both critical and supportive."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "2000",
       "current_residence": "España, Comunidad Valenciana",
@@ -857,7 +857,7 @@
       "sentiment_justification": "Graduate cites lack of job offers and low salaries as primary barriers, expressing concern about employment prospects and delayed job entry."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "1999",
       "current_residence": "España",
@@ -910,7 +910,7 @@
       "sentiment_justification": "Self-employed master's highlights employers' experience requirement, project-based precarious work and multiple severe barriers, indicating strong frustration with opportunities."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "2000",
       "current_residence": "España, Asturias",
@@ -963,7 +963,7 @@
       "sentiment_justification": "Describes employers demanding 1–3 years' experience and exploiting inexperienced hires with lower pay and poor conditions, and proposes decentralization—strongly critical."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "1997",
       "current_residence": "España",
@@ -1016,7 +1016,7 @@
       "sentiment_justification": "Employed/autónomo respondent reports no regional job opportunities and low pay in the audiovisual sector after emigrating, expressing dissatisfaction."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "2001",
       "current_residence": "España, Comunidad Valenciana",
@@ -1069,7 +1069,7 @@
       "sentiment_justification": "Unemployed vocational graduate criticizes absurd labor conditions and high experience requirements, calling for a review of work conditions and requirements."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "2001",
       "current_residence": "España, Comunidad Valenciana",
@@ -1122,7 +1122,7 @@
       "sentiment_justification": "Describes difficulty entering intermittent animation work due to lack of contacts and experience and asks for more opportunities to gain experience, expressing dissatisfaction with access barriers."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "1999",
       "current_residence": "España",
@@ -1175,7 +1175,7 @@
       "sentiment_justification": "Provides minimal, factual information about being employed with few reported barriers and no evaluative comments or proposals."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "1995",
       "current_residence": "España",
@@ -1228,7 +1228,7 @@
       "sentiment_justification": "Expresses that studies were useless for work, left university due to poor labor prospects and costs, and asks for informational and financial support, indicating strong dissatisfaction."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "27-06-26",
       "birth_year": "2003",
       "current_residence": "España, Asturies",
@@ -1281,7 +1281,7 @@
       "sentiment_justification": "Highlights precarious, sparsely located jobs and severe transport barriers, and proposes adjusting vocational timing to improve hiring opportunities, showing concern about regional conditions."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "28-06-26",
       "birth_year": "1999",
       "current_residence": "España, asturias",
@@ -1334,7 +1334,7 @@
       "sentiment_justification": "Attributes job-search difficulty to personal immaturity and offers a vague policy suggestion, mainly descriptive without strong emotional tone."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "28-06-26",
       "birth_year": "2001",
       "current_residence": "Cartagena, murcia, españa, europa",
@@ -1387,7 +1387,7 @@
       "sentiment_justification": "Describes a closed, scarce job market in the sector, uses strong language about having to take poor jobs, and demands policy change (trial period), showing high frustration."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "28-06-26",
       "birth_year": "1999",
       "current_residence": "Asturias, España",
@@ -1440,7 +1440,7 @@
       "sentiment_justification": "Reports firms not responding and finding work only via contacts, criticizes hiring practices requiring experience, and proposes creating jobs without prior experience."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "28-06-26",
       "birth_year": "1971",
       "current_residence": "España,  Gijón",
@@ -1493,7 +1493,7 @@
       "sentiment_justification": "Identifies youth lack of experience and proposes company subsidies to hire and guarantee experience, offering a constructive policy solution with a confident tone."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "28-06-26",
       "birth_year": "1966",
       "current_residence": "España, Asturias",
@@ -1546,7 +1546,7 @@
       "sentiment_justification": "Calls to guarantee job stability and salaries matching required qualifications, presenting a prescriptive, improvement-oriented recommendation for employment conditions."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "28-06-26",
       "birth_year": "2001",
       "current_residence": "España, Asturias",
@@ -1599,7 +1599,7 @@
       "sentiment_justification": "Requests more orientation for young students and values vocational training with good employability, proposing clearer guidance during study periods."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "29-06-26",
       "birth_year": "1997",
       "current_residence": "España, Asturias",
@@ -1652,7 +1652,7 @@
       "sentiment_justification": "States inability to pass interview filters, lack of career guidance and limited regional sector growth; advises seeking work abroad and proposes fostering sector growth."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "09-07-26",
       "birth_year": "1999",
       "current_residence": "Esoaña",
@@ -1705,7 +1705,7 @@
       "sentiment_justification": "Reports lack of experience, scarce opportunities, low salaries and temporary contracts hindering job search and proposes specialized job boards."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "09-07-26",
       "birth_year": "1999",
       "current_residence": "Suiza, Zúrich",
@@ -1758,7 +1758,7 @@
       "sentiment_justification": "Cites language proficiency as main barrier limiting job access in destination country and proposes regulating unpaid informal work."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "09-07-26",
       "birth_year": "1999",
       "current_residence": "España, Asturias",
@@ -1811,7 +1811,7 @@
       "sentiment_justification": "Reports poor study-job match, limited experience and temporary contract concerns hindering transition from education to employment and proposes entrepreneurship support."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "09-07-26",
       "birth_year": "1996",
       "current_residence": "Gijon",
@@ -1864,7 +1864,7 @@
       "sentiment_justification": "Describes difficulty being selected for first interviews, high experience and opportunity barriers, and proposes a prioritization system for young applicants."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "09-07-26",
       "birth_year": "1999",
       "current_residence": "españa, madrid",
@@ -1917,7 +1917,7 @@
       "sentiment_justification": "Complains employers do not respond to applications ('nobody calls'), reports high barriers across job scarcity and proposes paid internships."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "09-07-26",
       "birth_year": "1999",
       "current_residence": "España",
@@ -1970,7 +1970,7 @@
       "sentiment_justification": "As an employer criticizes excessive temporary contracts and unpredictable extra hours and requests limits on contracts and complementary hours."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "09-07-26",
       "birth_year": "1996",
       "current_residence": "España, Asturias",
@@ -2023,7 +2023,7 @@
       "sentiment_justification": "Notes regional job availability varies and can be limited, expresses intention to move abroad and proposes incentives to create jobs and support youth entrepreneurship."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "09-07-26",
       "birth_year": "1999",
       "current_residence": "España, Asturias",
@@ -2076,7 +2076,7 @@
       "sentiment_justification": "Explains experienced professionals relocating to regions occupy many local positions, reducing opportunities for locals and suggesting changing studies or moving abroad."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "09-07-26",
       "birth_year": "1999",
       "current_residence": "España, Asturias",
@@ -2129,7 +2129,7 @@
       "sentiment_justification": "Reports high prevalence of temporary contracts and scarce regional opportunities and requests more support ('Más ayudas')."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "09-07-26",
       "birth_year": "1999",
       "current_residence": "España",
@@ -2182,7 +2182,7 @@
       "sentiment_justification": "Expresses concern about employers' reluctance to hire young people while offering constructive proposals (public funding for training) and proactive networking advice."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "09-07-26",
       "birth_year": "1998",
       "current_residence": "España, Asturias",
@@ -2235,7 +2235,7 @@
       "sentiment_justification": "Complains about absence of public-sector competitive calls (oposiciones) in their area and urges convening them to fill vacancies and enable youth entry."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "09-07-26",
       "birth_year": "1997",
       "current_residence": "Belgica, brusselas",
@@ -2288,7 +2288,7 @@
       "sentiment_justification": "Reports lacking a higher qualification impeded job access and proposes training and better academic results as remedies, showing both problem awareness and solution orientation."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "09-07-26",
       "birth_year": "1999",
       "current_residence": "España, Asturias",
@@ -2341,7 +2341,7 @@
       "sentiment_justification": "Expresses frustration at companies' non-response hindering job access and strongly proposes a youth hiring quota as a corrective public measure."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "09-07-26",
       "birth_year": "1999",
       "current_residence": "España, Asturias",
@@ -2394,7 +2394,7 @@
       "sentiment_justification": "Describes a very easy, quick job entry with vocational studies and no barriers, indicating satisfaction with personal employment experience."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "09-07-26",
       "birth_year": "1999",
       "current_residence": "Estados Unidos, Carolina del Sur",
@@ -2447,7 +2447,7 @@
       "sentiment_justification": "Reports significant migration-related barriers after emigrating, cites discrimination and low-salary concerns, and recommends emigration and entrepreneurship despite difficulties."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "09-07-26",
       "birth_year": "1999",
       "current_residence": "Suiza, Ginebra",
@@ -2500,7 +2500,7 @@
       "sentiment_justification": "Identifies language as the main barrier to employment access abroad, noting high migration-related obstacles and proposing investment in new jobs."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "09-07-26",
       "birth_year": "1996",
       "current_residence": "España, Madrid",
@@ -2553,7 +2553,7 @@
       "sentiment_justification": "Expresses concern that wages are insufficient for independence, scoring low salary as primary issue and proposing an informational campaign about the labour market."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "09-07-26",
       "birth_year": "1999",
       "current_residence": "España, Palencia",
@@ -2606,7 +2606,7 @@
       "sentiment_justification": "Complains that most jobs require prior experience, preventing youth access, and proposes more internships and sector agreements as solutions."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "09-07-26",
       "birth_year": "1999",
       "current_residence": "España, Asturias",
@@ -2659,7 +2659,7 @@
       "sentiment_justification": "Highlights lack of required experience as the main barrier to employment and suggests improving conditions and regulating access requirements."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "10-07-26",
       "birth_year": "1997",
       "current_residence": "España, Asturias, Otur",
@@ -2712,7 +2712,7 @@
       "sentiment_justification": "Expresses anger toward government, calls for removal of Pedro Sánchez, uses insults, and reports high migration and temporary-contract barriers and intent to emigrate."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "14-07-26",
       "birth_year": "1999",
       "current_residence": "España, Asturias",
@@ -2765,7 +2765,7 @@
       "sentiment_justification": "Complains of severe regional job and opportunity scarcity, difficult first job, lack of employer information and career guidance, and expresses intent to emigrate."
     },
     {
-      "phase": "Resultados Analisis",
+      "phase": "Resultados Análisis",
       "timestamp": "14-07-26",
       "birth_year": "1999",
       "current_residence": "España, Asturias",
@@ -2821,7 +2821,7 @@
   "summary": {
     "phases": [
       {
-        "name": "Resultados Analisis",
+        "name": "Resultados Análisis",
         "value": 53
       }
     ],
@@ -3280,7 +3280,7 @@
       ]
     },
     "byPhase": {
-      "Resultados Analisis": {
+      "Resultados Análisis": {
         "responses": 53,
         "barriers": [
           {
@@ -3385,6 +3385,10 @@
     },
     "rows": [
       {
+        "policy_area": "education_to_work_transition",
+        "description": "Create and subsidize paid internships and structured work placements embedded in vocational and university programmes, with formal agreements between education institutions and employers to ensure relevant experience on graduation.",
+        "support_count": 7,
+        "proposal_id": "P01",
         "addressed_problems": [
           "lack_of_internships",
           "lack_of_experience",
@@ -3392,6 +3396,11 @@
           "transition_from_education_to_work",
           "internship_access_barrier"
         ],
+        "priority_justification": "Frequent, high-relevance mentions across education and employment categories; several respondents explicitly propose paid internships and curricular company collaboration; sentiment mixes hope and frustration.",
+        "source_type": "explicit_citizen_proposals",
+        "sentiment_context": "Predominantly constructive but urgent: respondents express hope for better school–company links and paid internships, with medium sentiment intensity.",
+        "title": "Expand paid, work-integrated internships and stronger education–business collaboration",
+        "citizen_demand": "More and better-regulated paid internships and closer collaboration between education and companies so graduates gain relevant experience.",
         "supporting_response_ids": [
           6,
           11,
@@ -3401,24 +3410,24 @@
           3,
           8
         ],
-        "description": "Create and subsidize paid internships and structured work placements embedded in vocational and university programmes, with formal agreements between education institutions and employers to ensure relevant experience on graduation.",
-        "source_type": "explicit_citizen_proposals",
-        "citizen_demand": "More and better-regulated paid internships and closer collaboration between education and companies so graduates gain relevant experience.",
-        "proposal_id": "P01",
-        "priority_justification": "Frequent, high-relevance mentions across education and employment categories; several respondents explicitly propose paid internships and curricular company collaboration; sentiment mixes hope and frustration.",
-        "title": "Expand paid, work-integrated internships and stronger education–business collaboration",
-        "priority": "high",
-        "policy_area": "education_to_work_transition",
-        "support_count": 7,
-        "sentiment_context": "Predominantly constructive but urgent: respondents express hope for better school–company links and paid internships, with medium sentiment intensity."
+        "priority": "high"
       },
       {
+        "policy_area": "employment",
+        "description": "Establish targeted measures (e.g., hiring subsidies, funded trainee positions, probation rules) to encourage employers to offer positions that do not require prior experience and to provide on-the-job training for young hires.",
+        "support_count": 7,
+        "proposal_id": "P02",
         "addressed_problems": [
           "lack_of_experience",
           "access_to_training",
           "opportunity_scarcity",
           "employer_predisposition_against_youth"
         ],
+        "priority_justification": "Widespread, strongly felt barrier (many high experience_barrier scores); multiple explicit proposals for subsidies/entry jobs across responses.",
+        "source_type": "mixed",
+        "sentiment_context": "Negative to frustrated: many respondents report being blocked by experience requirements; proposals combine criticism with constructive remedies.",
+        "title": "Create entry-level job pathways and incentives for firms to hire inexperienced youth",
+        "citizen_demand": "Help companies hire inexperienced young people through subsidies, trainee schemes and regulated on-the-job training so youth can build experience.",
         "supporting_response_ids": [
           2,
           27,
@@ -3428,18 +3437,13 @@
           48,
           17
         ],
-        "description": "Establish targeted measures (e.g., hiring subsidies, funded trainee positions, probation rules) to encourage employers to offer positions that do not require prior experience and to provide on-the-job training for young hires.",
-        "source_type": "mixed",
-        "citizen_demand": "Help companies hire inexperienced young people through subsidies, trainee schemes and regulated on-the-job training so youth can build experience.",
-        "proposal_id": "P02",
-        "priority_justification": "Widespread, strongly felt barrier (many high experience_barrier scores); multiple explicit proposals for subsidies/entry jobs across responses.",
-        "title": "Create entry-level job pathways and incentives for firms to hire inexperienced youth",
-        "priority": "high",
-        "policy_area": "employment",
-        "support_count": 7,
-        "sentiment_context": "Negative to frustrated: many respondents report being blocked by experience requirements; proposals combine criticism with constructive remedies."
+        "priority": "high"
       },
       {
+        "policy_area": "employment",
+        "description": "Introduce clearer regulations for internships and practice agreements (including minimum pay and limits on unpaid work) and put measures to reduce excessive use of temporary contracts and unpredictable extra hours.",
+        "support_count": 6,
+        "proposal_id": "P03",
         "addressed_problems": [
           "temporary_contracts",
           "working_conditions",
@@ -3447,6 +3451,11 @@
           "internship_access_barrier",
           "precarious_internships"
         ],
+        "priority_justification": "Repeated, emotionally charged reports about precarious internships and temporary contracts; several explicit calls for regulatory action.",
+        "source_type": "explicit_citizen_proposals",
+        "sentiment_context": "Negative, medium–high intensity: respondents express frustration with unpaid/temporary offers and exploitation of inexperienced workers.",
+        "title": "Regulate internships and limit precarious temporary-contract practices",
+        "citizen_demand": "Better regulation of internships (remuneration and access) and limits on temporary contracts and abusive working hours.",
         "supporting_response_ids": [
           8,
           35,
@@ -3455,24 +3464,24 @@
           16,
           17
         ],
-        "description": "Introduce clearer regulations for internships and practice agreements (including minimum pay and limits on unpaid work) and put measures to reduce excessive use of temporary contracts and unpredictable extra hours.",
-        "source_type": "explicit_citizen_proposals",
-        "citizen_demand": "Better regulation of internships (remuneration and access) and limits on temporary contracts and abusive working hours.",
-        "proposal_id": "P03",
-        "priority_justification": "Repeated, emotionally charged reports about precarious internships and temporary contracts; several explicit calls for regulatory action.",
-        "title": "Regulate internships and limit precarious temporary-contract practices",
-        "priority": "high",
-        "policy_area": "employment",
-        "support_count": 6,
-        "sentiment_context": "Negative, medium–high intensity: respondents express frustration with unpaid/temporary offers and exploitation of inexperienced workers."
+        "priority": "high"
       },
       {
+        "policy_area": "institutional",
+        "description": "Promote transparent hiring processes (reduce reliance on informal contacts), create youth-targeted employment pools or specialized job boards, accept portfolios or demonstrable skills in public hiring, and consider temporary prioritization mechanisms for younger applicants.",
+        "support_count": 6,
+        "proposal_id": "P06",
         "addressed_problems": [
           "hiring_by_contacts",
           "lack_of_job_offers",
           "education_employment_mismatch",
           "opportunity_scarcity"
         ],
+        "priority_justification": "Recurring complaints about contact-based hiring and non-response, combined with several explicit proposals (job pools, quotas, portfolio recognition) indicate high analytical relevance.",
+        "source_type": "mixed",
+        "sentiment_context": "Critical and solution-oriented: respondents express frustration at non-transparent hiring and propose concrete institutional fixes (job pools, portfolio acceptance); sentiment intensity medium–high.",
+        "title": "Improve recruitment transparency and broaden recognition of alternative credentials",
+        "citizen_demand": "Fairer, more transparent hiring: reduce contact-based selection, create youth job pools/specialized boards, and allow portfolios as proof of competence.",
         "supporting_response_ids": [
           5,
           7,
@@ -3481,23 +3490,23 @@
           26,
           35
         ],
-        "description": "Promote transparent hiring processes (reduce reliance on informal contacts), create youth-targeted employment pools or specialized job boards, accept portfolios or demonstrable skills in public hiring, and consider temporary prioritization mechanisms for younger applicants.",
-        "source_type": "mixed",
-        "citizen_demand": "Fairer, more transparent hiring: reduce contact-based selection, create youth job pools/specialized boards, and allow portfolios as proof of competence.",
-        "proposal_id": "P06",
-        "priority_justification": "Recurring complaints about contact-based hiring and non-response, combined with several explicit proposals (job pools, quotas, portfolio recognition) indicate high analytical relevance.",
-        "title": "Improve recruitment transparency and broaden recognition of alternative credentials",
-        "priority": "high",
-        "policy_area": "institutional",
-        "support_count": 6,
-        "sentiment_context": "Critical and solution-oriented: respondents express frustration at non-transparent hiring and propose concrete institutional fixes (job pools, portfolio acceptance); sentiment intensity medium–high."
+        "priority": "high"
       },
       {
+        "policy_area": "career_guidance",
+        "description": "Provide formal career-orientation services inside educational institutions (vocational and higher education) that inform students about labour-market demands, opportunities, and pathways to gain experience.",
+        "support_count": 5,
+        "proposal_id": "P04",
         "addressed_problems": [
           "lack_of_career_guidance",
           "transition_from_education_to_work",
           "education_job_mismatch"
         ],
+        "priority_justification": "Common and actionable demand but less emotionally intense than experience/contract issues; recurring across education levels.",
+        "source_type": "explicit_citizen_proposals",
+        "sentiment_context": "Hopeful and corrective: respondents request guidance to reduce uncertainty and mismatches; sentiment intensity medium.",
+        "title": "Strengthen career guidance and student orientation within education institutions",
+        "citizen_demand": "More and earlier orientation for students from their own institutions to understand labour-market options and how to access them.",
         "supporting_response_ids": [
           29,
           6,
@@ -3505,24 +3514,24 @@
           22,
           30
         ],
-        "description": "Provide formal career-orientation services inside educational institutions (vocational and higher education) that inform students about labour-market demands, opportunities, and pathways to gain experience.",
-        "source_type": "explicit_citizen_proposals",
-        "citizen_demand": "More and earlier orientation for students from their own institutions to understand labour-market options and how to access them.",
-        "proposal_id": "P04",
-        "priority_justification": "Common and actionable demand but less emotionally intense than experience/contract issues; recurring across education levels.",
-        "title": "Strengthen career guidance and student orientation within education institutions",
-        "priority": "medium",
-        "policy_area": "career_guidance",
-        "support_count": 5,
-        "sentiment_context": "Hopeful and corrective: respondents request guidance to reduce uncertainty and mismatches; sentiment intensity medium."
+        "priority": "medium"
       },
       {
+        "policy_area": "territorial",
+        "description": "Support measures to decentralize industry and create regional job opportunities (e.g., incentives for firms to locate outside big cities) and improve transport/organizational arrangements (including vocational calendar alignment) to reduce commuting barriers to sector jobs.",
+        "support_count": 5,
+        "proposal_id": "P05",
         "addressed_problems": [
           "lack_of_regional_opportunities",
           "public_transport_barrier",
           "opportunity_scarcity",
           "need_to_emigrate"
         ],
+        "priority_justification": "Frequent in certain sectors/regions with high relevance where respondents report concrete transport and locality problems; sentiment medium.",
+        "source_type": "mixed",
+        "sentiment_context": "Negative/concerned: respondents describe geographic isolation of jobs and transport hardship; propose decentralization and calendar adjustments with medium intensity.",
+        "title": "Address regional barriers: decentralize opportunities and improve mobility for sector jobs",
+        "citizen_demand": "More regional job creation, transport solutions and vocational-timing adjustments so local graduates can access real hiring opportunities without relocating.",
         "supporting_response_ids": [
           23,
           17,
@@ -3530,23 +3539,23 @@
           51,
           38
         ],
-        "description": "Support measures to decentralize industry and create regional job opportunities (e.g., incentives for firms to locate outside big cities) and improve transport/organizational arrangements (including vocational calendar alignment) to reduce commuting barriers to sector jobs.",
-        "source_type": "mixed",
-        "citizen_demand": "More regional job creation, transport solutions and vocational-timing adjustments so local graduates can access real hiring opportunities without relocating.",
-        "proposal_id": "P05",
-        "priority_justification": "Frequent in certain sectors/regions with high relevance where respondents report concrete transport and locality problems; sentiment medium.",
-        "title": "Address regional barriers: decentralize opportunities and improve mobility for sector jobs",
-        "priority": "medium",
-        "policy_area": "territorial",
-        "support_count": 5,
-        "sentiment_context": "Negative/concerned: respondents describe geographic isolation of jobs and transport hardship; propose decentralization and calendar adjustments with medium intensity."
+        "priority": "medium"
       },
       {
+        "policy_area": "economic",
+        "description": "Consider measures to improve pay conditions for entry-level jobs and ensure internships/practices provide at least minimum remuneration—actions may include wage regulation discussions, targeted subsidies, or sectoral agreements to align pay with qualification and living costs.",
+        "support_count": 5,
+        "proposal_id": "P07",
         "addressed_problems": [
           "low_salaries",
           "job_instability",
           "temporary_contracts"
         ],
+        "priority_justification": "Repeated concern about pay across respondents, but policy specifics vary; emotional intensity is significant though fewer explicit, detailed proposals than for experience barriers.",
+        "source_type": "mixed",
+        "sentiment_context": "Negative and concerned: respondents often link low pay to inability to be independent and to exploitation of inexperienced hires; sentiment intensity medium–high.",
+        "title": "Actions to address low pay and ensure adequate remuneration for youth",
+        "citizen_demand": "Regulate or support wages so jobs and internships pay adequately and enable financial independence.",
         "supporting_response_ids": [
           1,
           28,
@@ -3554,60 +3563,51 @@
           17,
           35
         ],
-        "description": "Consider measures to improve pay conditions for entry-level jobs and ensure internships/practices provide at least minimum remuneration—actions may include wage regulation discussions, targeted subsidies, or sectoral agreements to align pay with qualification and living costs.",
-        "source_type": "mixed",
-        "citizen_demand": "Regulate or support wages so jobs and internships pay adequately and enable financial independence.",
-        "proposal_id": "P07",
-        "priority_justification": "Repeated concern about pay across respondents, but policy specifics vary; emotional intensity is significant though fewer explicit, detailed proposals than for experience barriers.",
-        "title": "Actions to address low pay and ensure adequate remuneration for youth",
-        "priority": "medium",
-        "policy_area": "economic",
-        "support_count": 5,
-        "sentiment_context": "Negative and concerned: respondents often link low pay to inability to be independent and to exploitation of inexperienced hires; sentiment intensity medium–high."
+        "priority": "medium"
       },
       {
+        "policy_area": "public_policy",
+        "description": "Increase or time competitive public-sector hiring (oposiciones) and adapt public recruitment criteria to allow demonstration of skills (e.g., portfolios) to open stable entry-level positions for young people.",
+        "support_count": 3,
+        "proposal_id": "P08",
         "addressed_problems": [
           "lack_of_job_offers",
           "education_job_mismatch",
           "public_support"
         ],
+        "priority_justification": "High relevance for some respondents and explicit proposals present, though support is concentrated in a subset of responses.",
+        "source_type": "explicit_citizen_proposals",
+        "sentiment_context": "Critical of current public hiring but pragmatic: respondents see public-sector vacancies as an avenue for stable employment and request broader access criteria.",
+        "title": "Create stable public-sector entry points (targeted public hiring)",
+        "citizen_demand": "Convene public competitive calls and open hiring routes that allow capable young applicants (not only those with formal credentials) to obtain stable jobs.",
         "supporting_response_ids": [
           41,
           5,
           12
         ],
-        "description": "Increase or time competitive public-sector hiring (oposiciones) and adapt public recruitment criteria to allow demonstration of skills (e.g., portfolios) to open stable entry-level positions for young people.",
-        "source_type": "explicit_citizen_proposals",
-        "citizen_demand": "Convene public competitive calls and open hiring routes that allow capable young applicants (not only those with formal credentials) to obtain stable jobs.",
-        "proposal_id": "P08",
-        "priority_justification": "High relevance for some respondents and explicit proposals present, though support is concentrated in a subset of responses.",
-        "title": "Create stable public-sector entry points (targeted public hiring)",
-        "priority": "medium",
-        "policy_area": "public_policy",
-        "support_count": 3,
-        "sentiment_context": "Critical of current public hiring but pragmatic: respondents see public-sector vacancies as an avenue for stable employment and request broader access criteria."
+        "priority": "medium"
       },
       {
+        "policy_area": "economic",
+        "description": "Offer targeted supports (training, financial incentives, incubators) to encourage young entrepreneurship and measures to incentivize firms to create stable positions for young people.",
+        "support_count": 3,
+        "proposal_id": "P09",
         "addressed_problems": [
           "opportunity_scarcity",
           "lack_of_job_offers",
           "need_to_emigrate"
         ],
+        "priority_justification": "Present in the dataset but less frequent than core issues (experience, internships, temporary contracts); nonetheless relevant as a complementary pathway.",
+        "source_type": "explicit_citizen_proposals",
+        "sentiment_context": "Constructive and hopeful: respondents propose entrepreneurship as an alternative given scarce local opportunities; sentiment intensity medium.",
+        "title": "Support youth entrepreneurship and incentives for job creation",
+        "citizen_demand": "More support for entrepreneurship and incentives for companies to expand hiring so youth can create or find local opportunities.",
         "supporting_response_ids": [
           33,
           37,
           34
         ],
-        "description": "Offer targeted supports (training, financial incentives, incubators) to encourage young entrepreneurship and measures to incentivize firms to create stable positions for young people.",
-        "source_type": "explicit_citizen_proposals",
-        "citizen_demand": "More support for entrepreneurship and incentives for companies to expand hiring so youth can create or find local opportunities.",
-        "proposal_id": "P09",
-        "priority_justification": "Present in the dataset but less frequent than core issues (experience, internships, temporary contracts); nonetheless relevant as a complementary pathway.",
-        "title": "Support youth entrepreneurship and incentives for job creation",
-        "priority": "low",
-        "policy_area": "economic",
-        "support_count": 3,
-        "sentiment_context": "Constructive and hopeful: respondents propose entrepreneurship as an alternative given scarce local opportunities; sentiment intensity medium."
+        "priority": "low"
       }
     ],
     "summary": {
@@ -3667,6 +3667,10 @@
       ],
       "topSupported": [
         {
+          "policy_area": "education_to_work_transition",
+          "description": "Create and subsidize paid internships and structured work placements embedded in vocational and university programmes, with formal agreements between education institutions and employers to ensure relevant experience on graduation.",
+          "support_count": 7,
+          "proposal_id": "P01",
           "addressed_problems": [
             "lack_of_internships",
             "lack_of_experience",
@@ -3674,6 +3678,11 @@
             "transition_from_education_to_work",
             "internship_access_barrier"
           ],
+          "priority_justification": "Frequent, high-relevance mentions across education and employment categories; several respondents explicitly propose paid internships and curricular company collaboration; sentiment mixes hope and frustration.",
+          "source_type": "explicit_citizen_proposals",
+          "sentiment_context": "Predominantly constructive but urgent: respondents express hope for better school–company links and paid internships, with medium sentiment intensity.",
+          "title": "Expand paid, work-integrated internships and stronger education–business collaboration",
+          "citizen_demand": "More and better-regulated paid internships and closer collaboration between education and companies so graduates gain relevant experience.",
           "supporting_response_ids": [
             6,
             11,
@@ -3683,24 +3692,24 @@
             3,
             8
           ],
-          "description": "Create and subsidize paid internships and structured work placements embedded in vocational and university programmes, with formal agreements between education institutions and employers to ensure relevant experience on graduation.",
-          "source_type": "explicit_citizen_proposals",
-          "citizen_demand": "More and better-regulated paid internships and closer collaboration between education and companies so graduates gain relevant experience.",
-          "proposal_id": "P01",
-          "priority_justification": "Frequent, high-relevance mentions across education and employment categories; several respondents explicitly propose paid internships and curricular company collaboration; sentiment mixes hope and frustration.",
-          "title": "Expand paid, work-integrated internships and stronger education–business collaboration",
-          "priority": "high",
-          "policy_area": "education_to_work_transition",
-          "support_count": 7,
-          "sentiment_context": "Predominantly constructive but urgent: respondents express hope for better school–company links and paid internships, with medium sentiment intensity."
+          "priority": "high"
         },
         {
+          "policy_area": "employment",
+          "description": "Establish targeted measures (e.g., hiring subsidies, funded trainee positions, probation rules) to encourage employers to offer positions that do not require prior experience and to provide on-the-job training for young hires.",
+          "support_count": 7,
+          "proposal_id": "P02",
           "addressed_problems": [
             "lack_of_experience",
             "access_to_training",
             "opportunity_scarcity",
             "employer_predisposition_against_youth"
           ],
+          "priority_justification": "Widespread, strongly felt barrier (many high experience_barrier scores); multiple explicit proposals for subsidies/entry jobs across responses.",
+          "source_type": "mixed",
+          "sentiment_context": "Negative to frustrated: many respondents report being blocked by experience requirements; proposals combine criticism with constructive remedies.",
+          "title": "Create entry-level job pathways and incentives for firms to hire inexperienced youth",
+          "citizen_demand": "Help companies hire inexperienced young people through subsidies, trainee schemes and regulated on-the-job training so youth can build experience.",
           "supporting_response_ids": [
             2,
             27,
@@ -3710,18 +3719,13 @@
             48,
             17
           ],
-          "description": "Establish targeted measures (e.g., hiring subsidies, funded trainee positions, probation rules) to encourage employers to offer positions that do not require prior experience and to provide on-the-job training for young hires.",
-          "source_type": "mixed",
-          "citizen_demand": "Help companies hire inexperienced young people through subsidies, trainee schemes and regulated on-the-job training so youth can build experience.",
-          "proposal_id": "P02",
-          "priority_justification": "Widespread, strongly felt barrier (many high experience_barrier scores); multiple explicit proposals for subsidies/entry jobs across responses.",
-          "title": "Create entry-level job pathways and incentives for firms to hire inexperienced youth",
-          "priority": "high",
-          "policy_area": "employment",
-          "support_count": 7,
-          "sentiment_context": "Negative to frustrated: many respondents report being blocked by experience requirements; proposals combine criticism with constructive remedies."
+          "priority": "high"
         },
         {
+          "policy_area": "employment",
+          "description": "Introduce clearer regulations for internships and practice agreements (including minimum pay and limits on unpaid work) and put measures to reduce excessive use of temporary contracts and unpredictable extra hours.",
+          "support_count": 6,
+          "proposal_id": "P03",
           "addressed_problems": [
             "temporary_contracts",
             "working_conditions",
@@ -3729,6 +3733,11 @@
             "internship_access_barrier",
             "precarious_internships"
           ],
+          "priority_justification": "Repeated, emotionally charged reports about precarious internships and temporary contracts; several explicit calls for regulatory action.",
+          "source_type": "explicit_citizen_proposals",
+          "sentiment_context": "Negative, medium–high intensity: respondents express frustration with unpaid/temporary offers and exploitation of inexperienced workers.",
+          "title": "Regulate internships and limit precarious temporary-contract practices",
+          "citizen_demand": "Better regulation of internships (remuneration and access) and limits on temporary contracts and abusive working hours.",
           "supporting_response_ids": [
             8,
             35,
@@ -3737,24 +3746,24 @@
             16,
             17
           ],
-          "description": "Introduce clearer regulations for internships and practice agreements (including minimum pay and limits on unpaid work) and put measures to reduce excessive use of temporary contracts and unpredictable extra hours.",
-          "source_type": "explicit_citizen_proposals",
-          "citizen_demand": "Better regulation of internships (remuneration and access) and limits on temporary contracts and abusive working hours.",
-          "proposal_id": "P03",
-          "priority_justification": "Repeated, emotionally charged reports about precarious internships and temporary contracts; several explicit calls for regulatory action.",
-          "title": "Regulate internships and limit precarious temporary-contract practices",
-          "priority": "high",
-          "policy_area": "employment",
-          "support_count": 6,
-          "sentiment_context": "Negative, medium–high intensity: respondents express frustration with unpaid/temporary offers and exploitation of inexperienced workers."
+          "priority": "high"
         },
         {
+          "policy_area": "institutional",
+          "description": "Promote transparent hiring processes (reduce reliance on informal contacts), create youth-targeted employment pools or specialized job boards, accept portfolios or demonstrable skills in public hiring, and consider temporary prioritization mechanisms for younger applicants.",
+          "support_count": 6,
+          "proposal_id": "P06",
           "addressed_problems": [
             "hiring_by_contacts",
             "lack_of_job_offers",
             "education_employment_mismatch",
             "opportunity_scarcity"
           ],
+          "priority_justification": "Recurring complaints about contact-based hiring and non-response, combined with several explicit proposals (job pools, quotas, portfolio recognition) indicate high analytical relevance.",
+          "source_type": "mixed",
+          "sentiment_context": "Critical and solution-oriented: respondents express frustration at non-transparent hiring and propose concrete institutional fixes (job pools, portfolio acceptance); sentiment intensity medium–high.",
+          "title": "Improve recruitment transparency and broaden recognition of alternative credentials",
+          "citizen_demand": "Fairer, more transparent hiring: reduce contact-based selection, create youth job pools/specialized boards, and allow portfolios as proof of competence.",
           "supporting_response_ids": [
             5,
             7,
@@ -3763,23 +3772,23 @@
             26,
             35
           ],
-          "description": "Promote transparent hiring processes (reduce reliance on informal contacts), create youth-targeted employment pools or specialized job boards, accept portfolios or demonstrable skills in public hiring, and consider temporary prioritization mechanisms for younger applicants.",
-          "source_type": "mixed",
-          "citizen_demand": "Fairer, more transparent hiring: reduce contact-based selection, create youth job pools/specialized boards, and allow portfolios as proof of competence.",
-          "proposal_id": "P06",
-          "priority_justification": "Recurring complaints about contact-based hiring and non-response, combined with several explicit proposals (job pools, quotas, portfolio recognition) indicate high analytical relevance.",
-          "title": "Improve recruitment transparency and broaden recognition of alternative credentials",
-          "priority": "high",
-          "policy_area": "institutional",
-          "support_count": 6,
-          "sentiment_context": "Critical and solution-oriented: respondents express frustration at non-transparent hiring and propose concrete institutional fixes (job pools, portfolio acceptance); sentiment intensity medium–high."
+          "priority": "high"
         },
         {
+          "policy_area": "career_guidance",
+          "description": "Provide formal career-orientation services inside educational institutions (vocational and higher education) that inform students about labour-market demands, opportunities, and pathways to gain experience.",
+          "support_count": 5,
+          "proposal_id": "P04",
           "addressed_problems": [
             "lack_of_career_guidance",
             "transition_from_education_to_work",
             "education_job_mismatch"
           ],
+          "priority_justification": "Common and actionable demand but less emotionally intense than experience/contract issues; recurring across education levels.",
+          "source_type": "explicit_citizen_proposals",
+          "sentiment_context": "Hopeful and corrective: respondents request guidance to reduce uncertainty and mismatches; sentiment intensity medium.",
+          "title": "Strengthen career guidance and student orientation within education institutions",
+          "citizen_demand": "More and earlier orientation for students from their own institutions to understand labour-market options and how to access them.",
           "supporting_response_ids": [
             29,
             6,
@@ -3787,16 +3796,7 @@
             22,
             30
           ],
-          "description": "Provide formal career-orientation services inside educational institutions (vocational and higher education) that inform students about labour-market demands, opportunities, and pathways to gain experience.",
-          "source_type": "explicit_citizen_proposals",
-          "citizen_demand": "More and earlier orientation for students from their own institutions to understand labour-market options and how to access them.",
-          "proposal_id": "P04",
-          "priority_justification": "Common and actionable demand but less emotionally intense than experience/contract issues; recurring across education levels.",
-          "title": "Strengthen career guidance and student orientation within education institutions",
-          "priority": "medium",
-          "policy_area": "career_guidance",
-          "support_count": 5,
-          "sentiment_context": "Hopeful and corrective: respondents request guidance to reduce uncertainty and mismatches; sentiment intensity medium."
+          "priority": "medium"
         }
       ],
       "tiers": [
@@ -3804,6 +3804,10 @@
           "priority": "high",
           "proposals": [
             {
+              "policy_area": "education_to_work_transition",
+              "description": "Create and subsidize paid internships and structured work placements embedded in vocational and university programmes, with formal agreements between education institutions and employers to ensure relevant experience on graduation.",
+              "support_count": 7,
+              "proposal_id": "P01",
               "addressed_problems": [
                 "lack_of_internships",
                 "lack_of_experience",
@@ -3811,6 +3815,11 @@
                 "transition_from_education_to_work",
                 "internship_access_barrier"
               ],
+              "priority_justification": "Frequent, high-relevance mentions across education and employment categories; several respondents explicitly propose paid internships and curricular company collaboration; sentiment mixes hope and frustration.",
+              "source_type": "explicit_citizen_proposals",
+              "sentiment_context": "Predominantly constructive but urgent: respondents express hope for better school–company links and paid internships, with medium sentiment intensity.",
+              "title": "Expand paid, work-integrated internships and stronger education–business collaboration",
+              "citizen_demand": "More and better-regulated paid internships and closer collaboration between education and companies so graduates gain relevant experience.",
               "supporting_response_ids": [
                 6,
                 11,
@@ -3820,24 +3829,24 @@
                 3,
                 8
               ],
-              "description": "Create and subsidize paid internships and structured work placements embedded in vocational and university programmes, with formal agreements between education institutions and employers to ensure relevant experience on graduation.",
-              "source_type": "explicit_citizen_proposals",
-              "citizen_demand": "More and better-regulated paid internships and closer collaboration between education and companies so graduates gain relevant experience.",
-              "proposal_id": "P01",
-              "priority_justification": "Frequent, high-relevance mentions across education and employment categories; several respondents explicitly propose paid internships and curricular company collaboration; sentiment mixes hope and frustration.",
-              "title": "Expand paid, work-integrated internships and stronger education–business collaboration",
-              "priority": "high",
-              "policy_area": "education_to_work_transition",
-              "support_count": 7,
-              "sentiment_context": "Predominantly constructive but urgent: respondents express hope for better school–company links and paid internships, with medium sentiment intensity."
+              "priority": "high"
             },
             {
+              "policy_area": "employment",
+              "description": "Establish targeted measures (e.g., hiring subsidies, funded trainee positions, probation rules) to encourage employers to offer positions that do not require prior experience and to provide on-the-job training for young hires.",
+              "support_count": 7,
+              "proposal_id": "P02",
               "addressed_problems": [
                 "lack_of_experience",
                 "access_to_training",
                 "opportunity_scarcity",
                 "employer_predisposition_against_youth"
               ],
+              "priority_justification": "Widespread, strongly felt barrier (many high experience_barrier scores); multiple explicit proposals for subsidies/entry jobs across responses.",
+              "source_type": "mixed",
+              "sentiment_context": "Negative to frustrated: many respondents report being blocked by experience requirements; proposals combine criticism with constructive remedies.",
+              "title": "Create entry-level job pathways and incentives for firms to hire inexperienced youth",
+              "citizen_demand": "Help companies hire inexperienced young people through subsidies, trainee schemes and regulated on-the-job training so youth can build experience.",
               "supporting_response_ids": [
                 2,
                 27,
@@ -3847,18 +3856,13 @@
                 48,
                 17
               ],
-              "description": "Establish targeted measures (e.g., hiring subsidies, funded trainee positions, probation rules) to encourage employers to offer positions that do not require prior experience and to provide on-the-job training for young hires.",
-              "source_type": "mixed",
-              "citizen_demand": "Help companies hire inexperienced young people through subsidies, trainee schemes and regulated on-the-job training so youth can build experience.",
-              "proposal_id": "P02",
-              "priority_justification": "Widespread, strongly felt barrier (many high experience_barrier scores); multiple explicit proposals for subsidies/entry jobs across responses.",
-              "title": "Create entry-level job pathways and incentives for firms to hire inexperienced youth",
-              "priority": "high",
-              "policy_area": "employment",
-              "support_count": 7,
-              "sentiment_context": "Negative to frustrated: many respondents report being blocked by experience requirements; proposals combine criticism with constructive remedies."
+              "priority": "high"
             },
             {
+              "policy_area": "employment",
+              "description": "Introduce clearer regulations for internships and practice agreements (including minimum pay and limits on unpaid work) and put measures to reduce excessive use of temporary contracts and unpredictable extra hours.",
+              "support_count": 6,
+              "proposal_id": "P03",
               "addressed_problems": [
                 "temporary_contracts",
                 "working_conditions",
@@ -3866,6 +3870,11 @@
                 "internship_access_barrier",
                 "precarious_internships"
               ],
+              "priority_justification": "Repeated, emotionally charged reports about precarious internships and temporary contracts; several explicit calls for regulatory action.",
+              "source_type": "explicit_citizen_proposals",
+              "sentiment_context": "Negative, medium–high intensity: respondents express frustration with unpaid/temporary offers and exploitation of inexperienced workers.",
+              "title": "Regulate internships and limit precarious temporary-contract practices",
+              "citizen_demand": "Better regulation of internships (remuneration and access) and limits on temporary contracts and abusive working hours.",
               "supporting_response_ids": [
                 8,
                 35,
@@ -3874,24 +3883,24 @@
                 16,
                 17
               ],
-              "description": "Introduce clearer regulations for internships and practice agreements (including minimum pay and limits on unpaid work) and put measures to reduce excessive use of temporary contracts and unpredictable extra hours.",
-              "source_type": "explicit_citizen_proposals",
-              "citizen_demand": "Better regulation of internships (remuneration and access) and limits on temporary contracts and abusive working hours.",
-              "proposal_id": "P03",
-              "priority_justification": "Repeated, emotionally charged reports about precarious internships and temporary contracts; several explicit calls for regulatory action.",
-              "title": "Regulate internships and limit precarious temporary-contract practices",
-              "priority": "high",
-              "policy_area": "employment",
-              "support_count": 6,
-              "sentiment_context": "Negative, medium–high intensity: respondents express frustration with unpaid/temporary offers and exploitation of inexperienced workers."
+              "priority": "high"
             },
             {
+              "policy_area": "institutional",
+              "description": "Promote transparent hiring processes (reduce reliance on informal contacts), create youth-targeted employment pools or specialized job boards, accept portfolios or demonstrable skills in public hiring, and consider temporary prioritization mechanisms for younger applicants.",
+              "support_count": 6,
+              "proposal_id": "P06",
               "addressed_problems": [
                 "hiring_by_contacts",
                 "lack_of_job_offers",
                 "education_employment_mismatch",
                 "opportunity_scarcity"
               ],
+              "priority_justification": "Recurring complaints about contact-based hiring and non-response, combined with several explicit proposals (job pools, quotas, portfolio recognition) indicate high analytical relevance.",
+              "source_type": "mixed",
+              "sentiment_context": "Critical and solution-oriented: respondents express frustration at non-transparent hiring and propose concrete institutional fixes (job pools, portfolio acceptance); sentiment intensity medium–high.",
+              "title": "Improve recruitment transparency and broaden recognition of alternative credentials",
+              "citizen_demand": "Fairer, more transparent hiring: reduce contact-based selection, create youth job pools/specialized boards, and allow portfolios as proof of competence.",
               "supporting_response_ids": [
                 5,
                 7,
@@ -3900,16 +3909,7 @@
                 26,
                 35
               ],
-              "description": "Promote transparent hiring processes (reduce reliance on informal contacts), create youth-targeted employment pools or specialized job boards, accept portfolios or demonstrable skills in public hiring, and consider temporary prioritization mechanisms for younger applicants.",
-              "source_type": "mixed",
-              "citizen_demand": "Fairer, more transparent hiring: reduce contact-based selection, create youth job pools/specialized boards, and allow portfolios as proof of competence.",
-              "proposal_id": "P06",
-              "priority_justification": "Recurring complaints about contact-based hiring and non-response, combined with several explicit proposals (job pools, quotas, portfolio recognition) indicate high analytical relevance.",
-              "title": "Improve recruitment transparency and broaden recognition of alternative credentials",
-              "priority": "high",
-              "policy_area": "institutional",
-              "support_count": 6,
-              "sentiment_context": "Critical and solution-oriented: respondents express frustration at non-transparent hiring and propose concrete institutional fixes (job pools, portfolio acceptance); sentiment intensity medium–high."
+              "priority": "high"
             }
           ],
           "count": 4
@@ -3918,11 +3918,20 @@
           "priority": "medium",
           "proposals": [
             {
+              "policy_area": "career_guidance",
+              "description": "Provide formal career-orientation services inside educational institutions (vocational and higher education) that inform students about labour-market demands, opportunities, and pathways to gain experience.",
+              "support_count": 5,
+              "proposal_id": "P04",
               "addressed_problems": [
                 "lack_of_career_guidance",
                 "transition_from_education_to_work",
                 "education_job_mismatch"
               ],
+              "priority_justification": "Common and actionable demand but less emotionally intense than experience/contract issues; recurring across education levels.",
+              "source_type": "explicit_citizen_proposals",
+              "sentiment_context": "Hopeful and corrective: respondents request guidance to reduce uncertainty and mismatches; sentiment intensity medium.",
+              "title": "Strengthen career guidance and student orientation within education institutions",
+              "citizen_demand": "More and earlier orientation for students from their own institutions to understand labour-market options and how to access them.",
               "supporting_response_ids": [
                 29,
                 6,
@@ -3930,24 +3939,24 @@
                 22,
                 30
               ],
-              "description": "Provide formal career-orientation services inside educational institutions (vocational and higher education) that inform students about labour-market demands, opportunities, and pathways to gain experience.",
-              "source_type": "explicit_citizen_proposals",
-              "citizen_demand": "More and earlier orientation for students from their own institutions to understand labour-market options and how to access them.",
-              "proposal_id": "P04",
-              "priority_justification": "Common and actionable demand but less emotionally intense than experience/contract issues; recurring across education levels.",
-              "title": "Strengthen career guidance and student orientation within education institutions",
-              "priority": "medium",
-              "policy_area": "career_guidance",
-              "support_count": 5,
-              "sentiment_context": "Hopeful and corrective: respondents request guidance to reduce uncertainty and mismatches; sentiment intensity medium."
+              "priority": "medium"
             },
             {
+              "policy_area": "territorial",
+              "description": "Support measures to decentralize industry and create regional job opportunities (e.g., incentives for firms to locate outside big cities) and improve transport/organizational arrangements (including vocational calendar alignment) to reduce commuting barriers to sector jobs.",
+              "support_count": 5,
+              "proposal_id": "P05",
               "addressed_problems": [
                 "lack_of_regional_opportunities",
                 "public_transport_barrier",
                 "opportunity_scarcity",
                 "need_to_emigrate"
               ],
+              "priority_justification": "Frequent in certain sectors/regions with high relevance where respondents report concrete transport and locality problems; sentiment medium.",
+              "source_type": "mixed",
+              "sentiment_context": "Negative/concerned: respondents describe geographic isolation of jobs and transport hardship; propose decentralization and calendar adjustments with medium intensity.",
+              "title": "Address regional barriers: decentralize opportunities and improve mobility for sector jobs",
+              "citizen_demand": "More regional job creation, transport solutions and vocational-timing adjustments so local graduates can access real hiring opportunities without relocating.",
               "supporting_response_ids": [
                 23,
                 17,
@@ -3955,23 +3964,23 @@
                 51,
                 38
               ],
-              "description": "Support measures to decentralize industry and create regional job opportunities (e.g., incentives for firms to locate outside big cities) and improve transport/organizational arrangements (including vocational calendar alignment) to reduce commuting barriers to sector jobs.",
-              "source_type": "mixed",
-              "citizen_demand": "More regional job creation, transport solutions and vocational-timing adjustments so local graduates can access real hiring opportunities without relocating.",
-              "proposal_id": "P05",
-              "priority_justification": "Frequent in certain sectors/regions with high relevance where respondents report concrete transport and locality problems; sentiment medium.",
-              "title": "Address regional barriers: decentralize opportunities and improve mobility for sector jobs",
-              "priority": "medium",
-              "policy_area": "territorial",
-              "support_count": 5,
-              "sentiment_context": "Negative/concerned: respondents describe geographic isolation of jobs and transport hardship; propose decentralization and calendar adjustments with medium intensity."
+              "priority": "medium"
             },
             {
+              "policy_area": "economic",
+              "description": "Consider measures to improve pay conditions for entry-level jobs and ensure internships/practices provide at least minimum remuneration—actions may include wage regulation discussions, targeted subsidies, or sectoral agreements to align pay with qualification and living costs.",
+              "support_count": 5,
+              "proposal_id": "P07",
               "addressed_problems": [
                 "low_salaries",
                 "job_instability",
                 "temporary_contracts"
               ],
+              "priority_justification": "Repeated concern about pay across respondents, but policy specifics vary; emotional intensity is significant though fewer explicit, detailed proposals than for experience barriers.",
+              "source_type": "mixed",
+              "sentiment_context": "Negative and concerned: respondents often link low pay to inability to be independent and to exploitation of inexperienced hires; sentiment intensity medium–high.",
+              "title": "Actions to address low pay and ensure adequate remuneration for youth",
+              "citizen_demand": "Regulate or support wages so jobs and internships pay adequately and enable financial independence.",
               "supporting_response_ids": [
                 1,
                 28,
@@ -3979,38 +3988,29 @@
                 17,
                 35
               ],
-              "description": "Consider measures to improve pay conditions for entry-level jobs and ensure internships/practices provide at least minimum remuneration—actions may include wage regulation discussions, targeted subsidies, or sectoral agreements to align pay with qualification and living costs.",
-              "source_type": "mixed",
-              "citizen_demand": "Regulate or support wages so jobs and internships pay adequately and enable financial independence.",
-              "proposal_id": "P07",
-              "priority_justification": "Repeated concern about pay across respondents, but policy specifics vary; emotional intensity is significant though fewer explicit, detailed proposals than for experience barriers.",
-              "title": "Actions to address low pay and ensure adequate remuneration for youth",
-              "priority": "medium",
-              "policy_area": "economic",
-              "support_count": 5,
-              "sentiment_context": "Negative and concerned: respondents often link low pay to inability to be independent and to exploitation of inexperienced hires; sentiment intensity medium–high."
+              "priority": "medium"
             },
             {
+              "policy_area": "public_policy",
+              "description": "Increase or time competitive public-sector hiring (oposiciones) and adapt public recruitment criteria to allow demonstration of skills (e.g., portfolios) to open stable entry-level positions for young people.",
+              "support_count": 3,
+              "proposal_id": "P08",
               "addressed_problems": [
                 "lack_of_job_offers",
                 "education_job_mismatch",
                 "public_support"
               ],
+              "priority_justification": "High relevance for some respondents and explicit proposals present, though support is concentrated in a subset of responses.",
+              "source_type": "explicit_citizen_proposals",
+              "sentiment_context": "Critical of current public hiring but pragmatic: respondents see public-sector vacancies as an avenue for stable employment and request broader access criteria.",
+              "title": "Create stable public-sector entry points (targeted public hiring)",
+              "citizen_demand": "Convene public competitive calls and open hiring routes that allow capable young applicants (not only those with formal credentials) to obtain stable jobs.",
               "supporting_response_ids": [
                 41,
                 5,
                 12
               ],
-              "description": "Increase or time competitive public-sector hiring (oposiciones) and adapt public recruitment criteria to allow demonstration of skills (e.g., portfolios) to open stable entry-level positions for young people.",
-              "source_type": "explicit_citizen_proposals",
-              "citizen_demand": "Convene public competitive calls and open hiring routes that allow capable young applicants (not only those with formal credentials) to obtain stable jobs.",
-              "proposal_id": "P08",
-              "priority_justification": "High relevance for some respondents and explicit proposals present, though support is concentrated in a subset of responses.",
-              "title": "Create stable public-sector entry points (targeted public hiring)",
-              "priority": "medium",
-              "policy_area": "public_policy",
-              "support_count": 3,
-              "sentiment_context": "Critical of current public hiring but pragmatic: respondents see public-sector vacancies as an avenue for stable employment and request broader access criteria."
+              "priority": "medium"
             }
           ],
           "count": 4
@@ -4019,26 +4019,26 @@
           "priority": "low",
           "proposals": [
             {
+              "policy_area": "economic",
+              "description": "Offer targeted supports (training, financial incentives, incubators) to encourage young entrepreneurship and measures to incentivize firms to create stable positions for young people.",
+              "support_count": 3,
+              "proposal_id": "P09",
               "addressed_problems": [
                 "opportunity_scarcity",
                 "lack_of_job_offers",
                 "need_to_emigrate"
               ],
+              "priority_justification": "Present in the dataset but less frequent than core issues (experience, internships, temporary contracts); nonetheless relevant as a complementary pathway.",
+              "source_type": "explicit_citizen_proposals",
+              "sentiment_context": "Constructive and hopeful: respondents propose entrepreneurship as an alternative given scarce local opportunities; sentiment intensity medium.",
+              "title": "Support youth entrepreneurship and incentives for job creation",
+              "citizen_demand": "More support for entrepreneurship and incentives for companies to expand hiring so youth can create or find local opportunities.",
               "supporting_response_ids": [
                 33,
                 37,
                 34
               ],
-              "description": "Offer targeted supports (training, financial incentives, incubators) to encourage young entrepreneurship and measures to incentivize firms to create stable positions for young people.",
-              "source_type": "explicit_citizen_proposals",
-              "citizen_demand": "More support for entrepreneurship and incentives for companies to expand hiring so youth can create or find local opportunities.",
-              "proposal_id": "P09",
-              "priority_justification": "Present in the dataset but less frequent than core issues (experience, internships, temporary contracts); nonetheless relevant as a complementary pathway.",
-              "title": "Support youth entrepreneurship and incentives for job creation",
-              "priority": "low",
-              "policy_area": "economic",
-              "support_count": 3,
-              "sentiment_context": "Constructive and hopeful: respondents propose entrepreneurship as an alternative given scarce local opportunities; sentiment intensity medium."
+              "priority": "low"
             }
           ],
           "count": 1
