@@ -4,6 +4,7 @@ import {
   BarChart,
   CartesianGrid,
   Pie,
+  type PieLabelRenderProps,
   PieChart,
   ResponsiveContainer,
   Tooltip,
@@ -185,6 +186,34 @@ function formatLabel(value: string) {
 
 function formatPriority(value: string) {
   return PRIORITY_LABELS[value] ?? formatLabel(value);
+}
+
+function formatPercent(value: number) {
+  return `${Math.round(value * 100)}%`;
+}
+
+function renderDifficultyLabel({ name, percent, value, x, y }: PieLabelRenderProps) {
+  if (!value) {
+    return null;
+  }
+
+  return (
+    <text
+      className="pie-label"
+      dominantBaseline="central"
+      fill="#334155"
+      textAnchor="middle"
+      x={x}
+      y={y}
+    >
+      <tspan x={x} dy="-0.35em">
+        {name}
+      </tspan>
+      <tspan x={x} dy="1.2em">
+        {value} ({formatPercent(percent ?? 0)})
+      </tspan>
+    </text>
+  );
 }
 
 function phaseLabelFromSource(source: string | null) {
@@ -737,14 +766,35 @@ function App() {
 
             <ChartCard
               title="Dificultad del primer empleo"
-              description="Percepcion subjetiva al finalizar los estudios principales."
+              description="Cada sector cuenta cuantas respuestas aparecen en cada nivel de dificultad."
             >
-              <ResponsiveContainer width="100%" height={330}>
-                <PieChart>
-                  <Pie data={difficultyChartData} dataKey="value" fill="#2563eb" nameKey="name" outerRadius={105} label />
-                  <Tooltip formatter={(value) => [value, "Total"]} />
-                </PieChart>
-              </ResponsiveContainer>
+              <div className="difficulty-chart">
+                <ResponsiveContainer width="100%" height={280}>
+                  <PieChart>
+                    <Pie
+                      data={difficultyChartData}
+                      dataKey="value"
+                      fill="#2563eb"
+                      label={renderDifficultyLabel}
+                      labelLine={false}
+                      nameKey="name"
+                      outerRadius={92}
+                    />
+                    <Tooltip
+                      formatter={(value, name) => [`${value} apariciones`, `Dificultad: ${name}`]}
+                    />
+                  </PieChart>
+                </ResponsiveContainer>
+                <div className="difficulty-summary" aria-label="Apariciones por dificultad">
+                  {difficultyChartData.map((item) => (
+                    <div key={item.name}>
+                      <span className="difficulty-dot" style={{ background: item.fill }} />
+                      <span>{item.name}</span>
+                      <strong>{item.value} apariciones</strong>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </ChartCard>
 
             <ChartCard
