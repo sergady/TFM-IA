@@ -521,6 +521,7 @@ select {
 }
 
 .insights-grid {
+  align-items: start;
   grid-template-columns: 0.9fr 1.1fr;
   margin-top: 20px;
 }
@@ -547,9 +548,26 @@ select {
   margin-left: 4px;
 }
 
+.responses-card {
+  display: flex;
+  max-height: 320px;
+  flex-direction: column;
+}
+
+.responses-card .section-heading {
+  flex: 0 0 auto;
+}
+
 .quote-list {
   display: grid;
   gap: 12px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.responses-card .quote-list {
+  flex: 1 1 auto;
+  min-height: 0;
 }
 
 blockquote {

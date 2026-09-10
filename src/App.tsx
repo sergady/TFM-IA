@@ -324,9 +324,8 @@ function quoteExamples(rows: SurveyRow[]) {
     rows
       .map((row) => clean(row[column]))
       .filter(Boolean)
-      .slice(0, 3)
       .map((text) => ({ column, text })),
-  ).slice(0, 8);
+  ).sort((a, b) => b.text.length - a.text.length);
 }
 
 function normalizeWord(word: string) {
@@ -834,10 +833,10 @@ function App() {
               </div>
             </div>
 
-            <div className="card">
+            <div className="card responses-card">
               <div className="section-heading">
                 <h2>Respuestas abiertas</h2>
-                <p>Ejemplos cualitativos del segmento seleccionado.</p>
+                <p>Respuestas del segmento seleccionado, de mayor a menor longitud.</p>
               </div>
               <div className="quote-list">
                 {quotes.length ? (
