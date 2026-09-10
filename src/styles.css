@@ -304,22 +304,86 @@ select {
   gap: 18px;
 }
 
-.area-list {
+.priority-topic-list {
   display: grid;
-  gap: 10px;
+  gap: 12px;
 }
 
-.area-list div {
-  display: flex;
-  justify-content: space-between;
-  gap: 14px;
+.priority-topic-group {
   padding: 12px 14px;
   border-radius: 14px;
   background: #f8fafc;
   color: #334155;
 }
 
-.area-list strong {
+.priority-topic-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+.priority-topic-header strong {
+  color: #15803d;
+}
+
+.priority-topic-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.priority-topic-chips span {
+  padding: 6px 9px;
+  border-radius: 999px;
+  background: #e0f2fe;
+  color: #075985;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.priority-topic-chips strong {
+  margin-left: 4px;
+}
+
+.priority-tooltip {
+  min-width: 210px;
+  padding: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 14px;
+  background: #ffffff;
+  color: #0f172a;
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.14);
+}
+
+.priority-tooltip > strong,
+.priority-tooltip > span {
+  display: block;
+}
+
+.priority-tooltip > span {
+  margin-top: 4px;
+  color: #64748b;
+  font-size: 0.82rem;
+}
+
+.priority-tooltip-topics {
+  display: grid;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.priority-tooltip-topics div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: #334155;
+  font-size: 0.82rem;
+}
+
+.priority-tooltip-topics strong {
   color: #15803d;
 }
 

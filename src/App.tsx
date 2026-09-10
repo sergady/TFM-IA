@@ -8,6 +8,7 @@ import {
   PieChart,
   ResponsiveContainer,
   Tooltip,
+  type TooltipContentProps,
   XAxis,
   YAxis,
 } from "recharts";
@@ -26,6 +27,10 @@ type SurveyRow = Record<string, string>;
 type DistributionItem = {
   name: string;
   value: number;
+};
+
+type PriorityTopicSummary = DistributionItem & {
+  topics: DistributionItem[];
 };
 
 type BarrierItem = {
@@ -220,6 +225,29 @@ function renderDifficultyLabel({ name, percent, value, x, y }: PieLabelRenderPro
   );
 }
 
+function PriorityTopicsTooltip({ active, payload }: TooltipContentProps) {
+  const summary = payload[0]?.payload as PriorityTopicSummary | undefined;
+
+  if (!active || !summary) {
+    return null;
+  }
+
+  return (
+    <div className="priority-tooltip">
+      <strong>{formatPriority(summary.name)}</strong>
+      <span>{summary.value} propuestas</span>
+      <div className="priority-tooltip-topics">
+        {summary.topics.map((topic) => (
+          <div key={topic.name}>
+            <span>{formatLabel(topic.name)}</span>
+            <strong>{topic.value}</strong>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function phaseLabelFromSource(source: string | null) {
   const fileName = clean(source).split("/").pop() ?? "";
   const withoutExtension = fileName.replace(/\.[^.]+$/, "");
@@ -236,6 +264,17 @@ function countBy<T>(items: T[], getKey: (item: T) => string): DistributionItem[]
   return Object.entries(counts)
     .map(([name, value]) => ({ name, value }))
     .sort((a, b) => b.value - a.value || a.name.localeCompare(b.name));
+}
+
+function priorityTopicSummary(rows: ProposalRow[]): PriorityTopicSummary[] {
+  return PRIORITY_FILTERS.map((priority) => {
+    const priorityRows = rows.filter((proposal) => proposal.priority === priority);
+    return {
+      name: priority,
+      value: priorityRows.length,
+      topics: countBy(priorityRows, (proposal) => proposal.policy_area),
+    };
+  }).filter((item) => item.value > 0);
 }
 
 function normalizeProblems(value: unknown) {
@@ -432,7 +471,7 @@ function ProposalDashboard({ proposals }: { proposals: ProposalsData }) {
   const highPriorityCount = proposals.rows.filter((proposal) => proposal.priority === "high").length;
   const topProposal = proposals.summary.topSupported[0];
   const primaryArea = proposals.summary.byPolicyArea[0];
-  const priorityChartData = withChartColors(proposals.summary.byPriority);
+  const priorityChartData = withChartColors(priorityTopicSummary(proposals.rows));
   const selectedTier = proposals.summary.tiers.find((tier) => tier.priority === selectedPriority);
 
   return (
@@ -500,21 +539,30 @@ function ProposalDashboard({ proposals }: { proposals: ProposalsData }) {
         </ChartCard>
 
         <ChartCard
-          title="Prioridad y area politica"
-          description="Distribucion de propuestas segun urgencia y ambito de intervencion."
+          title="Temas por prioridad"
+          description="El grafico reparte propuestas por prioridad; el detalle muestra los temas dentro de cada nivel."
         >
           <div className="proposal-charts">
             <ResponsiveContainer width="100%" height={210}>
               <PieChart>
                 <Pie data={priorityChartData} dataKey="value" fill="#2563eb" nameKey="name" outerRadius={74} label />
-                <Tooltip formatter={(value, name) => [`${value} propuestas`, formatPriority(String(name))]} />
+                <Tooltip content={PriorityTopicsTooltip} />
               </PieChart>
             </ResponsiveContainer>
-            <div className="area-list">
-              {proposals.summary.byPolicyArea.map((area) => (
-                <div key={area.name}>
-                  <span>{formatLabel(area.name)}</span>
-                  <strong>{area.value}</strong>
+            <div className="priority-topic-list">
+              {priorityChartData.map((priority) => (
+                <div className="priority-topic-group" key={priority.name}>
+                  <div className="priority-topic-header">
+                    <span>{formatPriority(priority.name)}</span>
+                    <strong>{priority.value} propuestas</strong>
+                  </div>
+                  <div className="priority-topic-chips">
+                    {priority.topics.map((topic) => (
+                      <span key={topic.name}>
+                        {formatLabel(topic.name)} <strong>{topic.value}</strong>
+                      </span>
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>
