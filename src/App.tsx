@@ -109,6 +109,10 @@ const PRIORITY_LABELS: Record<string, string> = {
   unclassified: "Sin clasificar",
 };
 
+const PRIORITY_FILTERS = ["high", "medium", "low"] as const;
+
+type PriorityFilter = (typeof PRIORITY_FILTERS)[number];
+
 const TEXT_COLUMNS = [
   "main_job_search_barriers",
   "advice_to_young_people",
@@ -419,6 +423,8 @@ function ChartCard({
 }
 
 function ProposalDashboard({ proposals }: { proposals: ProposalsData }) {
+  const [selectedPriority, setSelectedPriority] = useState<PriorityFilter>("high");
+
   if (!proposals.rows.length) {
     return null;
   }
@@ -427,6 +433,7 @@ function ProposalDashboard({ proposals }: { proposals: ProposalsData }) {
   const topProposal = proposals.summary.topSupported[0];
   const primaryArea = proposals.summary.byPolicyArea[0];
   const priorityChartData = withChartColors(proposals.summary.byPriority);
+  const selectedTier = proposals.summary.tiers.find((tier) => tier.priority === selectedPriority);
 
   return (
     <section className="proposal-section">
@@ -515,18 +522,40 @@ function ProposalDashboard({ proposals }: { proposals: ProposalsData }) {
         </ChartCard>
       </div>
 
-      <div className="tier-list">
-        {proposals.summary.tiers.map((tier) => (
-          <section className={`tier-card priority-${tier.priority}`} key={tier.priority}>
-            <div className="tier-header">
-              <div>
-                <span>Prioridad</span>
-                <h3>{formatPriority(tier.priority)}</h3>
-              </div>
-              <strong>{tier.count}</strong>
+      <div className="priority-selector" role="tablist" aria-label="Prioridad de propuestas">
+        {PRIORITY_FILTERS.map((priority) => {
+          const count = proposals.summary.tiers.find((tier) => tier.priority === priority)?.count ?? 0;
+          const isSelected = selectedPriority === priority;
+
+          return (
+            <button
+              aria-selected={isSelected}
+              className={isSelected ? "active" : ""}
+              key={priority}
+              onClick={() => setSelectedPriority(priority)}
+              role="tab"
+              type="button"
+            >
+              <span>Prioridad</span>
+              {formatPriority(priority)}
+              <strong>{count}</strong>
+            </button>
+          );
+        })}
+      </div>
+
+      <div className="tier-list single-tier">
+        <section className={`tier-card priority-${selectedPriority}`}>
+          <div className="tier-header">
+            <div>
+              <span>Prioridad</span>
+              <h3>{formatPriority(selectedPriority)}</h3>
             </div>
+            <strong>{selectedTier?.count ?? 0}</strong>
+          </div>
+          {selectedTier ? (
             <div className="proposal-cards">
-              {tier.proposals.map((proposal) => (
+              {selectedTier.proposals.map((proposal) => (
                 <article className="proposal-card" key={proposal.proposal_id}>
                   <div className="proposal-card-header">
                     <span>{proposal.proposal_id}</span>
@@ -554,8 +583,10 @@ function ProposalDashboard({ proposals }: { proposals: ProposalsData }) {
                 </article>
               ))}
             </div>
-          </section>
-        ))}
+          ) : (
+            <p className="muted">No hay propuestas para esta prioridad.</p>
+          )}
+        </section>
       </div>
     </section>
   );

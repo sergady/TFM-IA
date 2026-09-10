@@ -350,11 +350,76 @@ select {
   line-height: 1.55;
 }
 
+.priority-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.priority-selector button {
+  display: flex;
+  min-width: 160px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 18px;
+  background: #ffffff;
+  color: #0f172a;
+  cursor: pointer;
+  font-weight: 900;
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.priority-selector button:hover {
+  border-color: #60a5fa;
+  transform: translateY(-1px);
+}
+
+.priority-selector button.active {
+  border-color: #2563eb;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.priority-selector button > span {
+  color: inherit;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  opacity: 0.76;
+  text-transform: uppercase;
+}
+
+.priority-selector button > strong {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border-radius: 10px;
+  background: #e0f2fe;
+  color: #075985;
+}
+
+.priority-selector button.active > strong {
+  background: #ffffff;
+  color: #1d4ed8;
+}
+
 .tier-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
   margin-top: 20px;
+}
+
+.tier-list.single-tier {
+  grid-template-columns: 1fr;
 }
 
 .tier-card {
@@ -415,6 +480,11 @@ select {
 .proposal-cards {
   display: grid;
   gap: 14px;
+}
+
+.single-tier .proposal-cards {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
 }
 
 .proposal-card {
@@ -603,6 +673,7 @@ code {
   .proposal-kpis,
   .proposal-grid,
   .tier-list,
+  .single-tier .proposal-cards,
   .dashboard-grid,
   .insights-grid {
     grid-template-columns: 1fr;
@@ -619,6 +690,10 @@ code {
   .source-pill {
     max-width: none;
     text-align: left;
+  }
+
+  .priority-selector button {
+    flex: 1 1 160px;
   }
 }
 
