@@ -769,7 +769,7 @@ function App() {
               description="Cada sector cuenta cuantas respuestas aparecen en cada nivel de dificultad."
             >
               <div className="difficulty-chart">
-                <ResponsiveContainer width="100%" height={280}>
+                <ResponsiveContainer width="100%" height={330}>
                   <PieChart>
                     <Pie
                       data={difficultyChartData}
@@ -778,22 +778,13 @@ function App() {
                       label={renderDifficultyLabel}
                       labelLine={false}
                       nameKey="name"
-                      outerRadius={92}
+                      outerRadius={110}
                     />
                     <Tooltip
                       formatter={(value, name) => [`${value} apariciones`, `Dificultad: ${name}`]}
                     />
                   </PieChart>
                 </ResponsiveContainer>
-                <div className="difficulty-summary" aria-label="Apariciones por dificultad">
-                  {difficultyChartData.map((item) => (
-                    <div key={item.name}>
-                      <span className="difficulty-dot" style={{ background: item.fill }} />
-                      <span>{item.name}</span>
-                      <strong>{item.value} apariciones</strong>
-                    </div>
-                  ))}
-                </div>
               </div>
             </ChartCard>
 
